@@ -1,0 +1,10 @@
+/* GENERELT */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --main: #ff1054;
+  --x: #ff1054a5;
+  --x: #01142a;
+}
