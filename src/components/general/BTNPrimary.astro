@@ -1,0 +1,21 @@
+---
+const { data } = Astro.props;
+---
+
+<button>
+    <p>{data}</p>
+</button>
+
+<style> 
+
+    button {
+    --button-primary-background-default: var(--brand-contrast);
+    }
+    button:hover {
+    --button-primary-background-hover: var(--primary);
+    }
+
+    button:hover p {
+        
+    }
+</style>
