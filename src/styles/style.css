@@ -61,90 +61,99 @@ button {
   /*1 - TOKEN COLOR*/
   /* surface */
 
-  --primary: var(--neutral100);
-  --secondary: var(--yellow100);
-  --brand-contrast: var(--red500);
-  --heavy-contrast: var(--neutral400);
-  --tertiary: var(--neutral200);
+  --surface-primary: var(--neutral100);
+  --surface-secondary: var(--yellow100);
+  --surface-brand-contrast: var(--red500);
+  --surface-heavy-contrast: var(--neutral400);
+  --surface-tertiary: var(--neutral200);
 
   /* components-button */
 
-  --button-primary-background-default: var(--brand-contrast);
-  --button-primary-background-hover: var(--primary);
-  --button-secondary-background-default: var(--neutral400);
-  --button-secondary-background-hover: var(--neutral400);
-  --button-alternative-background-default: var(--neutral100);
-  --button-alternative-background-hover: var(--neutral400);
-  --button-primary-text-default: var(--neutral100);
+  --components-button-primary-background-default: var(--surface-brand-contrast);
+  --components-button-primary-background-hover: var(--surface-primary);
+  --components-button-secondary-background-default: var(--neutral400);
+  --components-button-secondary-background-hover: var(--neutral400);
+  --components-button-alternative-background-default: var(--neutral100);
+  --components-button-alternative-background-hover: var(--neutral400);
+  --components-button-primary-text-default: var(--neutral100);
 
   /* components-icon*/
 
-  --icon-primary: var(--neutral100);
-  --icon-primary-hover: var(--red500);
-  --icon-primary-pressed: var(--red500);
-  --icon-secondary: var(--neutral400);
-  --icon-secondary-hover: var(--neutral400);
-  --icon-secondary-pressed: var(--neutral400);
+  --components-icon-primary: var(--neutral100);
+  --components-icon-primary-hover: var(--red500);
+  --components-icon-primary-pressed: var(--red500);
+  --components-icon-secondary: var(--neutral400);
+  --components-icon-secondary-hover: var(--neutral400);
+  --components-icon-secondary-pressed: var(--neutral400);
 
   /* components-text*/
 
-  --heading-1: var(--red500);
-  --heading-2: var(--neutral400);
-  --heading-3: var(--neutral400);
-  --heading-4: var(--neutral400);
+  --text-heading-1: var(--red500);
+  --text-heading-2: var(--neutral400);
+  --text-heading-3: var(--neutral400);
+  --text-heading-4: var(--neutral400);
   --text-foridder: var(--neutral300);
   --text-body: var(--neutral400);
 
   /* components-text-form*/
 
-  --newsletter-heading-color: var(--neutral100);
-  --newsletter-text-body-color: var(--neutral100);
-  --contact-form-text-body-color: var(--neutral300);
-  --contact-form-heading-color: var(--neutral300);
+  --text-form-newsletter-heading-color: var(--neutral100);
+  --text-form-newsletter-text-body-color: var(--neutral100);
+  --text-form-contact-form-text-body-color: var(--neutral300);
+  --text-form-contact-form-heading-color: var(--neutral300);
 
   /* components-text-button*/
-  --button-text-primary-default: var(--neutral100);
-  --button-text-primary-hover: var(--neutral400);
-  --button-text-secondary-default: var(--neutral400);
-  --button-text-secondary-hover: var(--neutral100);
+  --text-button-text-primary-default: var(--neutral100);
+  --text-button-text-primary-hover: var(--neutral400);
+  --text-button-text-secondary-default: var(--neutral400);
+  --textutton-text-secondary-hover: var(--neutral100);
 
   /*2 - TOKEN SPACE*/
 
   /*horisontal-margin?*/
-  --horisontal-margin-xsmall: var(--space-8);
-  --horisontal-margin-small: var(--space-10);
-  --horisontal-margin-medium: var(--space-11);
+  --space-horisontal-margin-xsmall: var(--space-8);
+  --space-horisontal-margin-small: var(--space-10);
+  --space-horisontal-margin-medium: var(--space-11);
   /*--horisontal-margin-large: 145????; */
   /*--gap-small: var(--space-10); ?????*/
 
   /*horisontal-gap*/
-  --horisontal-gap-xxsmall: var(--space-1);
-  --horisontal-gap-xsmall: var(--space-3);
-  --horisontal-gap-small: var(--space-4);
-  --horisontal-gap-medium: var(--space-5);
-  --horisontal-gap-large: var(--space-6);
-  --horisontal-gap-xlarge: var(--space-7);
-  --horisontal-gap-xxlarge: var(--space-9);
-  --horisontal-gap-xxxlarge: var(--space-11);
+  --space-horisontal-gap-xxsmall: var(--space-1);
+  --space-horisontal-gap-xsmall: var(--space-3);
+  --space-horisontal-gap-small: var(--space-4);
+  --space-horisontal-gap-medium: var(--space-5);
+  --space-horisontal-gap-large: var(--space-6);
+  --space-horisontal-gap-xlarge: var(--space-7);
+  --space-horisontal-gap-xxlarge: var(--space-9);
+  --space-horisontal-gap-xxxlarge: var(--space-11);
 
   /*vertical-margin*/
-  --vertical-margin-small: var(--space-10);
-  --vertical-margin-medium: var(--space-12);
-  --vertical-margin-large: var(--space-14);
-  --vertical-margin-x-large: var(--space-16);
+  --space-vertical-margin-small: var(--space-10);
+  --space-vertical-margin-medium: var(--space-12);
+  --space-vertical-margin-large: var(--space-14);
+  --space-vertical-margin-x-large: var(--space-16);
 
   /*vertical-gap*/
-  --vertical-gap-xsmall: var(--space-3);
-  --vertical-gap-small: var(--space-8);
-  --vertical-gap-medium: var(--space-9);
-  --vertical-gap-large: var(--space-13);
-  --vertical-gap-x-large: var(--space-15);
+  --space-vertical-gap-xsmall: var(--space-3);
+  --space-vertical-gap-small: var(--space-8);
+  --space-vertical-gap-medium: var(--space-9);
+  --space-vertical-gap-large: var(--space-13);
+  --space-vertical-gap-x-large: var(--space-15);
 
   /*3 - TOKEN SCALE*/
 
   /*vertical-image*/
-  --vertical-insta-section-img: var(--scale-3);
+  --scale-vertical-image-insta-section-img: var(--scale-3);
 
   /*horisontal-image*/
-  --horisontal-insta-section-img: var(--scale-1);
+  --scale-horisontal-image-insta-section-img: var(--scale-1);
+}
+
+/*Gælder overalt*/
+h1 {
+  color: var(--text-heading-1);
+}
+
+.foridder {
+  --text-foridder: var(--neutral300);
 }

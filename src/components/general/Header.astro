@@ -1,18 +1,16 @@
 ---
-
+import BTNPrimary from "./BTNPrimary.astro";
 ---
 
 <header>
     <div class="menu-container">
         <div class="main-menu" id="myHeader">
-            <div class="logo-container">
-                <li><a href="/index.html"><img src="/svg/rejselyst..svg" class="logo" alt="Rejselyst logo"/></a></li>
-            </div>
-        
             <div class="icons">
               <ul>
-                <li><a class="menuBTN" href="/rejseforslag.html"> REJSEFORSLAG</a></li>
-                <li><a class="menuBTN" href="/destinationer.html">DESTINATIONER</a></li>
+                <li><a href="/index.html"><img src="/svg/rejselyst..svg" class="logo" alt="Rejselyst logo"/></a></li>
+                <li><a class="menuBTN link-text-small" href="/rejseforslag.html"> REJSEFORSLAG</a></li>
+                <li><a class="menuBTN link-text-small" href="/destinationer.html"> DESTINATIONER</a></li>
+                <li><a class="menuBTN" href="/kontaktos.html"><BTNPrimary data="KONTAKT OS"/></a></li>
                 <li class="burger-menu"><img src="/svg/burgermenu.svg" alt="Burger-Menu" /></li>
               </ul>
             </div>
@@ -48,12 +46,9 @@
     position: absolute;
   }
     header{
-    display: flex;
-    justify-content: space-between;
     list-style-type: none;
     z-index: 1000;
-
-    }
+  }
 
     .main-menu {
     display: flex;
@@ -68,20 +63,16 @@
     }
     
     body.menu-open .menu-container {
-  display: none;
-}
-
-
+      display: none;
+    }
   .icons ul {
     display: flex;
     align-items: right;
     list-style-type: none; 
   }
-
   .icons {
     display: flex;
   }
-
     .burger-menu img, .burger-menu2 img {
       /* width: 40px;
       height: 40px; */
@@ -96,7 +87,7 @@
   .burger-menu:hover, .burger-menu2:hover {
     opacity: 0.7;
     transition: 0.5s ease;
-    }
+  }
 
   body .open {
     transform: translateX(0);
@@ -157,6 +148,11 @@
     @media screen and (min-width: 800px) {
       header {
       z-index: 1000;
+      display: flex;
+      width: 1440px;
+      justify-content: center;
+      align-items: flex-start;
+      gap: var(--space-vertical-gap-large);
       }
 
       .menuBTN {
@@ -178,26 +174,6 @@
   }
 
 </style>
-
-<script>
-  // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementById("myHeader");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-} 
-</script>
 
 <script>
   const overlaymenu = document.querySelector(".overlaymenu-container");
