@@ -1,5 +1,10 @@
 /* GENERELT */
 
+::selection {
+  background-color: var(--red500); /* Ændr farven efter behov */
+  color: var(--yellow100); /* Ændr tekstfarven efter behov */
+}
+
 button {
   cursor: pointer;
 }
