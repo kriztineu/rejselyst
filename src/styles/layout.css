@@ -17,6 +17,7 @@
 }
 
 .hero-second {
+  padding-top: 140px;
   display: flex;
   flex-direction: column;
   gap: var(--space-horisontal-gap-medium);
