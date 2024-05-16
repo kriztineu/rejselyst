@@ -1,0 +1,85 @@
+<footer>
+    <section class="footerStart">        
+        <section>
+            <h4 class="h4">Kontakt</h4>
+                <ul>
+                    <li class="footer-text">Tlf: + 45 53 80 53 59.</li>
+                    <li class="footer-text">Mail: info@rejselyst.dk</li>
+                    <li class="footer-text">Vesterå 12, 1. th., 9000 Aalborg</li>
+                    <li class="footer-text">Mandag-Fredag fra 08.00-17.00</li>
+                </ul>
+        </section>
+        <section>
+            <h4 class="h4">Praktisk</h4>
+            <ul>
+                <li class="footer-text-mediumwidth">Privatlivspolitik & Betingelser</li>
+                <hr>
+                <li class="footer-text-mediumwidth">Rejsegarantifonden</li>
+                <hr>
+                <li class="footer-text-mediumwidth">Danmarks Rejsebureau Forening</li>
+            </ul>
+        </section>
+        <section class="footerLogo">
+            <img src="/svg/rejselyst.white.svg" alt="">
+        </section>
+    </section>
+
+    <hr>
+
+    <section class="footerEnd">
+        <p>All rights reserved @2023</p>
+        <p>CVR 43340689</p>
+        <div>
+            <a href="https://www.facebook.com/rejselyst.dk"><img src="/svg/fbicon.svg" alt="Facebook Ikon"></a>
+            <a href="https://www.instagram.com/rejselystdk/"><img src="/svg/igicon.svg" alt="Instagram Ikon"></a>
+            <a href="https://www.linkedin.com/company/rejselyst/"><img src="/svg/linkedinicon.svg" alt="LinkedIn Ikon"></a>
+        </div>
+    </section>
+</footer>
+
+<style>
+
+    h4, p, li {
+        color: var(--text-form-newsletter-text-body-color);
+    }
+
+    footer {
+        background: var(--surface-brand-contrast);
+        padding: var(--space-horisontal-margin-small) var(--space-vertical-margin-small) var(--space-horisontal-margin-xsmall) var(--space-vertical-margin-small);
+        display: flex;
+        text-decoration: none;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 30px;
+    }
+
+    .footerStart {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr; 
+        gap: var(--space-horisontal-margin-small);
+    }
+    .footerEnd {
+        display: flex;
+        justify-content: center;
+        gap: var(--space-16);
+    }
+
+    .footerLogo {
+        align-self: center;
+    }
+
+    hr {
+        color: var(--surface-primary);
+    }
+
+    ul {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: 
+    }
+</style>

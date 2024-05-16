@@ -4,7 +4,156 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  --main: #ff1054;
-  --x: #ff1054a5;
-  --x: #01142a;
+}
+
+button {
+  cursor: pointer;
+}
+
+* {
+  /*!PRIMITIVES HERUNDER!*/
+
+  /* colors */
+
+  --neutral100: #fdfdfd;
+  --neutral200: #f2f2f2;
+  --neutral300: #5a5a5a;
+  --neutral400: #2f2f2f;
+  --neutral500: #000000;
+  --yellow100: #ffffe9;
+  --red500: #ff5635;
+
+  /* SIZE */
+
+  /*spacing*/
+
+  --radiusNone: 0px;
+  --spaceNone: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 10px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 30px;
+  --space-8: 40px;
+  --space-9: 50px;
+  --space-10: 60px;
+  --space-11: 80px;
+  --space-12: 120px;
+  --space-13: 130px;
+  --space-14: 144px;
+  --space-15: 150px;
+  --space-16: 160px;
+
+  /* scale */
+
+  --scale-1: 235px;
+  --scale-2: 280px;
+  --scale-3: 300px;
+  --scale-4: 415px;
+  --scale-5: 420px;
+  --scale-6: 535px;
+  --scale-7: 635px;
+
+  /*!TOKENS HERUNDER!*/
+
+  /*1 - TOKEN COLOR*/
+  /* surface */
+
+  --surface-primary: var(--neutral100);
+  --surface-secondary: var(--yellow100);
+  --surface-brand-contrast: var(--red500);
+  --surface-heavy-contrast: var(--neutral400);
+  --surface-tertiary: var(--neutral200);
+
+  /* components-button */
+
+  --components-button-primary-background-default: var(--surface-brand-contrast);
+  --components-button-primary-background-hover: var(--surface-primary);
+  --components-button-secondary-background-default: var(--neutral400);
+  --components-button-secondary-background-hover: var(--neutral400);
+  --components-button-alternative-background-default: var(--neutral100);
+  --components-button-alternative-background-hover: var(--neutral400);
+  --components-button-primary-text-default: var(--neutral100);
+
+  /* components-icon*/
+
+  --components-icon-primary: var(--neutral100);
+  --components-icon-primary-hover: var(--red500);
+  --components-icon-primary-pressed: var(--red500);
+  --components-icon-secondary: var(--neutral400);
+  --components-icon-secondary-hover: var(--neutral400);
+  --components-icon-secondary-pressed: var(--neutral400);
+
+  /* components-text*/
+
+  --text-heading-1: var(--red500);
+  --text-heading-2: var(--neutral400);
+  --text-heading-3: var(--neutral400);
+  --text-heading-4: var(--neutral400);
+  --text-foridder: var(--neutral300);
+  --text-body: var(--neutral400);
+
+  /* components-text-form*/
+
+  --text-form-newsletter-heading-color: var(--neutral100);
+  --text-form-newsletter-text-body-color: var(--neutral100);
+  --text-form-contact-form-text-body-color: var(--neutral300);
+  --text-form-contact-form-heading-color: var(--neutral300);
+
+  /* components-text-button*/
+  --text-button-text-primary-default: var(--neutral100);
+  --text-button-text-primary-hover: var(--neutral400);
+  --text-button-text-secondary-default: var(--neutral400);
+  --textutton-text-secondary-hover: var(--neutral100);
+
+  /*2 - TOKEN SPACE*/
+
+  /*horisontal-margin?*/
+  --space-horisontal-margin-xsmall: var(--space-8);
+  --space-horisontal-margin-small: var(--space-10);
+  --space-horisontal-margin-medium: var(--space-11);
+  /*--horisontal-margin-large: 145????; */
+  /*--gap-small: var(--space-10); ?????*/
+
+  /*horisontal-gap*/
+  --space-horisontal-gap-xxsmall: var(--space-1);
+  --space-horisontal-gap-xsmall: var(--space-3);
+  --space-horisontal-gap-small: var(--space-4);
+  --space-horisontal-gap-medium: var(--space-5);
+  --space-horisontal-gap-large: var(--space-6);
+  --space-horisontal-gap-xlarge: var(--space-7);
+  --space-horisontal-gap-xxlarge: var(--space-9);
+  --space-horisontal-gap-xxxlarge: var(--space-11);
+
+  /*vertical-margin*/
+  --space-vertical-margin-small: var(--space-10);
+  --space-vertical-margin-medium: var(--space-12);
+  --space-vertical-margin-large: var(--space-14);
+  --space-vertical-margin-x-large: var(--space-16);
+
+  /*vertical-gap*/
+  --space-vertical-gap-xsmall: var(--space-3);
+  --space-vertical-gap-small: var(--space-8);
+  --space-vertical-gap-medium: var(--space-9);
+  --space-vertical-gap-large: var(--space-13);
+  --space-vertical-gap-x-large: var(--space-15);
+
+  /*3 - TOKEN SCALE*/
+
+  /*vertical-image*/
+  --scale-vertical-image-insta-section-img: var(--scale-3);
+
+  /*horisontal-image*/
+  --scale-horisontal-image-insta-section-img: var(--scale-1);
+}
+
+/*Gælder overalt*/
+h1 {
+  color: var(--text-heading-1);
+}
+
+.foridder {
+  --text-foridder: var(--neutral300);
 }
