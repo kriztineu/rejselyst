@@ -1,0 +1,56 @@
+---
+const { data } = Astro.props;
+---
+
+<button>
+    <p class="button-text">{data}</p>
+    <img class="arrow" src="../svg/arrow4.svg" alt="">
+    <img class="hoverArrow" src="../svg/arrow5.svg" alt="">
+</button>
+
+<style> 
+
+    button {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        display: inline-flex;
+        padding: 10px 15px;
+        align-items: center;
+        gap: 50px;
+        background-color: var(--components-button-primary-background-default);
+        color: var(--text-button-text-primary-default);
+        border: 1px solid var(--components-button-primary-background-default);
+    }
+
+    p {
+    color: var(--components-button-text-primary-default);
+    }
+    button:hover {
+    color: var(--text-button-text-secondary-hover);
+    border: 1.5px solid var(--components-button-secondary-background-default);
+    background: var(--components-button-secondary-background-hover);
+    }
+
+
+    button:hover p {
+        color: var(--button-text-primary-hover);
+    }
+
+    .arrow {
+        display: block;
+    }
+
+    .hoverArrow {
+        display: none;
+    }
+
+    .arrow:hover {
+        display: none;
+    }
+
+    .hoverArrow:hover {
+        display: none;
+    }
+
+</style>
