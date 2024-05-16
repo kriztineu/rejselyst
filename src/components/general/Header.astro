@@ -4,10 +4,13 @@ import BTNPrimary from "./BTNPrimary.astro";
 
 <header>
     <div class="menu-container">
-        <div class="main-menu" id="myHeader">
+        <div class="main-menu">
+          <div class="logoContainer">
+            <li><a href="/index.html"><img src="/svg/rejselyst..svg" class="logo" alt="Rejselyst logo"/></a></li>
+          </div>
+
             <div class="icons">
               <ul>
-                <li><a href="/index.html"><img src="/svg/rejselyst..svg" class="logo" alt="Rejselyst logo"/></a></li>
                 <li><a class="menuBTN link-text-small" href="/rejseforslag.html"> REJSEFORSLAG</a></li>
                 <li><a class="menuBTN link-text-small" href="/destinationer.html"> DESTINATIONER</a></li>
                 <li><a class="menuBTN" href="/kontaktos.html"><BTNPrimary data="KONTAKT OS"/></a></li>
@@ -39,8 +42,19 @@ import BTNPrimary from "./BTNPrimary.astro";
 
 </header>
 
-
 <style>
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+  .menu-container {
+      position: absolute;
+      z-index: 10000;
+      width: 100%;
+  }
 
   .overlayLogo a {
     position: absolute;
@@ -50,21 +64,11 @@ import BTNPrimary from "./BTNPrimary.astro";
     z-index: 1000;
   }
 
-    .main-menu {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    }
 
-    .menu-container {
-        position: absolute;
-        z-index: 10000;
-        width: 100%;
-    }
     
-    body.menu-open .menu-container {
+  body.menu-open .menu-container {
       display: none;
-    }
+  }
   .icons ul {
     display: flex;
     align-items: right;
@@ -73,10 +77,10 @@ import BTNPrimary from "./BTNPrimary.astro";
   .icons {
     display: flex;
   }
-    .burger-menu img, .burger-menu2 img {
-      /* width: 40px;
-      height: 40px; */
-    }
+  .burger-menu img, .burger-menu2 img {
+      width: 40px;
+      height: 40px;
+  }
 
   .burger-menu,
   .burger-menu2 {
@@ -96,7 +100,7 @@ import BTNPrimary from "./BTNPrimary.astro";
   .overlaymenu-container {
     height: 100vh;
     width: 100vw;
-    background-color: var(--primary-red);
+    background-color: var(--surface-brand-contrast);
     position: fixed;
     top: 0;
     right: 0;
@@ -149,9 +153,6 @@ import BTNPrimary from "./BTNPrimary.astro";
       header {
       z-index: 1000;
       display: flex;
-      width: 1440px;
-      justify-content: center;
-      align-items: flex-start;
       gap: var(--space-vertical-gap-large);
       }
 
@@ -162,13 +163,6 @@ import BTNPrimary from "./BTNPrimary.astro";
     .icons-close a {
     display: block;
     z-index: 1000;
-  }
-  .storMenu {
-
-  }
-
-  .menu-container {
-    width: 0%;
   }
 
   }
