@@ -17,7 +17,7 @@
   line-height: 100px; /* 100% */
 }
 
-.h1-display-Italic {
+.h1-display-italic {
   font-family: "Wulkan Display Italic";
   font-size: 160px;
   font-style: italic;
@@ -144,7 +144,7 @@
 /* buttons */
 
 .button-text {
-  /* font-family: "Be Vietnam Pro"; */
+  font-family: "Be Vietnam Pro";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
