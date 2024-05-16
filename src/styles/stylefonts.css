@@ -206,7 +206,7 @@
   font-size: 17px;
   font-style: normal;
   font-weight: 300;
-  line-height: 25px; /* 147.059% */
+  line-height: 40px; /* 147.059% */
 }
 
 .footer-text-mediumwidth {
@@ -214,7 +214,7 @@
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
-  line-height: 40px; /* 235.294% */
+  line-height: 40px;
 }
 
 .footer-text-bold {
@@ -222,7 +222,7 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
-  line-height: 20px; /* 133.333% */
+  line-height: 40px;
 }
 @media only screen and (min-width: 992px) {
   /* headings */
