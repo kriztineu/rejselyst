@@ -21,8 +21,6 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-horisontal-gap-medium);
-  margin-right: 2rem;
-  margin-left: 2rem;
 }
 
 .hero-heading {
@@ -50,8 +48,6 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-horisontal-gap-medium);
-    margin-right: 2rem;
-    margin-left: 2rem;
   }
 
   .hero-second {
@@ -59,8 +55,6 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-horisontal-gap-medium);
-    margin-right: 2rem;
-    margin-left: 2rem;
   }
 
   .hero-heading {

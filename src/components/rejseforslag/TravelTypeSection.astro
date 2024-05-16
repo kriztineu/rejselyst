@@ -1,0 +1,70 @@
+---
+import BTNPrimary from "../general/BTNPrimary.astro"
+---
+
+<article>
+    <div>
+        <span class="forridder">REJSETYPER</span>
+        </div>
+    <div>
+        <p>Luksuriøse rejser og de andre rejsetyper her</p>
+    <section class="travel-upper-section">
+        <div>
+        <img src="rejseforslag/noahsurfhouse.png" alt="Noah Surf House, Portugal" width="" height="">
+        <div>
+        <div>
+            
+            <span class="image-link">Noah Surf House, Portugal</span>
+        </div>
+       </div>
+    </div>
+    <div>
+        <div>
+        <span class="forridder">REJSETYPER</span>
+            <div>
+                <h3 class="h3-display">Oplev verdenen med dem du holder af</h3>
+
+            <div>
+                <p class="paragraph-small">Noah Surf House er et lille laidback surferhotel beliggende i byen Santa Cruz, hvor især surfing og udendørs aktiviteter er på programmet. Lige foran hotellet finder I nogle af de bedste surfbølger, så sæt kurs mod havet og stranden. Hæng ud ved poolen, kør mountainbike langs kysten, hop på trampolin og vis jeres skills på hotellets skaterrampe. Deltag også i fællessang og hygge om bålet om aftenen, hvor nye venskaber opstår.</p>
+            </div>
+            <BTNPrimary/>
+           </div>
+        </div>
+        <div>
+        
+    </section>
+
+</article>
+
+<style>
+
+    .travel-upper-section {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .travel-lower-section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    @media only screen and (min-width: 992px) {
+        
+        
+        .travel-upper-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .travel-lower-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+   
+</style>
