@@ -6,13 +6,16 @@ import BTNPrimary from "./BTNPrimary.astro";
     <div class="menu-container">
         <div class="main-menu">
           <div class="logoContainer">
-            <li><a href="/index.html"><img src="/svg/rejselyst..svg" class="logo" alt="Rejselyst logo"/></a></li>
+              <li><a href="/index.html"><img src="/svg/rejselyst..svg" class="logo" alt="Rejselyst logo"/></a></li>
+              <div class="menu-left">
+                <li><a class="menuBTN link-text-small" href="/rejseforslag.html"> REJSEFORSLAG</a></li>
+                <li><a class="menuBTN link-text-small" href="/destinationer.html"> DESTINATIONER</a></li>
+              </div>
+
           </div>
 
             <div class="icons">
               <ul>
-                <li><a class="menuBTN link-text-small" href="/rejseforslag.html"> REJSEFORSLAG</a></li>
-                <li><a class="menuBTN link-text-small" href="/destinationer.html"> DESTINATIONER</a></li>
                 <li><a class="menuBTN" href="/kontaktos.html"><BTNPrimary data="KONTAKT OS"/></a></li>
                 <li class="burger-menu"><img src="/svg/burgermenu.svg" alt="Burger-Menu" /></li>
               </ul>
@@ -23,19 +26,16 @@ import BTNPrimary from "./BTNPrimary.astro";
     <div class="overlaymenu-container">
         <div class="icons-close">
           <div class="overlayLogo">
-            <li><a href="/index.html"><img src="/svg/rejselyst..svg" class="logo" alt="Rejselyst logo"/></a></li>
+            <li><a href="/index.html"><img src="/svg/rejselyst.sand.svg" class="logo" alt="Rejselyst logo"/></a></li>
           </div>
           <ul class="ulicons">
-              <li class="burger-menu2"><img src="/svg/burgermenu.svg" alt="Burger-Menu2" /></li>
+              <li class="burger-menu2"><img src="/svg/x.svg" alt="Burger-Menu2" /></li>
                 <div class="storMenu">
-                    <li><a href="/rejseforslag.html">REJSEFORSLAG</a></li>
-                    <li><a href="/omos.html">OM OS</a></li>
-                    <li><a href="/destinationer.html">DESTINATIONER</a></li>
-                    <li><a href="/kontaktos.html">KONTAKT OS</a></li>
+                    <li><a class="h1-display-small" href="/rejseforslag.html">Rejseforslag</a></li>
+                    <li><a class="h1-display-small" href="/omos.html">Om os</a></li>
+                    <li><a class="h1-display-small" href="/destinationer.html">Destinationer</a></li>
+                    <li><a class="h1-display-small" href="/kontaktos.html">Kontakt os</a></li>
               </div>
-              <!-- <div class="SoMe" style="background-color: var(--dark-blue);">
-                <SoMe bg="blue"/>
-              </div> -->
           </ul>
           </div>
     </div>
@@ -44,6 +44,18 @@ import BTNPrimary from "./BTNPrimary.astro";
 
 <style>
 
+.ulicons, a {
+  text-decoration: none;
+}
+
+  .menu-left, li {
+    gap: var(--space-vertical-gap-small);
+  }
+
+.logoContainer {
+  display: flex;
+  gap: var(--space-vertical-gap-medium);
+}
 .main-menu {
   display: flex;
   justify-content: space-between;
@@ -64,18 +76,12 @@ import BTNPrimary from "./BTNPrimary.astro";
     z-index: 1000;
   }
 
-
-    
   body.menu-open .menu-container {
       display: none;
   }
   .icons ul {
     display: flex;
-    align-items: right;
     list-style-type: none; 
-  }
-  .icons {
-    display: flex;
   }
   .burger-menu img, .burger-menu2 img {
       width: 40px;
@@ -121,9 +127,11 @@ import BTNPrimary from "./BTNPrimary.astro";
     display: flex;
     justify-content: left;
     flex-direction: column;
+    gap: var(--space-horisontal-margin-xsmall);
   }
 
   .storMenu a {
+    color: var(--surface-secondary);
   }
 
   .icons-close ul {
@@ -150,6 +158,22 @@ import BTNPrimary from "./BTNPrimary.astro";
 
 
     @media screen and (min-width: 800px) {
+
+      header {
+
+      }
+
+      .menu-left {
+        display: flex;
+      }
+
+      .menu-left a {
+        color: var(--components-button-primary-background-default);
+      }
+
+      .icons {
+        display: flex;
+      }
       header {
       z-index: 1000;
       display: flex;
@@ -158,6 +182,10 @@ import BTNPrimary from "./BTNPrimary.astro";
 
       .menuBTN {
       display: block;
+    }
+
+    .icons ul {
+      gap: var(--space-vertical-gap-small);
     }
 
     .icons-close a {
