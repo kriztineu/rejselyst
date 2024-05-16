@@ -5,12 +5,23 @@ import BTNSecondary from "../components/general/BTNSecondary.astro"
 ---
 
 <MainLayout title="Destinationer">
-<section>
+<section class="hero-heading">
     <span class="forridder">DESTINATIONER</span>
-    <h1 class="h1-display">Destination</h1>
+    <h1 class="h1-display">Maldiverne</h1>
 </section>
+<section class="hero-text-img">
+    <p class="paragraph-large">Rejs til Maldiverne, hvor turkisblåt hav, svajende kokospalmer og kridhvide sandstrande skaber rammerne for uforglemmelige bounty-oplevelser og store smil på læberne. Maldiverne byder – bogstaveligt talt – på et hav af muligheder for at se farverige fisk, manta rays, stingrays, delfiner og skildpadder på åbent hav. Kom helt ned i gear eller tag snorkelmaske og svømmefødder på, hop i den turkise lagune og bliv klogere på livet under havoverfladen. Oplev verdens smukkeste strande, nyd en privat middag med fødderne i sandet, der er blødt som balsam og lilla-orangefarvede solnedgange, du aldrig vil glemme.</p>
+    <img src="hero-img-maldiverne.png" alt="Maldives" width="365" height="498"> 
+</section>
+
 </MainLayout>
 
 <style>
+.hero-heading {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-horisontal-gap-xsmall, 10px);
+}
+
 
 </style>
