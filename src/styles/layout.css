@@ -1,6 +1,36 @@
 /* Universal layouts */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* Hero layouts */
+
+.hero-landingpage {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-horisontal-gap-medium);
+}
+
+.hero-second {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-horisontal-gap-medium);
+}
+
+.hero-heading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-horisontal-gap-medium);
+}
+
+.hero-paragraph-img {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-horisontal-gap-xxlarge);
+}
 
 @media only screen and (min-width: 992px) {
   /* Hero layouts */

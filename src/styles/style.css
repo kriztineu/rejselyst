@@ -1,11 +1,5 @@
 /* GENERELT */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 button {
   cursor: pointer;
 }
@@ -92,7 +86,7 @@ button {
   --text-heading-2: var(--neutral400);
   --text-heading-3: var(--neutral400);
   --text-heading-4: var(--neutral400);
-  --text-foridder: var(--neutral300);
+  --text-forridder: var(--neutral300);
   --text-body: var(--neutral400);
 
   /* components-text-form*/
@@ -155,6 +149,6 @@ h1 {
   color: var(--text-heading-1);
 }
 
-.foridder {
-  --text-foridder: var(--neutral300);
+.forridder {
+  color: var(--text-forridder);
 }

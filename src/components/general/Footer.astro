@@ -1,7 +1,8 @@
 <footer>
+    
     <section class="footerStart">        
-        <section>
-            <h4 class="h4">Kontakt</h4>
+        <section class="grid1">
+            <h4 class="h4">KONTAKT</h4>
                 <ul>
                     <li class="footer-text">Tlf: + 45 53 80 53 59.</li>
                     <li class="footer-text">Mail: info@rejselyst.dk</li>
@@ -9,8 +10,9 @@
                     <li class="footer-text">Mandag-Fredag fra 08.00-17.00</li>
                 </ul>
         </section>
-        <section>
-            <h4 class="h4">Praktisk</h4>
+
+        <section class="grid2">
+            <h4 class="h4">PRAKTISK</h4>
             <ul>
                 <li class="footer-text-mediumwidth">Privatlivspolitik & Betingelser</li>
                 <hr>
@@ -27,9 +29,9 @@
     <hr>
 
     <section class="footerEnd">
-        <p>All rights reserved @2023</p>
-        <p>CVR 43340689</p>
-        <div>
+        <p class="footer-text-bold">All rights reserved @2023</p>
+        <p class="footer-text-bold">CVR 43340689</p>
+        <div class="footerIcons">
             <a href="https://www.facebook.com/rejselyst.dk"><img src="/svg/fbicon.svg" alt="Facebook Ikon"></a>
             <a href="https://www.instagram.com/rejselystdk/"><img src="/svg/igicon.svg" alt="Instagram Ikon"></a>
             <a href="https://www.linkedin.com/company/rejselyst/"><img src="/svg/linkedinicon.svg" alt="LinkedIn Ikon"></a>
@@ -43,13 +45,34 @@
         color: var(--text-form-newsletter-text-body-color);
     }
 
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-5);
+    }
+
+    .grid1 {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-7);
+    }
+
+    .grid2 {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-5);
+    }
+
+    .grid2 ul {
+        gap: var(--space-3);
+    }
+
     footer {
         background: var(--surface-brand-contrast);
         padding: var(--space-horisontal-margin-small) var(--space-vertical-margin-small) var(--space-horisontal-margin-xsmall) var(--space-vertical-margin-small);
         display: flex;
         text-decoration: none;
         flex-direction: column;
-        /* align-items: center; */
         gap: 30px;
     }
 
@@ -61,12 +84,12 @@
     }
     .footerEnd {
         display: flex;
-        justify-content: center;
-        gap: var(--space-16);
+        justify-content: space-between;
     }
 
     .footerLogo {
         align-self: center;
+        /* padding-left: var(--space-10); */
     }
 
     hr {
@@ -81,5 +104,10 @@
     a:visited {
         text-decoration: none;
         color: 
+    }
+
+    .footerIcons {
+        display: flex;
+        gap: var(--space-6);
     }
 </style>
