@@ -12,9 +12,12 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-horisontal-gap-medium);
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .hero-second {
+  padding-top: 140px;
   display: flex;
   flex-direction: column;
   gap: var(--space-horisontal-gap-medium);
@@ -32,6 +35,37 @@
   gap: var(--space-horisontal-gap-xxlarge);
 }
 
+.h2-forridder-gap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-horisontal-gap-xsmall);
+}
+
 @media only screen and (min-width: 992px) {
   /* Hero layouts */
+
+  .hero-landingpage {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-horisontal-gap-medium);
+  }
+
+  .hero-second {
+    padding-top: 164px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-horisontal-gap-medium);
+  }
+
+  .hero-heading {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-horisontal-gap-medium);
+  }
+
+  .hero-paragraph-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-horisontal-gap-xxlarge);
+  }
 }
