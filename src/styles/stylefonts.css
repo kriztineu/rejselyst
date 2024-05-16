@@ -118,18 +118,18 @@
 
 .paragraph-medium {
   font-family: "Be Vietnam Pro";
-  font-size: 15px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: normal;
+  line-height: 22px;
 }
 
 .paragraph-large {
   font-family: "Be Vietnam Pro";
-  font-size: 18px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 300;
-  line-height: 20px; /* 138.889% */
+  line-height: 25px; /* 138.889% */
 }
 
 .inline-text {
@@ -341,7 +341,7 @@
     font-size: 15px;
     font-style: normal;
     font-weight: 300;
-    line-height: normal;
+    line-height: 22px;
   }
 
   .paragraph-medium {
@@ -349,7 +349,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: normal;
+    line-height: 23px;
   }
 
   .paragraph-large {
