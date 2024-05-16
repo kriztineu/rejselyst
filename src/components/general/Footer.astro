@@ -1,7 +1,7 @@
 <footer>
     <section class="footerStart">        
         <section>
-            <h4 class="h4">Kontakt</h4>
+            <h4 class="h4">KONTAKT</h4>
                 <ul>
                     <li class="footer-text">Tlf: + 45 53 80 53 59.</li>
                     <li class="footer-text">Mail: info@rejselyst.dk</li>
@@ -10,7 +10,7 @@
                 </ul>
         </section>
         <section>
-            <h4 class="h4">Praktisk</h4>
+            <h4 class="h4">PRAKTISK</h4>
             <ul>
                 <li class="footer-text-mediumwidth">Privatlivspolitik & Betingelser</li>
                 <hr>
@@ -27,9 +27,9 @@
     <hr>
 
     <section class="footerEnd">
-        <p>All rights reserved @2023</p>
-        <p>CVR 43340689</p>
-        <div>
+        <p class="footer-text-bold">All rights reserved @2023</p>
+        <p class="footer-text-bold">CVR 43340689</p>
+        <div class="footerIcons">
             <a href="https://www.facebook.com/rejselyst.dk"><img src="/svg/fbicon.svg" alt="Facebook Ikon"></a>
             <a href="https://www.instagram.com/rejselystdk/"><img src="/svg/igicon.svg" alt="Instagram Ikon"></a>
             <a href="https://www.linkedin.com/company/rejselyst/"><img src="/svg/linkedinicon.svg" alt="LinkedIn Ikon"></a>
@@ -61,7 +61,7 @@
     }
     .footerEnd {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         gap: var(--space-16);
     }
 
@@ -81,5 +81,10 @@
     a:visited {
         text-decoration: none;
         color: 
+    }
+
+    .footerIcons {
+        display: flex;
+        gap: var(--space-6);
     }
 </style>
