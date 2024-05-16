@@ -2,7 +2,13 @@
 
 /* Hero layouts */
 
-.hero {
+.hero-landingpage {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-horisontal-gap-medium);
+}
+
+.hero-second {
   display: flex;
   flex-direction: column;
   gap: var(--space-horisontal-gap-medium);
@@ -14,7 +20,7 @@
   gap: var(--space-horisontal-gap-medium);
 }
 
-.hero-text-img {
+.hero-paragraph-img {
   display: flex;
   flex-direction: column;
   gap: var(--space-horisontal-gap-xxlarge);
