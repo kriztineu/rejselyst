@@ -44,7 +44,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 
 
      <div>
-        <img src="destination-page/travel-small-1.png" alt="Maldives" width="" height="">
+        <img src="destination-page/travel-small-1.png" class="img2" alt="Maldives" width="" height="">
         <div class="text-btn-gap">
         <div class="text-gap">
             <h6 class="h6">BOUNTYSTRANDE OG LOKALE OPLEVELSER</h6>
@@ -58,7 +58,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     </div>
 
         <div>
-            <img src="destination-page/travel-small-2.png" alt="Maldives" width="" height="">
+            <img src="destination-page/travel-small-2.png" class="img2" alt="Maldives" width="" height="">
             <div class="text-btn-gap">
             <div class="text-gap">
                 <h6 class="h6">BOUNTYSTRANDE OG LOKALE OPLEVELSER</h6>
@@ -73,7 +73,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 
 
             <div>
-                <img src="destination-page/travel-small-3.png" alt="Maldives" width="" height="">
+                <img src="destination-page/travel-small-3.png" class="img2" alt="Maldives" width="" height="">
                 <div class="text-btn-gap">
                 <div class="text-gap">
                     <h6 class="h6">BOUNTYSTRANDE OG LOKALE OPLEVELSER</h6>
@@ -93,9 +93,16 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 
 <style>
 
+    .img2 {
+        max-width: 420px;
+        height: 420px;
+        object-fit:cover;
+    }
+
     .article {
         background-color: var(--surface-secondary, #FFFFE9);
         display: flex;
+        padding-top: 250px;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
@@ -106,12 +113,17 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     .travel-upper-section {
         display: grid;
         grid-template-columns: 1fr;
+        gap: var(--space-vertical-gap-small);
+        padding-bottom: var(--space-horisontal-gap-xlarge, 30px);
 
     }
 
     .travel-lower-section {
         display: grid;
         grid-template-columns: 1fr;
+        padding-bottom: 30px;
+        gap: var(--space-vertical-gap-small);
+        padding-top: var(--space-horisontal-gap-xlarge, 30px);
     }
 
     .text-btn-gap {
