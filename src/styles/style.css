@@ -105,7 +105,7 @@ button {
   --text-button-text-primary-default: var(--neutral100);
   --text-button-text-primary-hover: var(--neutral400);
   --text-button-text-secondary-default: var(--neutral400);
-  --textutton-text-secondary-hover: var(--neutral100);
+  --text-button-text-secondary-hover: var(--neutral100);
 
   /*2 - TOKEN SPACE*/
 
