@@ -1,0 +1,71 @@
+---
+import BTNPrimary from "./BTNPrimary.astro"
+import BTNSecondary from "./BTNSecondary.astro"
+---
+<article>
+    <section>
+        <h2 class="h2-display">Udfyld kontaktformularen</h2>
+        <p class="paragraph-medium">Eller ring direkte til Matti på +45 53 80 53 59</p>
+    </section>
+
+    <section class="contact-form">
+        <form action="">
+            <label for="fname">Fornavn</label>
+            <input type="text" id="fname" name="fname">
+
+            <label for="lname">Efternavn</label>
+            <input type="text" id="lname" name="lname">
+
+            <label for="age">Alder</label>
+            <input type="text" id="age" name="age">
+
+            <label for="e-mail">E-mail</label>
+            <input type="text" id="e-mail" name="e-mail">
+
+            <label for="destination">Destination</label>
+            <input type="text" id="destination" name="destination">
+
+            <label for="phone">Telefon</label>
+            <input type="text" id="phone" name="phone">
+
+            <label for="airport">Foretrukken afrejselufthavn</label>
+            <input type="text" id="airport" name="airport">
+
+            <label for="travellers">Antal rejsende</label>
+            <input type="text" id="travellers" name="travellers">
+
+            <label for="dates">Rejsedatoer</label>
+            <input type="text" id="dates" name="dates">
+
+            <label for="travellength">Rejselængde</label>
+            <input type="text" id="travellength" name="travellength">
+
+            <label for="flexi">Fleksibilitet</label>
+            <input type="text" id="flexi" name="flexi">
+
+            <label for="budget">Antal samlet rejsebudget</label>
+            <input type="text" id="budget" name="budget">
+
+            <label for="cmnts">Bemærkninger</label>
+            <input type="text" id="cmnts" name="cmnts">
+        </form>
+
+    </section>
+
+    <BTNPrimary data="SEND"/>
+</article>
+
+<style>
+
+    .contact-form {
+        display: flex;
+        width: 887px;
+        height: 450px;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: var(--space-horisontal-gap-xxlarge, 50px) 105px;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+        background-color: var(--surface-tertiary);
+    }
+</style>
