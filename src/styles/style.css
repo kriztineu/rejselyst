@@ -157,3 +157,7 @@ h1 {
 .forridder {
   color: var(--text-forridder);
 }
+
+.header-p {
+  color: var(--text-heading-1);
+}

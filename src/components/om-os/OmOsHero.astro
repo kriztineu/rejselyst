@@ -1,0 +1,44 @@
+<article class="hero-second">
+    <div class="hero-heading div1">
+        <span class="forridder">OM OS</span>
+        <h1 class="h1-display-small">Hvem er din rejserådgiver?</h1>
+         <p class="paragraph-medium header-p">Det er vi, Matti Saastamoinen Binderup og dagligt driver jeg rejsebureauet med min bedre halvdel, Tina Andrea Frydenlund Nielsen. Vi er et lille rejsebureau, og vi er ambitiøse og sætter en dyd i at yde professionel rådgivning. Vores ambitioner er ikke at være store, men at byde dig velkommen til et univers, hvor vores DNA skinner igennem. </p>
+    </div>
+    <div class="div2">
+        <img src="../om-os/IMG_9409.jpg" alt="Tina og Matti" width="" height=""> 
+    </div>
+</article>
+
+<style>
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        @media only screen and (min-width: 992px) {
+            article {   
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr; 
+            gap: var(--space-horisontal-margin-small);
+            }
+
+            .div1 {
+            display: flex;
+            grid-column: 2/2;
+            grid-row: 1;
+            }
+
+            .div2 {
+            display: flex;
+            justify-content: center;
+            grid-column: 1/2;
+            grid-row: 1;
+            }
+
+            img {
+                padding-top: 264px;
+            }
+
+        }
+</style>
