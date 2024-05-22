@@ -3,16 +3,22 @@ import BTNForm2 from "./BTNForm2.astro"
 ---
 <article>
     <div class="newsletter">
-        <h3 class="h3-display">Få tilbud og nyheder 
-            om dine drømmerejser</h5>
+        <div class="newsh3">
+            <h3 class="h3-display">Få tilbud og nyheder om dine drømmerejser</h5>
             <p class="paragraph-small">Tilmeld dig nyhedsbrevet og få inspiration om nye destinationer, og bliv en del af vores rejsefællesskab. </p>
+        </div>
+            <form action="">
+                <input type="text" id="fname" name="fname" class="newsletterinput form-text" value="Fornavn">
+                <label class="newslabel" for="fname"></label>
+                
+                <input type="text" id="lname" name="lname" class="newsletterinput form-text" value="Efternavn">
+                <label class="newslabel" for="lname"></label>
+                
+                </form>
 
-            <form action="Fornavn">Fornavn</form>
-            <form action="Efternavn">Efternavn</form>
             <div class="newsletterBTN">
                 <BTNForm2 data="TILMELD"/>
             </div>
-            
     </div>
     <div>
         <img src="../img/newsletter.png" alt="">
@@ -21,8 +27,37 @@ import BTNForm2 from "./BTNForm2.astro"
 
 <style>
 
+    .newsletterBTN {
+        display: flex;
+        justify-content: right;
+        margin-top: var(--space-vertical-margin-small);
+    }
+
+    .newsletterinput {
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        color:#FAC9B9;
+        border-bottom: 1px solid var(--text-form-newsletter-text-body-color);
+        width: 100%;
+    }
+    
+
+    .newsh3 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-horisontal-gap-medium);
+        margin-bottom: var(--space-horisontal-gap-medium);
+    }
+
     .newsletter {
         background-color: var(--surface-brand-contrast);
+        padding: var(--space-vertical-margin-small);
+        min-width: 400px;
+        max-width: 800px;
+        
     }
 
     h3 {
@@ -33,16 +68,31 @@ import BTNForm2 from "./BTNForm2.astro"
         color: var(--text-form-newsletter-heading-color);
     }
 
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
     @media only screen and (min-width: 992px) {
         article {
-            display: flex;
-            
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr; 
         }
 
         .newsletter {
+            padding: var(--space-vertical-margin-medium);
+        }
+
+        form {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            align-items: right;
+            gap: var(--space-horisontal-gap-xsmall);
+        }
+
+        .newsletterBTN {
+            margin-top: 2.5rem;
         }
     }
 </style>
