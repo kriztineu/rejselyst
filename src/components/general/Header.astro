@@ -27,9 +27,10 @@ import BTNPrimary from "./BTNPrimary.astro";
         <div class="icons-close">
           <div class="overlayLogo">
             <li><a href="/index.html"><img src="/svg/rejselyst.sand.svg" class="logo" alt="Rejselyst logo"/></a></li>
+            <li class="burger-menu2"><img src="/svg/x.svg" alt="Burger-Menu2" /></li>
           </div>
           <ul class="ulicons">
-              <li class="burger-menu2"><img src="/svg/x.svg" alt="Burger-Menu2" /></li>
+             
                 <div class="storMenu">
                     <li><a class="h1-display-small" href="/rejseforslag.html">Rejseforslag</a></li>
                     <li><a class="h1-display-small" href="/omos.html">Om os</a></li>
@@ -44,22 +45,33 @@ import BTNPrimary from "./BTNPrimary.astro";
 
 <style>
 
+  .overlayLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 .ulicons, a {
   text-decoration: none;
 }
 
   .menu-left, li {
     gap: var(--space-vertical-gap-small);
+    align-self: center;
+  }
+
+  .menu-left {
+    padding-left: var(--space-vertical-gap-medium);
   }
 
 .logoContainer {
   display: flex;
   gap: var(--space-vertical-gap-medium);
+  justify-content: center;
 }
 .main-menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+
 }
 
   .menu-container {
@@ -133,6 +145,7 @@ import BTNPrimary from "./BTNPrimary.astro";
     justify-content: left;
     flex-direction: column;
     gap: var(--space-horisontal-margin-xsmall);
+    padding: 3rem;
   }
 
   .storMenu a {
@@ -159,6 +172,11 @@ import BTNPrimary from "./BTNPrimary.astro";
   .menuBTN {
     display: none;
     text-decoration: none;
+  }
+
+  .menu-container, .overlaymenu-container {
+    /* padding: 0px 60px; */
+    padding: var(--space-horisontal-margin-xsmall, 40px)
   }
 
 
