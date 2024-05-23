@@ -1,0 +1,83 @@
+---
+import BTNSecondary from "../general/BTNSecondary.astro";
+
+
+---
+
+<article>
+
+
+    <section class="gap">
+
+    <span class="forridder">OM OS</span>
+
+    <div>
+    <div class="text-section">
+    <div class="heading">
+    <h2 class="h2-display">Et personligt rejsebureau, skræddersyede oplevelser, håndplukkede destinationer. </h2>
+    </div>
+
+    <div class="paragraph">
+        <p class="paragraph-medium">Det er mig Matti, du får i røret, når du ringer til os - og sammen med min bedre halvdel, Tina, driver jeg rejsebureauet. Stederne, vi udbyder, har vi selv besøgt, så vi kender dem til fingerspidserne. Ekspertise, personlig service, ærlig rådgivning og fingeren på pulsen får du hos os!</p>
+        <BTNSecondary/>
+    </div>
+    </div>
+    </div>
+
+
+    </section>
+
+    <div>
+
+    </div>
+
+</article>
+
+<style>
+
+
+@media only screen and (min-width: 992px) {
+
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-horisontal-gap-xsmall, 10px);
+    
+}
+
+.text-section {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-horisontal-gap-xxxlarge, 80px);
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-horisontal-gap-medium, 20px);
+    display: flex;
+    align-items: flex-end;
+    width: 800px;
+    
+
+}
+
+.gap {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-horisontal-gap-xsmall, 10px);
+    padding-left:var(--space-horisontal-margin-small);
+    padding-right:var(--space-horisontal-margin-small);
+    
+}
+
+}
+
+
+</style>
