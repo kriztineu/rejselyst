@@ -150,6 +150,105 @@ span::after {
 
 .slide {
   clear:both;
+  width:250px;
+  height:0px;
+  overflow: hidden;
+  transition: height .4s ease;
+}
+
+.slide li {padding-left : 0px;}  
+
+#touch1 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch1:checked + .slide {height: 50px;} 
+
+
+#touch2 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch2:checked + .slide {height: 50px;} 
+
+
+#touch3 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch3:checked + .slide {height: 50px;} 
+
+
+#touch4 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch4:checked + .slide {height: 50px;} 
+
+
+#touch5 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch5:checked + .slide {height: 50px;} 
+
+
+#touch6 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch6:checked + .slide {height: 50px;} 
+
+
+#touch7 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch7:checked + .slide {height: 50px;} 
+
+
+#touch8 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch8:checked + .slide {height: 50px;} 
+
+
+#touch9 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch9:checked + .slide {height: 50px;} 
+
+
+#touch10 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch10:checked + .slide {height: 50px;} 
+
+
+@media only screen and (min-width: 992px) {
+.heading {
+    padding-bottom: var(--space-horisontal-gap-xxxlarge, 80px);
+
+}
+
+
+.line {
+    border-bottom: solid 1px;
+}
+
+article {
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+  padding-left: 0px var(--space-vertical-margin-x-large, 160px);
+  padding-right: 0px var(--space-vertical-margin-x-large, 160px);
+  padding-top: 130px;
+  padding-bottom: 130px;
+
+
+}
+
+span {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background : transparent; 
+  color : rgb(0, 0, 0);
+  font-variant : small-caps;
+  cursor : pointer;
+  display: block;
+}
+
+span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
   width:1000px;
   height:0px;
   overflow: hidden;
@@ -208,20 +307,8 @@ span::after {
 
 #touch10:checked + .slide {height: 50px;} 
 
-/* 
-    .article {
-        
-    }
 
-    .dropdown {
-        max-width: 1000px;
-    }
+}
 
-    .dropdown-btn-line {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        max-width: 1000px;
-    } */
 
 </style>
