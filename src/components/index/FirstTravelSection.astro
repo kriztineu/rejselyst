@@ -7,13 +7,13 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     <section class="travel-upper-section">
 
         <div>
-            <span class="forridder">MALDIVERNE</span>
-            <h2 class="h2-display">Udvalgte rejseforslag</h2>
+            <span class="forridder">REJSEFORSLAG</span>
+            <h2 class="h2-display">Find din destination</h2>
             </div>
         <div>
 <div class="content">
         <div>
-        <img src="destination-page/travel-big-1.png" alt="Maldives" width="" height="">
+    <img src="destination-page/greece.png" alt="Maldives" width="" height="" class="responsive1">
         <div class="text-btn-gap">
         <div class="text-gap">
             <h6 class="h6">MALDIVERNE</h6>
@@ -26,7 +26,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     </div>
     <div>
         <div>
-            <img src="destination-page/travel-big-2.png" alt="Maldives" width="" height="">
+           <img src="destination-page/schey.png" alt="Maldives" width="" height="" class="responsive1">
             <div class="text-btn-gap">
             <div class="text-gap">
                 <h6 class="h6">SCHEYSELLERNE</h6>
@@ -44,13 +44,13 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     <section class="travel-lower-section">
 
     <div>
-            <span class="forridder">MALDIVERNE</span>
+            <span class="forridder">REJSETYPER</span>
             <h2 class="h2-display">Udvalgte rejseforslag</h2>
             </div>
         <div>
     <div class="content">
      <div>
-        <img src="destination-page/travel-small-1.png" class="img2" alt="Maldives" width="" height="">
+        <img src="destination-page/travel-small-1.png" class="responsive2" alt="Maldives" width="" height="">
         <div class="text-btn-gap">
         <div class="text-gap">
             <span class="forridder">THAILAND</span>
@@ -65,7 +65,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     </div>
 
         <div>
-            <img src="destination-page/travel-small-2.png" class="img2" alt="Maldives" width="" height="">
+            <img src="destination-page/travel-small-2.png" class="responsive2" alt="Maldives" width="" height="">
             <div class="text-btn-gap">
             <div class="text-gap">
                 <span class="forridder">OMAN</span>
@@ -81,7 +81,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 
 
             <div>
-                <img src="destination-page/travel-small-3.png" class="img2" alt="Maldives" width="" height="">
+               <img src="destination-page/travel-small-3.png" class="responsive2" alt="Maldives" width="" height="">
                 <div class="text-btn-gap">
                 <div class="text-gap">
                     <span class="forridder">THAILAND</span>
@@ -102,12 +102,26 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 </article>
 
 <style>
-
+/* 
     .img2 {
-        max-width: 420px;
-        height: 420px;
+        max-width: 500px;
+        height: 40%;
         object-fit:cover;
     }
+
+    .img1 {
+        max-width: 420px;
+        height: 65%;
+        object-fit:cover;
+    } */
+
+    img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    }
+
+
 
     .article {
         background-color: var(--surface-secondary, #FFFFE9);
@@ -188,6 +202,18 @@ import BTNPrimary from "../general/BTNPrimary.astro"
         gap: var(--space-horisontal-gap-xxxlarge);
         padding-top: var(--space-horisontal-gap-xlarge, 30px);
     }
+
+    .responsive1 {
+  height: 350px; 
+  width: 500px; 
+  object-fit: cover;
+}
+
+.responsive2 {
+  height: 250px; 
+  width: 400px; 
+  object-fit: cover;
+}
 }
 
    
