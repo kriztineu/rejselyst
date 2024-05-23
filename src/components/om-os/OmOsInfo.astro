@@ -6,14 +6,15 @@
             <h2 class="h2-display">Fra rejselyst til rejsebureau</h2>
         </div>
         
-            <p class="paragraph-small">Vi har set flere hotelværelser end de fleste. Vores rejseoplevelser spænder vidt fra små, intime guesthouses hos lokale familier til nogle af verdens bedste hoteller. Vi har trang til at søge væk fra de mest betrådte stier, se diversiteten og kontrasten, mærke de lokales hverdag og lade oplevelserne røre noget i os. Det er jo lige præcis dét, rejser kan!
-                Vores fælles rejse-CV tæller land nr. 46 på tværs af kontinenter. Lige fra eksotiske ø-grupper i Det Indiske Ocean til mere kulturprægede lande som Indien og Indonesien. Hvert år tilføjer vi nye oplevelser til vores rejseunivers - både sammen og hver for sig. Vores holdning er, at der ikke er nogen rejseform, der er mere rigtig end andre, hvilket også afspejler sig i de lande, vi har rejst i. Vi er drevet af, hvad verden har at byde på. Det eksotiske, det ukendte, spændende kulturer, men mest af alt er vi drevet af at bidrage til noget større, sammensætte rejser og give dig nogle af de samme ultimative oplevelser, som vi selv har fået.
-            </p>
-    
-            <p class="paragraph-small">Hos Rejselyst vil vi opfylde drømme - store som små. Vi er et nichebureau, der skræddersyer oplevelsesrejser på tværs af prisklasser. Vores ekspertise er de oversøiske rejsemål, og hertil arrangerer vi både rejser for par, familier, solorejsende og virksomheder. Vi udvikler selv vores rejsemål. Det betyder, at vi selv har været på stederne, inden vi sender dig afsted. Vi har derfor et personligt kendskab til vores portefølje og samarbejdspartnere, og vi ved, hvad vi kan tilbyde. For dig betyder det, at du får ekspertise, kvalitet, erfaring, sikkerhed og fordelagtige priser.</p>
-    
-            <p class="paragraph-small">Vores fokus er især på hoteller, der er mere end bare et overnatningssted. Ja, faktisk vil vi gerne være med til at præge branchen i en retning, hvor ansvarlig turisme er noget, der tænkes over og tages stilling til. Derfor gør vi os ekstremt umage, når vi vælger destinationer, hoteller og udflugter. Hos Rejselyst vil du også opleve, at vi prioriterer de steder med et autentisk touch fremfor store kædehoteller. Vi lægger vægt på, at hotellet tager ansvar - både for de ansatte og omgivelserne. Vores hjerter banker ubegrænset for dyrevelfærd, miljøet og ikke mindst for, at pengene investeres på en måde, så de synker dybere ned i samfundslagene på de forskellige destinationer.</p>
+        <div class="scroll-effect">
+            <p class="paragraph-small">Vi har set flere hotelværelser end de fleste. Vores rejseoplevelser spænder vidt fra små, intime guesthouses hos lokale familier til nogle af verdens bedste hoteller. Vi har trang til at søge væk fra de mest betrådte stier, se diversiteten og kontrasten, mærke de lokales hverdag og lade oplevelserne røre noget i os. Det er jo lige præcis dét, rejser kan! Vores fælles rejse-CV tæller land nr. 46 på tværs af kontinenter. Lige fra eksotiske ø-grupper i Det Indiske Ocean til mere kulturprægede lande som Indien og Indonesien. </p> 
 
+            <p class="paragraph-small">Hvert år tilføjer vi nye oplevelser til vores rejseunivers - både sammen og hver for sig. Vores holdning er, at der ikke er nogen rejseform, der er mere rigtig end andre, hvilket også afspejler sig i de lande, vi har rejst i. Vi er drevet af, hvad verden har at byde på. Det eksotiske, det ukendte, spændende kulturer, men mest af alt er vi drevet af at bidrage til noget større, sammensætte rejser og give dig nogle af de samme ultimative oplevelser, som vi selv har fået. </p>
+
+            <p class="paragraph-small">Hos Rejselyst vil vi opfylde drømme - store som små. Vi er et nichebureau, der skræddersyer oplevelsesrejser på tværs af prisklasser. Vores ekspertise er de oversøiske rejsemål, og hertil arrangerer vi både rejser for par, familier, solorejsende og virksomheder. Vi udvikler selv vores rejsemål. Det betyder, at vi selv har været på stederne, inden vi sender dig afsted. Vi har derfor et personligt kendskab til vores portefølje og samarbejdspartnere, og vi ved, hvad vi kan tilbyde. For dig betyder det, at du får ekspertise, kvalitet, erfaring, sikkerhed og fordelagtige priser.</p>
+
+            <p class="paragraph-small">Vores fokus er især på hoteller, der er mere end bare et overnatningssted. Ja, faktisk vil vi gerne være med til at præge branchen i en retning, hvor ansvarlig turisme er noget, der tænkes over og tages stilling til. Derfor gør vi os ekstremt umage, når vi vælger destinationer, hoteller og udflugter. Hos Rejselyst vil du også opleve, at vi prioriterer de steder med et autentisk touch fremfor store kædehoteller. Vi lægger vægt på, at hotellet tager ansvar - både for de ansatte og omgivelserne. Vores hjerter banker ubegrænset for dyrevelfærd, miljøet og ikke mindst for, at pengene investeres på en måde, så de synker dybere ned i samfundslagene på de forskellige destinationer.</p>
+        </div>
     </div>
     <div class="div2">
         <img src="../om-os/omos2.jpg" alt="">
@@ -39,6 +40,7 @@
             grid-template-rows: 1fr; 
             padding: var(--space-horisontal-margin-small) var(--space-vertical-margin-small);
             gap: var(--space-horisontal-margin-small);
+            height: 810px;
         }
 
         .div1 {
@@ -54,6 +56,20 @@
             justify-content: center;
             grid-column: 2/2;
         }
+
+        .scroll-effect {
+                position: relative;
+                overflow: hidden;
+                overflow-y: scroll;
+                padding-top: 50px;
+                max-width: 550px;
+                max-height: 500px;
+                
+            }
+
+        .paragraph-small {
+            margin-bottom: 20px;
+        }
     }
 </style>
 
@@ -63,5 +79,17 @@ import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
         
 gsap.registerPlugin(ScrollTrigger);
-    gsap.registerPlugin(ScrollTrigger);
-</script>
+
+ScrollTrigger.create({
+    trigger: ".scroll-effect", // Set the trigger to the scroll-effect container
+    start: "top top", // Start the animation when the top of the container reaches the top of the viewport
+    end: "bottom bottom", // End the animation when the bottom of the container reaches the bottom of the viewport
+    onUpdate: self => {
+        gsap.to(".scroll-effect", {
+            scrollTop: self.progress * (gsap.getProperty(".scroll-effect", "scrollHeight") - gsap.getProperty(".scroll-effect", "clientHeight")), // Calculate the scroll position based on the progress
+            ease: "none", // Use linear easing
+            overwrite: true // Overwrite any existing scroll tweens
+        });
+    }
+});
+    </script>

@@ -1,9 +1,70 @@
-<article>
-    <img src="../om-os/placeholder.png" alt="Postkort1" width="" height=""> 
+<article class="wrapper">
+    <div class="container-h">
+
+        <section class="panel">
+            <figure>
+                <img src="../om-os/post1.png" alt="Postkort1" width="" height=""> 
+            </figure>
+        </section>
+
+        <section class="panel">
+            <figure>
+                <img src="../om-os/post2.png" alt="Postkort2" width="" height=""> 
+            </figure>
+        </section>
+
+    </div>
 </article>
 
 <style>
+
+
+    article {
+        overflow-x: hidden;
+        position: relative;
+        /* display: flex;
+        justify-content: center; */
+    }
+
+    .container-h {
+        display: flex;
+        margin-left: 20%;
+        gap: 2rem;
+    }
+
+    .panel {
+        width: 100vw;
+        flex-shrink: 0;
+    }
     img {
         width: 100%;
+        height: 100%
     }
+
+    :global(body) {
+        overflow-x: hidden;
+    }
+    
+
 </style>
+
+<script>
+    import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+    
+    gsap.registerPlugin(ScrollTrigger);
+    
+    const sections = gsap.utils.toArray('.panel')
+    
+    gsap.to(sections, {
+          xPercent: -100 * (sections.length - 1),
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".container-h",
+            pin: true,
+            scrub: true, 
+            end: "+=3000",
+          }
+    })
+    </script>
+    
