@@ -1,15 +1,58 @@
 <article>
-    <h2>Thomas Paaske Hansen</h2>
-    <p class="paragraph-small">Med os har vi også Thomas. Thomas har været i rejsebranchen gennem årtier. Tidligere har han siddet i en stilling som leder i et andet rejsebureau. Han er 100 meter mester i alt, hvad der vedrører fly, dem kompromisløse kundekontakt - og service, og så elsker han at skræddersy og nørde rejser til de mere ukendte steder, som vores hjerter banker for. Han har skræddersyet rejser til alverdens lande og spændende kontinenter verden over, og vi er utroligt glade for at have ham som en del af Rejselyst.
+    <div class="thomas-text">
+            <h3 class="h3-display">Thomas Paaske Hansen</h3>
+            <p class="paragraph-small">Med os har vi også Thomas. Thomas har været i rejsebranchen gennem årtier. Tidligere har han siddet i en stilling som leder i et andet rejsebureau. Han er 100 meter mester i alt, hvad der vedrører fly, dem kompromisløse kundekontakt - og service, og så elsker han at skræddersy og nørde rejser til de mere ukendte steder, som vores hjerter banker for. Han har skræddersyet rejser til alverdens lande og spændende kontinenter verden over, og vi er utroligt glade for at have ham som en del af Rejselyst.</p>
+            <p class="paragraph-small">Det er Thomas, du skal have fat i, hvis du skal opleve Thailand. Han kender Thailand fra et andet perspektiv end det gængse. </p>
+            <div class="thomas-contact">
+                <p class="category-bold">53 87 59 53</p>
+                <p class="category-bold">thomas@rejselyst.dk</p>
+            </div>
 
-        Det er Thomas, du skal have fat i, hvis du skal opleve Thailand. Han kender Thailand fra et andet perspektiv end det gængse. </p>
-        <p class="category-bold">53 87 59 53</p>
-        <p class="category-bold">thomas@rejselyst.dk</p>
-    <img src="../om-os/thomas.jpg" alt="Thomas Paaske Hansen">
+    </div>
+    <div class="thomas-img">
+        <img src="../om-os/thomas.png" alt="Thomas Paaske Hansen">
+    </div>
+    
 </article>
 
 <style>
+
+    .thomas-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-horisontal-gap-medium);
+    }
     article {
         background: var(--surface-secondary);
+    }
+
+    .thomas-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    @media only screen and (min-width: 992px) {
+
+    article {
+        display: flex;
+        padding: var(--space-horisontal-margin-small) var(--space-vertical-margin-x-large);
+        align-items: flex-start;
+        gap: var(--space-vertical-margin-medium);
+    }
+
+
+    img {
+        min-width: 377px;
+        min-height: 488px;
+    }
+
     }
 </style>
