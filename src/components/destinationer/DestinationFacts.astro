@@ -1,8 +1,101 @@
 <article>
-    <div>
+    <div class="heading">
         <h2 class="h3-display">Fakta om Maldiverne</h2>
         </div>
-    <div>
+
+<div class="line">
+ <label for="touch1"><span class="h6">SPROG</span></label>               
+  <input type="checkbox" id="touch1"> 
+
+  <ul class="slide">
+    <li class="paragraph-medium">Dhivehi & engelsk</li> 
+  </ul>
+</div> 
+
+    <div class="line">
+    <label for="touch2"><span class="h6">VISUM</span></label>               
+    <input type="checkbox" id="touch2"> 
+  
+    <ul class="slide">
+        <li class="paragraph-medium">Nej. Visa er ikke nødvendigt.</li> 
+    </ul>
+  </div> 
+
+  <div class="line">
+    <label for="touch3"><span class="h6">KLIMA</span></label>               
+    <input type="checkbox" id="touch3"> 
+  
+    <ul class="slide">
+        <li class="paragraph-medium">27-33 grader</li> 
+    </ul>
+  </div> 
+
+  <div class="line">
+    <label for="touch4"><span class="h6">HOVEDSTAD</span></label>               
+    <input type="checkbox" id="touch4"> 
+  
+    <ul class="slide">
+        <li class="paragraph-medium">Malé</li> 
+    </ul>
+  </div> 
+
+  <div class="line">
+    <label for="touch5"><span class="h6">INDBYGGERE</span></label>               
+    <input type="checkbox" id="touch5"> 
+  
+    <ul class="slide">
+        <li class="paragraph-medium">+500.000</li> 
+    </ul>
+  </div> 
+
+  <div class="line">
+    <label for="touch6"><span class="h6">RELGION</span></label>               
+    <input type="checkbox" id="touch6"> 
+  
+    <ul class="slide">
+        <li class="paragraph-medium">Islam</li> 
+    </ul>
+  </div> 
+
+  <div class="line">
+    <label for="touch7"><span class="h6">TIDSFORSKEL</span></label>               
+    <input type="checkbox" id="touch7"> 
+  
+    <ul class="slide">
+        <li class="paragraph-medium">Sommertid +3 timer, Vintertid +4 timer</li> 
+    </ul>
+  </div> 
+
+  <div class="line">
+    <label for="touch8"><span class="h6">KONTINENT</span></label>               
+    <input type="checkbox" id="touch8"> 
+  
+    <ul class="slide">
+        <li class="paragraph-medium">Asien</li> 
+    </ul>
+  </div> 
+
+  <div class="line">
+    <label for="touch9"><span class="h6">VALUTA</span></label>               
+    <input type="checkbox" id="touch9"> 
+  
+    <ul class="slide">
+        <li class="paragraph-medium">Maldiviske Rufiyaa & USD</li> 
+    </ul>
+  </div>
+
+
+  <div class="line">
+    <label for="touch10"><span class="h6">BESKÆFTIGELSE</span></label>               
+    <input type="checkbox" id="touch10"> 
+  
+    <ul class="slide">
+        <li class="paragraph-medium">Fiskeri & turisme</li> 
+    </ul>
+  </div>
+
+
+    <!-- <div>
         <div class="dropdown">
             <div class="dropdown-btn-line">
             <span class="h6">SPROG</span>
@@ -11,25 +104,211 @@
             <div class="dropdown-content">
               <p>Hello World!</p>
             </div>
-          </div>
+          </div> -->
 
 </article>
 
 <style>
 
-    .article {
-        
-    }
+.heading {
+    padding-bottom: var(--space-horisontal-gap-xxxlarge, 80px);
 
-    .dropdown {
-        max-width: 1000px;
-    }
+}
 
-    .dropdown-btn-line {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        max-width: 1000px;
-    }
+
+.line {
+    border-bottom: solid 1px;
+}
+
+article {
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+  padding-left: 0px var(--space-vertical-margin-x-large, 160px);
+  padding-right: 0px var(--space-vertical-margin-x-large, 160px);
+  padding-top: 130px;
+  padding-bottom: 130px;
+
+
+}
+
+span {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background : transparent; 
+  color : rgb(0, 0, 0);
+  font-variant : small-caps;
+  cursor : pointer;
+  display: block;
+}
+
+span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:250px;
+  height:0px;
+  overflow: hidden;
+  transition: height .4s ease;
+}
+
+.slide li {padding-left : 0px;}  
+
+#touch1 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch1:checked + .slide {height: 50px;} 
+
+
+#touch2 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch2:checked + .slide {height: 50px;} 
+
+
+#touch3 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch3:checked + .slide {height: 50px;} 
+
+
+#touch4 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch4:checked + .slide {height: 50px;} 
+
+
+#touch5 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch5:checked + .slide {height: 50px;} 
+
+
+#touch6 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch6:checked + .slide {height: 50px;} 
+
+
+#touch7 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch7:checked + .slide {height: 50px;} 
+
+
+#touch8 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch8:checked + .slide {height: 50px;} 
+
+
+#touch9 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch9:checked + .slide {height: 50px;} 
+
+
+#touch10 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch10:checked + .slide {height: 50px;} 
+
+
+@media only screen and (min-width: 992px) {
+.heading {
+    padding-bottom: var(--space-horisontal-gap-xxxlarge, 80px);
+
+}
+
+
+.line {
+    border-bottom: solid 1px;
+}
+
+article {
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+  padding-left: 0px var(--space-vertical-margin-x-large, 160px);
+  padding-right: 0px var(--space-vertical-margin-x-large, 160px);
+  padding-top: 130px;
+  padding-bottom: 130px;
+
+
+}
+
+span {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background : transparent; 
+  color : rgb(0, 0, 0);
+  font-variant : small-caps;
+  cursor : pointer;
+  display: block;
+}
+
+span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:1000px;
+  height:0px;
+  overflow: hidden;
+  transition: height .4s ease;
+}
+
+.slide li {padding-left : 0px;}
+
+
+#touch1 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch1:checked + .slide {height: 50px;} 
+
+
+#touch2 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch2:checked + .slide {height: 50px;} 
+
+
+#touch3 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch3:checked + .slide {height: 50px;} 
+
+
+#touch4 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch4:checked + .slide {height: 50px;} 
+
+
+#touch5 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch5:checked + .slide {height: 50px;} 
+
+
+#touch6 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch6:checked + .slide {height: 50px;} 
+
+
+#touch7 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch7:checked + .slide {height: 50px;} 
+
+
+#touch8 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch8:checked + .slide {height: 50px;} 
+
+
+#touch9 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch9:checked + .slide {height: 50px;} 
+
+
+#touch10 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch10:checked + .slide {height: 50px;} 
+
+
+}
+
 
 </style>

@@ -1,0 +1,197 @@
+---
+import BTNSecondary from "../general/BTNSecondary.astro";
+import OurValues from "../general/OurValues.astro";
+
+---
+
+<article>
+
+
+    <section class="gap">
+
+    <span class="forridder">OM OS</span>
+
+    <div>
+    <div class="text-section">
+    <div class="heading">
+    <h2 class="h2-display">Et personligt rejsebureau, skræddersyede oplevelser, håndplukkede destinationer. </h2>
+    </div>
+
+    <div class="paragraph">
+        <p class="paragraph-medium">Det er mig Matti, du får i røret, når du ringer til os - og sammen med min bedre halvdel, Tina, driver jeg rejsebureauet. Stederne, vi udbyder, har vi selv besøgt, så vi kender dem til fingerspidserne. Ekspertise, personlig service, ærlig rådgivning og fingeren på pulsen får du hos os!</p>
+        <div><BTNSecondary data="LÆS MERE OM REJSELYST"/></div>
+    </div>
+    </div>
+    </div>
+
+
+    </section>
+
+    <section class="img-section">
+        <div><img src="img/om-os-1.png" alt="Billede af Matti og Tina som ejer Rejeslyst" class="img1"></div>
+        <div><img src="img/om-os-2.png" alt="Billede af Matti med deres barn, på en af deres ferier, ved en helikopter" class="img2"></div>
+        <div><img src="img/om-os-3.png" alt="Billede af Matti og Tina som ejer Rejeslyst" class="img3"></div>
+        <div><img src="img/om-os-4.png" alt="Billede af Matti og Tina som ejer Rejeslyst" class="img4"></div>
+        <div><img src="img/om-os-5.png" alt="Billede af Matti og Tina som ejer Rejeslyst" class="img5"></div>
+    </section>
+
+
+    <OurValues/>
+
+</article>
+
+<style>
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 150px;    
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-horisontal-gap-xxxlarge, 80px);
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-horisontal-gap-medium, 20px);
+    display: flex;
+    align-items: flex-end;
+    width: 800px;
+    
+
+}
+
+.gap {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-horisontal-gap-xsmall, 10px);
+    padding-left:30px;
+    padding-right:30px;
+    
+}
+
+.img-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-vertical-gap-small, 40px);
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.img1 {
+    width: 225.234px;
+    height: 231.182px;
+}
+
+.img2 {
+    width: 207.453px;
+    height: 323px;
+}
+
+.img3 {
+    width: 232.149px;
+    height: 231px;
+}
+
+.img4 {
+    width: var(--size-scale-scale-2, 280px);
+    height: 264px;
+}
+
+.img5 {
+    width: 211.404px;
+    height: 267px;
+}
+
+
+@media only screen and (min-width: 992px) {
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 150px;    
+}
+
+.text-section {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-horisontal-gap-xxxlarge, 80px);
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-horisontal-gap-medium, 20px);
+    display: flex;
+    align-items: flex-end;
+    width: 800px;
+    
+
+}
+
+.gap {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-horisontal-gap-xsmall, 10px);
+    padding-left:var(--space-horisontal-margin-small);
+    padding-right:var(--space-horisontal-margin-small);
+    
+}
+
+.img-section {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-vertical-gap-small, 40px);
+    padding-left:var(--space-horisontal-margin-small);
+    padding-right:var(--space-horisontal-margin-small);
+}
+
+.img1 {
+    width: 225.234px;
+    height: 231.182px;
+}
+
+.img2 {
+    width: 207.453px;
+    height: 323px;
+}
+
+.img3 {
+    width: 232.149px;
+    height: 231px;
+}
+
+.img4 {
+    width: var(--size-scale-scale-2, 280px);
+    height: 264px;
+}
+
+.img5 {
+    width: 211.404px;
+    height: 267px;
+}
+
+
+}
+
+
+</style>

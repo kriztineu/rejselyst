@@ -82,19 +82,23 @@ import BTNSecondary from "../general/BTNSecondary.astro"
         </section>
     </div>  
 
-    <BTNPrimary data="SEND"/>
+    <div class="button"><BTNPrimary data="SEND"/></div>
 </article>
 
 <style>
 
     .contact-grid {
-        /* display: flex; */
-
+        display: flex; 
+        flex-direction: column;
+        width: 887px;
+        align-items: center;
+        justify-content: center;
     }
 
     form {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .grid-container {
@@ -110,6 +114,10 @@ import BTNSecondary from "../general/BTNSecondary.astro"
     article {
         background-color: var(--surface-tertiary);
         padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .div1 { grid-area: 1 / 1 / 2 / 2; }
@@ -144,6 +152,10 @@ import BTNSecondary from "../general/BTNSecondary.astro"
         /* display: flex;
         flex-direction: column; */
         padding-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        
     }
 
 </style>
