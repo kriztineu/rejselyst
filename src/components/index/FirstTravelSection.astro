@@ -1,0 +1,220 @@
+---
+import BTNPrimary from "../general/BTNPrimary.astro"
+---
+
+<article>
+
+    <section class="travel-upper-section">
+
+        <div>
+            <span class="forridder">REJSEFORSLAG</span>
+            <h2 class="h2-display">Find din destination</h2>
+            </div>
+        <div>
+<div class="content">
+        <div>
+    <img src="destination-page/greece.png" alt="Maldives" width="" height="" class="responsive1">
+        <div class="text-btn-gap">
+        <div class="text-gap">
+            <h6 class="h6">MALDIVERNE</h6>
+            <p class="paragraph-small">Grækenland byder på solsikkert klima, øhop og smukke strande, kulturelle oplevelser, cykel -og vandreruter for de aktive og en kulinarisk scene, der efter vores mening er en af de bedste i Europa.</p>
+        </div>
+        <div>
+            <BTNPrimary/>
+            </div>
+       </div>
+    </div>
+    <div>
+        <div>
+           <img src="destination-page/schey.png" alt="Maldives" width="" height="" class="responsive1">
+            <div class="text-btn-gap">
+            <div class="text-gap">
+                <h6 class="h6">SCHEYSELLERNE</h6>
+                <p class="paragraph-small">Seychellerne er et eksotisk og uberørt bountyland midt i Det Indiske Ocean. Se frem til unikke naturoplevelser, cykel –og vandreture i idylliske omgivelser, enestående dyreliv og tilbagelænede afslapningsdage.</p>
+            </div>
+            <div>
+                <BTNPrimary/>
+                </div>
+           </div>
+        </div>
+        <div>
+        </div>     
+    </section>
+
+    <section class="travel-lower-section">
+
+    <div>
+            <span class="forridder">REJSETYPER</span>
+            <h2 class="h2-display">Udvalgte rejseforslag</h2>
+            </div>
+        <div>
+    <div class="content">
+     <div>
+        <img src="destination-page/travel-small-1.png" class="responsive2" alt="Maldives" width="" height="">
+        <div class="text-btn-gap">
+        <div class="text-gap">
+            <span class="forridder">THAILAND</span>
+            <h6 class="h6">TOPPEN AF ECOLUKSUS</h6>
+            <p class="paragraph-small">På en rejse til Soneva Kiri vil I nyde godt af privat butler, smukke strande, børneklub og spa. Hotellet er det ultimative univers for børnefamilier, generationsrejsende og par. Soneva Kiri er et luksuriøst hotel på øen Koh Kood i Thailand.</p>
+            <span class="inline-text">8 nætter. Fra 33.000 pr. person. </span>
+        </div>
+        <div>
+            <BTNPrimary/>
+            </div>
+       </div>
+    </div>
+
+        <div>
+            <img src="destination-page/travel-small-2.png" class="responsive2" alt="Maldives" width="" height="">
+            <div class="text-btn-gap">
+            <div class="text-gap">
+                <span class="forridder">OMAN</span>
+                <h6 class="h6">ROADTRIP I OMAN</h6>
+                <p class="paragraph-small">Sæt kurs mod bjergene, hvor I først skal bo på Mellemøstens højtbeliggende luksushotel, Anantara Al Jabal Akhdar. Dernæst Arabian Oryx Camp, der ligger midt i ørkenen - væk fra civil beboelse. Sidst på The Chedi får I alt det bedste indenfor rækkevidde. </p>
+                <span class="inline-text">7 nætter. Fra 26.000.kr pr person. </span>
+            </div>
+            <div>
+                <BTNPrimary/>
+                </div>
+           </div>
+        </div>
+
+
+            <div>
+               <img src="destination-page/travel-small-3.png" class="responsive2" alt="Maldives" width="" height="">
+                <div class="text-btn-gap">
+                <div class="text-gap">
+                    <span class="forridder">THAILAND</span>
+                    <h6 class="h6">STRAND OG LOKALE OPLEVELSER</h6>
+                    <p class="paragraph-small">The Barefoot ligger i den nordlige del af Maldiverne på øen, Hanimaadhoo. En lokal ø, hvor der er etableret et lille hotel i den ene ende af øen ud mod stranden. Hotellet sigter efter at reducere CO2-aftrykket betydeligt ved at være så selvforsynende som muligt.</p>
+                    <span class="inline-text">10 nætter. Fra 18.500.kr pr. person. </span>
+                </div>
+                <div>
+                <BTNPrimary/>
+                </div>
+               </div>
+            </div>
+    </div>
+        
+    </section>
+
+    
+</article>
+
+<style>
+/* 
+    .img2 {
+        max-width: 500px;
+        height: 40%;
+        object-fit:cover;
+    }
+
+    .img1 {
+        max-width: 420px;
+        height: 65%;
+        object-fit:cover;
+    } */
+
+    img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    }
+
+
+
+    .article {
+        background-color: var(--surface-secondary, #FFFFE9);
+        display: flex;
+        padding-top: 250px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: var(--space-horisontal-gap-xxlarge, 50px);
+        padding: var(--space-horisontal-gap-xlarge, 30px) var(--space-vertical-margin-small, 60px);
+    }
+
+    .travel-upper-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-vertical-gap-small);
+        padding-bottom: var(--space-horisontal-gap-xlarge, 30px);
+
+    }
+
+    .travel-lower-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 30px;
+        gap: var(--space-vertical-gap-small);
+        padding-top: var(--space-horisontal-gap-xlarge, 30px);
+    }
+
+    .text-btn-gap {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-horisontal-gap-xlarge, 30px);
+    justify-content: left;
+    }
+
+    .text-gap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding-top: 16px;
+    }
+
+    @media only screen and (min-width: 992px) {
+        
+
+        article {
+            gap: var(--space-horisontal-gap-xxlarge, 50px);
+            padding: var(--space-horisontal-gap-xlarge, 30px) var(--space-vertical-margin-small, 60px);
+            background-color: var(--surface-secondary, #FFFFE9);
+            padding-top: 250px;
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        }
+        
+        .travel-upper-section {
+        display: flex;
+       flex-direction: row;
+        padding-bottom: 30px;
+        gap: var(--space-horisontal-gap-xxxlarge);
+        padding-bottom: var(--space-horisontal-gap-xlarge, 30px);
+
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        gap: var(--space-vertical-gap-small);
+
+    }
+
+
+    .travel-lower-section {
+        display: flex;
+       flex-direction: row;
+        gap: var(--space-horisontal-gap-xxxlarge);
+        padding-top: var(--space-horisontal-gap-xlarge, 30px);
+    }
+
+    .responsive1 {
+  height: 350px; 
+  width: 500px; 
+  object-fit: cover;
+}
+
+.responsive2 {
+  height: 250px; 
+  width: 400px; 
+  object-fit: cover;
+}
+}
+
+   
+</style>
