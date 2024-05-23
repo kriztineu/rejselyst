@@ -1,0 +1,77 @@
+---
+
+---
+
+<article>
+    <section class="values-section">
+
+        <div class="value">
+            <img src="" alt="" class="">
+            <h6 class="h6">PERSONLIGT</h6>
+            <p class="paragraph-small center">Vi har et personligt kendskab til vores portefølje og samarbejdspartnere. Hos os får du ærlig, kompetent og personlig rådgivning, hver gang. </p>
+        </div>
+
+        <div class="value">
+            <img src="" alt="" class="">
+            <h6 class="h6">SKRÆDDERSYET</h6>
+            <p class="paragraph-small center">Vores passion for at rejse, dele ud af viden og opfylde din rejselyst er ekstrem. Vi går langt for at indfri dine ønsker til en skræddersyet rejse.</p>
+        </div>
+
+        <div class="value">
+            <img src="" alt="" class="">
+            <h6 class="h6">ANSVAR</h6>
+            <p class="paragraph-small center">  Vores hjerter banker for dyrevelfærd, miljøet og at pengene investeres på en måde, så de synker dybere ned i samfundslagene på de forskellige destinationer.</p>
+        </div>
+
+
+    </section>
+</article>
+
+
+<style>
+
+.values-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-vertical-gap-x-large, 150px);
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    gap: var(--space-horisontal-gap-small, 16px);
+}
+
+.center {
+    text-align: center;
+}
+@media only screen and (min-width: 992px) {
+.values-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--space-vertical-gap-x-large, 150px);
+    padding-left:var(--space-horisontal-margin-small);
+    padding-right:var(--space-horisontal-margin-small);
+}
+
+.value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    gap: var(--space-horisontal-gap-small, 16px);
+}
+
+.center {
+    text-align: center;
+}
+
+}
+
+</style>
