@@ -1,0 +1,113 @@
+---
+import BTNPrimary from "../general/BTNPrimary.astro"
+---
+
+<section class="travel-upper-section">
+    <div class="travel-sections">
+        <span class="forridder">REJSETYPER</span>
+    </div>
+    <div class="paragraph">
+    <ul class="paragraph-small">
+        <li>Luksuriøse rejser</li>
+        <li>Familierejser</li>
+        <li>Honeymoons</li>
+        <li>Lokale oplevelser</li>
+        <li>For de voksne</li>
+    </ul>
+    </div>
+    <div class="travel-content">
+        <div class="travel-image">
+            <img src="rejseforslag/noahsurfhouse.png" alt="Noah Surf House, Portugal" width="" height="">
+            <div>
+                <span class="image-link">Noah Surf House, Portugal</span>
+            </div>
+        </div>
+        <div class="travel-text">
+            <div class="familierejser">
+            <span class="forridder">FAMILIEREJSER</span>
+        </div>
+            <h3 class="h3-display">Oplev verdenen med dem du holder af</h3>
+            <p class="paragraph-small">Noah Surf House er et lille laidback surferhotel beliggende i byen Santa Cruz, hvor især surfing og udendørs aktiviteter er på programmet. Lige foran hotellet finder I nogle af de bedste surfbølger, så sæt kurs mod havet og stranden. Hæng ud ved poolen, kør mountainbike langs kysten, hop på trampolin og vis jeres skills på hotellets skaterrampe. Deltag også i fællessang og hygge om bålet om aftenen, hvor nye venskaber opstår.</p>
+            <div class="btn-container"><BTNPrimary data="LÆS MERE"/></div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<style>
+
+@media only screen and (min-width: 992px) {
+
+    .btn-container {
+    padding-top: var(--space-horisontal-gap-xlarge,30px)
+}
+
+ .travel-sections {
+padding-bottom: var(--space-horisontal---space-horisontal-gap-xsmall,10px);
+padding-left: var(----space-vertical-gap-small,60px);
+
+}
+
+.familierejser {
+    padding-bottom: var(--space-horisontal---space-horisontal-gap-xsmall,10px);
+}
+
+.paragraph {
+    padding-left: var(----space-vertical-gap-small,60px);  
+    padding-bottom: var(--space-horisontal-gap-xlarge, 30px);
+}
+
+.paragraph-small {
+    padding-top: var(--space-horisontal---space-horisontal-gap-small, 16px);
+    padding-bottom: var(--space-horisontal-gap-xlarge, 30px);
+    display: flex;
+    list-style-type: none; /* Fjern punkttegn */
+    padding: 0;
+    margin: 0;
+}
+
+.paragraph li {
+    margin-right: var(--space-horisontal---space-horisontal-gap-medium, 20px)
+}
+
+.travel-upper-section {
+    display: flex;
+    align-items: flex-start;
+}
+
+.travel-content {
+    display: flex;
+    align-items: flex-start; 
+    padding-left: var(----space-vertical-gap-small,60px);
+    padding-right: var(----space-vertical-gap-small,60px);
+}
+
+
+.travel-text {
+    flex: 2;
+    padding-left: var(----space-vertical---space-vertical-gap-medium,50px);  
+
+}
+
+
+section {
+            background-color: var(--surface-secondary, #FFFFE9);
+            padding-top: 100px;
+            padding-bottom: 100px;
+            display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+
+}
+
+</style>
+
+
+     
+
+
+
+
