@@ -2,15 +2,27 @@
 import MainLayout from "../layouts/MainLayout.astro"
 import BTNPrimary from "../components/general/BTNPrimary.astro"
 import BTNSecondary from "../components/general/BTNSecondary.astro"
-import TravelTypeSection from "../components/rejseforslag/TravelTypeSection.astro"
+import TravelSection from "../components/rejseforslag/TravelSection.astro"
+import SecondTravelSection from "../components/rejseforslag/SecondTravelSection.astro"
+import ThirdTravelSection from "../components/rejseforslag/ThirdTravelSection.astro"
+import IconSection from "../components/rejseforslag/IconSection.astro"
+import Newsletter from "../components/general/Newsletter.astro"
+import InstagramSection from "../components/general/InstagramSection.astro"
 ---
 
 <MainLayout title="Rejseforslag">
     <article class="hero-second">
         <section class="hero-heading">
-    <TravelTypeSection/>  
+        </section>
+    <TravelSection/>  
+</article>
+<SecondTravelSection/>
+<ThirdTravelSection/>
+<IconSection/>
+<Newsletter/>
+<InstagramSection/>
 </section>
 
 
-</article>
+
 </MainLayout>

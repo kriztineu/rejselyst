@@ -1,0 +1,100 @@
+---
+
+---
+
+<article>
+    <section class="values-section">
+
+        <div class="value">
+            <img src="icons/icon4.png" alt="" class="">
+            <h6 class="h6">UDFYLD FORMULAREN</h6>
+            <p class="paragraph-small center">Udfyld felterne og fortæl hvor din drømmerejse skal gå hen. Har du særlige ønsker til din rejse? Uddyb dem under "bemærkninger". </p>
+        </div>
+
+        <div class="value">
+            <img src="icons/icon5.png" alt="" class="">
+            <h6 class="h6">VI KONTAKTER DIG</h6>
+            <p class="paragraph-small center">En telefonsamtale skaber de bedste forudsætninger. Vi ringer til dig for at få mere information om dine ønsker og forventninger.</p>
+        </div>
+
+        <div class="value">
+            <img src="icons/icon6.png" alt="" class="">
+            <h6 class="h6">MODTAG REJSEFORSLAG</h6>
+            <p class="paragraph-small center">Efter vores samtale fremsender vi et rejsetilbud til dig. Husk, at vi skræddersyer din rejse - og kan altid justere rejsetilbuddet.</p>
+        </div>
+
+        <div class="value">
+            <img src="icons/icon7.png" alt="" class="">
+            <h6 class="h6">BOOK DIN REJSE</h6>
+            <p class="paragraph-small center">Når du er tilfreds med rejsetilbuddet så booker vi rejsen for dig. Du skal blot læne dig tilbage og glæde dig til rejsen.</p>
+        </div>
+
+
+    </section>
+</article>
+
+
+<style>
+
+
+img {
+    height: 80px;
+    width: auto;
+}
+.values-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-vertical-gap-x-large, 150px);
+    padding-left:30px;
+    padding-right:30px;
+    padding-top: var(--space-horisontal-gap-xxlarge, 50px);
+}
+
+.value {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    gap: var(--space-horisontal-gap-small, 16px);
+}
+
+.value h6 {
+    font-size: 15px;
+}
+
+.value p {
+    font-size: 12px;
+    line-height: normal;
+
+}
+
+.center {
+    text-align: center;
+}
+@media only screen and (min-width: 992px) {
+.values-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--space-vertical-gap-x-large, 150px);
+    padding-left:var(--space-horisontal-margin-small);
+    padding-right:var(--space-horisontal-margin-small);
+}
+
+.value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    gap: var(--space-horisontal-gap-small, 16px);
+}
+
+.center {
+    text-align: center;
+}
+
+}
+
+</style>
