@@ -1,35 +1,54 @@
-<article class="wrapper">
-    <div class="container-h">
+<section id="postcard" class="wrapper">
+    <div id="img-container">
 
-        <section class="panel">
-            <figure>
-                <img src="../om-os/post1.png" alt="Postkort1" width="" height=""> 
-            </figure>
-        </section>
+        <div id="container-1" class="element">
+            <img class="vertical" id="card1" src="../om-os/post1.png" alt="Postkort1" width="" height=""> 
+        </div>
 
-        <section class="panel">
-            <figure>
-                <img src="../om-os/post2.png" alt="Postkort2" width="" height=""> 
-            </figure>
-        </section>
+        <div id="container-2" class="element">
+            <img class="vertical" id="card2" src="../om-os/post2.png" alt="Postkort2" width="" height=""> 
+        </div>
 
+        <div id="container-3" class="element">
+            <img class="vertical" id="card3" src="../om-os/post1.png" alt="Postkort3" width="" height=""> 
+        </div>
     </div>
-</article>
+</section>
 
 <style>
-
-
-    article {
-        overflow-x: hidden;
-        position: relative;
-        /* display: flex;
-        justify-content: center; */
+    section {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .container-h {
+    #img_container {
+    height: 100%;
+    position: relative;
+    }
+
+    .element {
+    position: absolute;
+  }
+
+    /* .img-container {
         display: flex;
         margin-left: 20%;
         gap: 2rem;
+    } */
+
+    #foto2 {
+    transform: rotate(5.803deg);
+    }
+
+    #foto1 {
+        transform: rotate(-3.167deg);
+    }
+
+    #foto3 {
+        transform: rotate(-10deg);
     }
 
     .panel {
@@ -41,9 +60,27 @@
         height: 100%
     }
 
-    :global(body) {
-        overflow-x: hidden;
-    }
+    #container3 {
+    /* -webkit-animation: slide-in-tr 1s ease-in-out 1s both;
+    animation: slide-in-tr 1s ease-in-out 1s both; */
+    right: 50%;
+    top: 20%;
+  }
+
+  #container2 {
+    top: 0;
+    left: 20%;
+
+    /* -webkit-animation: slide-in-tl 1s ease-in-out 0.5s both;
+    animation: slide-in-tl 1s ease-in-out 0.5s both; */
+  }
+
+  #container1 {
+    bottom: 0;
+
+    /* -webkit-animation: slide-in-bl 1s ease-in-out both;
+    animation: slide-in-bl 1s ease-in-out both; */
+  }
     
 
 </style>
@@ -53,18 +90,20 @@
     import { ScrollTrigger } from "gsap/ScrollTrigger";
     
     gsap.registerPlugin(ScrollTrigger);
-    
-    const sections = gsap.utils.toArray('.panel')
-    
-    gsap.to(sections, {
-          xPercent: -100 * (sections.length - 1),
-          ease: "none",
-          scrollTrigger: {
-            trigger: ".container-h",
-            pin: true,
-            scrub: true, 
-            end: "+=3000",
-          }
-    })
+
+        const tl = gsap.timeline({
+        duration: 2,
+        scrollTrigger: {
+            trigger: "#postcard",
+            start: "top 80%",
+            end: "top",
+            scrub: 3,
+            /* markers: true, */
+        },
+        });
+
+        tl.fromTo("#container-1", { rotateY: -20, rotateX: 35, y: -300, x: 300, skewX: -35, skewY: 10, opacity: 0 }, { rotateY: 0, rotateX: 0, y: -300, x: -100, skewX: 0, skewY: 0, opacity: 1, ease: "power1.inOut", duration: 2 })
+        .fromTo("#container-2", { rotateY: 20, rotateX: 35, y: -300, x: 300, skewX: -35, skewY: 10, opacity: 0 }, { rotateY: 0, rotateX: 0, y: -200, x: -600, skewX: 0, skewY: 0, opacity: 1, ease: "power1.inOut", duration: 2 })
+        .fromTo("#container-3", { rotateY: 20, rotateX: -35, y: 300, x: 300, skewX: -35, skewY: -10, opacity: 0 }, { rotateY: 0, rotateX: 0, y: 0, x: -100, skewX: 0, skewY: 0, opacity: 1, ease: "power1.inOut", duration: 2 });
     </script>
     
