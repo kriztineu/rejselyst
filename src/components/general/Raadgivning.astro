@@ -1,0 +1,106 @@
+---
+import BTNPrimary from "./BTNPrimary.astro"
+---
+
+<section>
+    <div class="raadgivning-container">
+        <div class="raadgivning-text">
+            <div class="raadgivning-header">
+                <h3 class="h3-display">Brug for rådgivning til din rejse?</h3>
+                <p class="paragraph-small">Udfyld formularen, og vi kontakter dig.</p>
+            </div>
+            <form action="">
+                <div class="div1">
+                    <input type="text" id="fname" name="fname" class="form-text form-input paragraph-medium" value="Fornavn">
+                    <label class="formlabel" for="fname"></label>
+                </div>
+
+                <div class="div2">
+                    <input type="text" id="lname" name="lname" class="form-text form-input paragraph-medium" value="Efternavn">
+                    <label class="formlabel" for="lname"></label>
+                </div>
+
+                <div class="div3">
+                    <input type="text" id="email" name="email" class="form-text form-input paragraph-medium" value="E-mail">
+                    <label class="formlabel" for="email"></label>
+                </div>
+
+                <div class="div4">
+                    <input type="text" id="phone" name="phone" class="form-text form-input paragraph-medium" value="Telefon">
+                    <label class="formlabel" for="phone"></label>
+                </div>
+
+                <div class="div5">
+                    <input type="text" id="comments" name="comments" class="form-text form-input paragraph-medium" value="Hvad kan vi hjælpe med?">
+                    <label class="formlabel" for="comments"></label>
+                </div>
+                <div class="div6">
+                    <BTNPrimary data="SEND"/>
+                </div>
+                
+        </form>
+    </div>
+    <div class="matti-img">
+        <img src="../img/matti_raadgivning.png" alt="Matti">
+        <p class="category-bold">Matti Saastamoinen Binderup</p>
+        <p class="paragraph-small">Stifter af Rejselyst</p>
+    </div>
+       
+    </div>
+</section>
+
+<style>
+    section {
+        background-color: var(--surface-tertiary);
+        padding: 60px;
+    }
+
+    .raadgivning-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 124px;
+        justify-content: center;
+    }
+
+    .raadgivning-header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .raadgivning-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-horisontal-gap-xxlarge, 50px);
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: var(--space-vertical-gap-small);
+        align-items: center;
+        width: 640px;
+    }
+
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 1 / 3 / 2; }
+    .div4 { grid-area: 2 / 2 / 3 / 3; }
+    .div5 { grid-area: 3 / 1 / 4 / 3; }
+    .div6 { grid-area: 4 / 1 / 5 / 3; }
+
+    .form-input {
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        color: rgba(0, 0, 0, 0.50);
+        border-bottom: 1px solid var(--text-form-contact-form-text-body-color);
+        width: 100%;
+    }
+
+</style>
