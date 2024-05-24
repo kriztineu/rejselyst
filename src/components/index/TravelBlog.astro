@@ -1,0 +1,135 @@
+---
+import BTNPrimary from "../general/BTNPrimary.astro"
+---
+
+<article>
+<div class="heading">
+<span class="forridder">REJSELYST BLOG</span>
+<h4 class="h3-display">Lad dig <span class="h3-italic">inspirere</span> gennem vores rejseeventyr</h4>
+</div>
+
+<section class="blog-post">
+
+<div class="blog-post-1">
+    <div class="upper">
+    <span class="dato">29. SEPTEMBER 2019</span>
+    <img src="img/blog1.png" alt="" class="blog-img">
+    </div>
+    <div class="lower">
+    <h6 class="h6">5 DRØMMEHOTELLER DU SKAL BESØGE</h6>
+    <div><BTNPrimary data="LÆS MERE"/></div>
+    </div>
+</div>
+
+
+<div class="blog-post-2">
+    <div class="upper">
+    <span class="dato">18. MARTS 2021</span>
+    <img src="img/blog2.png" alt="" class="blog-img">
+    </div>
+    <div class="lower">
+    <h6 class="h6">17 SPØRGSMÅL OG SVAR OM REJSE TIL MALDIVERNE</h6>
+    <div><BTNPrimary data="LÆS MERE"/></div>
+    </div>
+</div>
+
+
+<div class="blog-post-3">
+    <div class="upper">
+    <span class="dato">12. JANUAR 2020</span>
+    <img src="img/blog3.png" alt="" class="blog-img">
+    </div>
+    <div class="lower">
+    <h6 class="h6">REJSEHILSEN: OMAN GAV OS MINDER FOR LIVET</h6>
+    <div><BTNPrimary data="LÆS MERE"/></div>
+    </div>
+</div>
+
+
+
+</section>
+
+</article>
+
+<style>
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-horisontal-gap-xlarge, 30px);
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.dato {
+    color: var(--text-body, #2F2F2F);
+/* inline-text */
+font-family: "Be Vietnam Pro";
+font-size: 15px;
+font-style: italic;
+font-weight: 400;
+line-height: normal;
+}
+
+@media only screen and (min-width: 992px) { 
+
+.blog-img {
+width: 400px;
+height: auto;
+
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 530px;
+}
+
+.blog-post{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    gap: var(--space-vertical-gap-medium, 50px);
+}
+
+.blog-post-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 400px;
+}
+
+.blog-post-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 100px;
+    max-width: 400px;
+}
+
+.blog-post-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 400px;
+}
+
+.upper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lower {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-horisontal-gap-medium, 20px);
+
+}
+
+}
+
+</style>
