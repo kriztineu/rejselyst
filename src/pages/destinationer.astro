@@ -8,6 +8,7 @@ import TravelSection2 from "../components/destinationer/TravelSection2.astro"
 ---
 
 <MainLayout title="Destinationer">
+<div class="margin">
 <article class="hero-second">
 <section class="hero-heading">
     <span class="forridder">DESTINATIONER</span>
@@ -17,12 +18,19 @@ import TravelSection2 from "../components/destinationer/TravelSection2.astro"
     <p class="paragraph-medium header-p">Rejs til Maldiverne, hvor turkisblåt hav, svajende kokospalmer og kridhvide sandstrande skaber rammerne for uforglemmelige bounty-oplevelser og store smil på læberne. Maldiverne byder – bogstaveligt talt – på et hav af muligheder for at se farverige fisk, manta rays, stingrays, delfiner og skildpadder på åbent hav. Kom helt ned i gear eller tag snorkelmaske og svømmefødder på, hop i den turkise lagune og bliv klogere på livet under havoverfladen. Oplev verdens smukkeste strande, nyd en privat middag med fødderne i sandet, der er blødt som balsam og lilla-orangefarvede solnedgange, du aldrig vil glemme.</p>
     <img src="destination-page/hero-img-maldiverne.png" alt="Maldives" width="" height=""> 
 </section>
-</article>
+</div>
 <FirstTravelSection2/>
+<div class="margin">
 <TravelSection2/>
+</div>
+<div class="margin">
 <DestinationFacts/>
+</div>
 <Newsletter/>
+<div class="margin">
 <InstagramSection/>
+</div>
+</article>
 
 </MainLayout>
 
@@ -31,5 +39,9 @@ import TravelSection2 from "../components/destinationer/TravelSection2.astro"
 img {
   max-width: 100%;
   height: auto;
+}
+
+.margin {
+  margin: 2.5rem;
 }
 </style>

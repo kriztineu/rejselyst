@@ -30,9 +30,14 @@ import BTNPrimary from "./BTNPrimary.astro"
     }
 
     .insta-img {
-        display: grid;
-        grid-template-columns: 1fr 1fr  1fr 1fr;
-    }
+        padding-top: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        }
 
     .instagram-media {
         width: 100%;
@@ -65,6 +70,8 @@ import BTNPrimary from "./BTNPrimary.astro"
             display: flex;
             flex-direction: row;
             gap: 40px;
+            display: grid;
+        grid-template-columns: 1fr 1fr  1fr 1fr;
         }
 
         .instah3 {
@@ -84,5 +91,7 @@ import BTNPrimary from "./BTNPrimary.astro"
         height: 300px;
         object-fit: cover;
   }
+
+  
     }
 </style>

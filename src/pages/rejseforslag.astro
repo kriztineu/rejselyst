@@ -11,18 +11,29 @@ import InstagramSection from "../components/general/InstagramSection.astro"
 ---
 
 <MainLayout title="Rejseforslag">
-    <article class="hero-second">
-        <section class="hero-heading">
-        </section>
-    <TravelSection/>  
+<div class="margin">
+<article class="hero-second">
+<section class="hero-heading">
+<TravelSection/>  
+</section>
 </article>
+</div>
 <SecondTravelSection/>
+<div class="margin">
 <ThirdTravelSection/>
+</div>
 <IconSection/>
 <Newsletter/>
+<div class="margin">
 <InstagramSection/>
+</div>
 </section>
 
-
-
 </MainLayout>
+
+
+<style>
+    .margin {
+        margin:2.5rem;
+    }
+</style>

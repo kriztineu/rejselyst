@@ -9,12 +9,18 @@ import TravelBlog from "../components/index/TravelBlog.astro"
 ---
 
 <MainLayout title="Rejselyst">
+    <div class="margin">
     <h1 class="h1-display">Dine rejsedrømme kan godt gå i opfyldeldse</h1>
     <OmOsLanding/>
+    </div>  
     <FirstTravelSection/>
+    <div class="margin">
     <TravelBlog/>
+    </div>
     <Newsletter/>
-    <InstagramSection/>
+    <div class="margin">
+    <InstagramSection/> 
+    </div>
     <Raadgivning/>
 </MainLayout>
 
@@ -22,4 +28,7 @@ import TravelBlog from "../components/index/TravelBlog.astro"
 
 <style>
 
+.margin {
+    margin: 2.5rem;
+}
 </style>

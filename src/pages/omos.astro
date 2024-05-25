@@ -12,11 +12,23 @@ import Raadgivning from "../components/general/Raadgivning.astro"
 ---
 
 <MainLayout title="Om os">
+    <div class="margin">
     <OmOsHero/>
+    </div>
     <OmOsInfo/>
+    <div class="margin">
     <PostCard/>
+    </div>
     <ThomasSection/>
     <Newsletter/>
+    <div class="margin">
     <InstagramSection/>
+    </div>
     <Raadgivning/>
 </MainLayout>
+
+<style>
+     .margin {
+        margin: 2.5rem;
+    }
+</style>
