@@ -1,0 +1,51 @@
+<section>
+    <video src="../video/hero-video.mp4"autoplay muted loop ></video>
+    <h1 class="h1-display">Dine <div class="h1-display-italic">rejsedrømme</div>kan godt gå i opfyldeldse</h1>
+    <div class="maldiverlink">
+        <li><a class="link-text-large" href="/destinationer.html"> REJS TIL MALDIVERNE</a></li>
+        <img src="../public/svg/redarrow.svg" alt="Rød pil">
+    </div>
+</section>
+
+<style>
+    
+    .maldiverlink {
+        display: flex;
+        gap: 10px;
+        position: absolute; 
+            z-index: 1;
+            top: 88%;
+            left: 70%;
+    }
+
+    .maldiverlink a {
+        color: var(--red500);
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .maldiverlink li {
+        list-style-type: none;
+    }
+
+    section {
+        position: relative;
+        margin-top:-8rem;
+    }
+    video {
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 100%;
+        left: 0;
+        object-fit: cover
+        }
+
+        h1 {
+            position: absolute; 
+            z-index: 1;
+            top: 13%;
+            left: 2%;
+            width: 11ch;
+        }
+</style>
