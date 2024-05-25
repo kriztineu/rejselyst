@@ -8,72 +8,61 @@ import BTNSecondary from "../general/BTNSecondary.astro"
             <h2 class="h2-display">Udfyld kontaktformularen</h2>
             <p class="paragraph-medium">Eller ring direkte til Matti på +45 53 80 53 59</p>
         </section>
-
+        <article class="hero-second">
+    
         <section class="contact-form">
             <form action="">
                 <div class="grid-container">
                     <div class="div1">
-                        <input type="text" id="fname" name="fname" class="form-input paragraph-medium" value="Fornavn *">
+                        <input type="text" id="fname" name="fname" class="form-input paragraph-medium" placeholder="Fornavn *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Fornavn *'">
                         <label class="formlabel" for="fname"></label>
                     </div>
-
                     <div class="div2">
-                        <input type="text" id="lname" name="lname" class="form-input paragraph-medium" value="Efternavn *">
+                        <input type="text" id="lname" name="lname" class="form-input paragraph-medium" placeholder="Efternavn *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Efternavn *'">
                         <label class="formlabel" for="lname"></label>
                     </div>
-
                     <div class="div3">
-                        <input type="text" id="age" name="age" class="form-input paragraph-medium" value="Alder">
+                        <input type="text" id="age" name="age" class="form-input paragraph-medium" placeholder="Alder" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Alder'">
                         <label class="formlabel" for="age"></label>
                     </div>
-
                     <div class="div4">
-                        <input type="text" id="email" name="email" class="form-input paragraph-medium" value="E-mail *">
+                        <input type="text" id="email" name="email" class="form-input paragraph-medium" placeholder="E-mail *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail *'">
                         <label class="formlabel" for="email"></label>
                     </div>
-
                     <div class="div5">
-                        <input type="text" id="destination" name="destination" class="form-input paragraph-medium" value="Destination *">
+                        <input type="text" id="destination" name="destination" class="form-input paragraph-medium" placeholder="Destination *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Destination *'">
                         <label class="formlabel" for="destination"></label>
                     </div>
-
                     <div class="div6">
-                        <input type="text" id="phone" name="phone" class="form-input paragraph-medium" value="Telefon *">
+                        <input type="text" id="phone" name="phone" class="form-input paragraph-medium" placeholder="Telefon *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telefon *'">
                         <label class="formlabel" for="phone"></label>
                     </div>
-
                     <div class="div7">
-                        <input type="text" id="airport" name="airport" class="form-input paragraph-medium" value="Foretrukken afrejselufthavn">
+                        <input type="text" id="airport" name="airport" class="form-input paragraph-medium" placeholder="Foretrukken afrejselufthavn" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Foretrukken afrejselufthavn'">
                         <label class="formlabel" for="airport"></label>
                     </div>
-
                     <div class="div8">
-                        <input type="text" id="travellers" name="travellers" class="form-input paragraph-medium" value="Antal rejsende *">
+                        <input type="text" id="travellers" name="travellers" class="form-input paragraph-medium" placeholder="Antal rejsende *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Antal rejsende *'">
                         <label class="formlabel" for="travellers"></label>
                     </div>
-
                     <div class="div9">
-                        <input type="text" id="dates" name="dates" class="form-input paragraph-medium" value="Rejsedatoer *">
+                        <input type="text" id="dates" name="dates" class="form-input paragraph-medium" placeholder="Rejsedatoer *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Rejsedatoer *'">
                         <label class="formlabel" for="dates"></label>
                     </div>
-
                     <div class="div10">
-                        <input type="text" id="travellengt" name="travellengt" class="form-input paragraph-medium" value="Rejselængde *">
+                        <input type="text" id="travellengt" name="travellengt" class="form-input paragraph-medium" placeholder="Rejselængde *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Rejselængde *'">
                         <label class="formlabel" for="travellengt"></label>
                     </div>
-
                     <div class="div11">
-                        <input type="text" id="flexi" name="flexi" class="form-input paragraph-medium" value="Fleksibilitet *">
+                        <input type="text" id="flexi" name="flexi" class="form-input paragraph-medium" placeholder="Fleksibilitet *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Fleksibilitet *'">
                         <label class="formlabel" for="flexi"></label>
                     </div>
-
                     <div class="div12">
-                        <input type="text" id="budget" name="budget" class="form-input paragraph-medium" value="Samlet rejsebudget *">
+                        <input type="text" id="budget" name="budget" class="form-input paragraph-medium" placeholder="Samlet rejsebudget *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Samlet rejsebudget *'">
                         <label class="formlabel" for="budget"></label>
                     </div>
-
                     <div class="div13">
-                        <input type="text" id="comments" name="comments" class="form-input paragraph-medium" value="Bemærkninger">
+                        <input type="text" id="comments" name="comments" class="form-input paragraph-medium" placeholder="Bemærkninger" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Bemærkninger'">
                         <label class="formlabel" for="comments"></label>
                     </div>
                 </div>
@@ -86,58 +75,22 @@ import BTNSecondary from "../general/BTNSecondary.astro"
 </article>
 
 <style>
+    article {
+        background-color: var(--surface-tertiary);
+        padding: 2rem;
+        padding-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     .contact-grid {
         display: flex; 
         flex-direction: column;
-        width: 887px;
         align-items: center;
         justify-content: center;
     }
 
-    form {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(7, 1fr);
-        align-items: center; 
-        width: 887px;
-        height: 450px;
-        gap: var(--space-horisontal-gap-xxlarge, 50px);
-    }
-
-    article {
-        background-color: var(--surface-tertiary);
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .div1 { grid-area: 1 / 1 / 2 / 2; }
-    .div2 { grid-area: 1 / 2 / 2 / 3; }
-    .div3 { grid-area: 2 / 1 / 3 / 2; }
-    .div4 { grid-area: 2 / 2 / 3 / 3; }
-    .div5 { grid-area: 3 / 1 / 4 / 2; }
-    .div6 { grid-area: 3 / 2 / 4 / 3; }
-    .div7 { grid-area: 4 / 1 / 5 / 2; }
-    .div8 { grid-area: 4 / 2 / 5 / 3; }
-    .div9 { grid-area: 5 / 1 / 6 / 2; }
-    .div10 { grid-area: 5 / 2 / 6 / 3; }
-    .div11 { grid-area: 6 / 1 / 7 / 2; }
-    .div12 { grid-area: 6 / 2 / 7 / 3; }
-    .div13 { grid-area: 7 / 1 / 8 / 3; } 
-
-    .div13 {
-        display: flex;
-        justify-content: left;
-    }
     .form-input {
         cursor: pointer;
         outline: none;
@@ -146,19 +99,72 @@ import BTNSecondary from "../general/BTNSecondary.astro"
         color: var(--contact-form-text-placeholder);
         border-bottom: 1px solid var(--text-form-contact-form-text-body-color);
         width: 100%;
+        position: relative;
     }
 
-    .h2-contact {
-        /* display: flex;
-        flex-direction: column; */
-        padding-bottom: 4rem;
-        display: flex;
-        flex-direction: column;
-        align-self: flex-start;
+    .form-input::placeholder {
+        color: var(--contact-form-text-placeholder);
+    }
+
+    .form-input::placeholder::before {
+        content: ' *';
+        color: var(--red500);
+    }
+
+    .grid-container {
+        display: grid;
+        align-items: center; 
+        width: 340px;
+        height: auto;
+        gap: var(--space-horisontal-gap-xxlarge, 50px);
     }
 
     .button {
         display: flex;
         padding-top: 5rem;
+        padding-bottom: 4rem;
+    }
+
+    @media only screen and (min-width: 992px) {
+        .contact-grid {
+            display: flex; 
+            flex-direction: column;
+            width: 887px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grid-container {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            width: 887px;
+            height: 450px;
+        }
+
+        .div1 { grid-area: 1 / 1 / 2 / 2; }
+        .div2 { grid-area: 1 / 2 / 2 / 3; }
+        .div3 { grid-area: 2 / 1 / 3 / 2; }
+        .div4 { grid-area: 2 / 2 / 3 / 3; }
+        .div5 { grid-area: 3 / 1 / 4 / 2; }
+        .div6 { grid-area: 3 / 2 / 4 / 3; }
+        .div7 { grid-area: 4 / 1 / 5 / 2; }
+        .div8 { grid-area: 4 / 2 / 5 / 3; }
+        .div9 { grid-area: 5 / 1 / 6 / 2; }
+        .div10 { grid-area: 5 / 2 / 6 / 3; }
+        .div11 { grid-area: 6 / 1 / 7 / 2; }
+        .div12 { grid-area: 6 / 2 / 7 / 3; }
+        .div13 { grid-area: 7 / 1 / 8 / 3; } 
+
+        .div13 {
+            display: flex;
+            justify-content: left;
+        }
+
+        .h2-contact {
+            padding-bottom: 4rem;
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+        }
     }
 </style>
