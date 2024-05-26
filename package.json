@@ -10,6 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "astro": "^4.8.4",
     "gsap": "^3.12.5",
     "jquery": "^3.7.1"
@@ -18,4 +20,3 @@
     "@types/jquery": "^3.5.30"
   }
 }
-
