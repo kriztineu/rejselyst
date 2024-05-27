@@ -3,9 +3,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 ---
 
 <article>
-
     <section class="travel-upper-section">
-
         <div>
             <span class="forridder">REJSEFORSLAG</span>
             <h2 class="h2-display">Find din destination</h2>
@@ -237,6 +235,34 @@ import BTNPrimary from "../general/BTNPrimary.astro"
         end: "bottom center ",
           scrub: true,
           /*markers: true, */
+      }
+    });
+
+    
+    gsap.from(".travel-upper-section", {
+        x: 700,
+        duration: 2,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".travel-upper-section",
+          start: "top 95%",
+        end: "bottom center ",
+          scrub: true,
+      }
+    });
+
+    gsap.from(".travel-lower-section", {
+        x: -700,
+        duration: 2,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".travel-lower-section",
+          start: "top 95%",
+        end: "bottom center ",
+          scrub: true,
+          markers: true, 
       }
     });
     
