@@ -218,3 +218,26 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 
    
 </style>
+
+<script>
+
+    import { gsap } from "gsap";
+        import { ScrollTrigger } from "gsap/ScrollTrigger";
+    
+        gsap.registerPlugin(ScrollTrigger);
+    
+    gsap.from(".values-section", {
+        yPercent: 50,
+        duration: 2,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".values-section",
+          start: "top 95%",
+        end: "bottom center ",
+          scrub: true,
+          /*markers: true, */
+      }
+    });
+    
+    </script>

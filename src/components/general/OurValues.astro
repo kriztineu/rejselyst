@@ -76,3 +76,26 @@ img {
 }
 
 </style>
+
+<script>
+
+import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+    gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".values-section", {
+    yPercent: 50,
+    duration: 3,
+    opacity: 0,
+    stagger: 0.2,
+    scrollTrigger: {
+      trigger: ".values-section",
+      start: "top 60%",
+    end: "center 90%",
+      scrub: true,
+      markers: true,
+  }
+});
+
+</script>
