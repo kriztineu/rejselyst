@@ -3,6 +3,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 ---
 
 <section class="travel-upper-section">
+    <div class="margin">
     <div class="travel-content">
         <div class="travel-text">
             <div class="familierejser">
@@ -20,9 +21,41 @@ import BTNPrimary from "../general/BTNPrimary.astro"
         </div>
     </div>
 </section>
-
+</div>
 
 <style>
+    .margin {
+        margin: 2.5rem;
+    }
+
+    .travel-text {
+    padding-top: 20px;
+}
+
+.paragraph-small {
+    padding-top: 16px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.travel-image img {
+    width: 100%;
+    height: auto;
+}
+
+    section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 @media only screen and (min-width: 992px) {
 
