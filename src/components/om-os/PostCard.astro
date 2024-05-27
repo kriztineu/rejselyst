@@ -61,26 +61,29 @@
 </style>
 
 <script>
+   
     import { gsap } from "gsap";
     import { ScrollTrigger } from "gsap/ScrollTrigger";
     
     gsap.registerPlugin(ScrollTrigger);
 
         const tl = gsap.timeline({
-        duration: 3,
+        duration: 10,
+        x: -700,
+        stagger: 0.2,
         scrollTrigger: {
-            trigger: "#postcard",
-            start: "top 80%",
-            end: "top",
-            scrub: 3,
-            /* markers: true, */
+     trigger: "#postcard",
+        start: "top 60%",
+        end: "center 50%",
+        scrub: true,
+        markers: true,
         },
         onComplete: () => {
             enablePageScrolling();
         }
         });
 
-        tl.fromTo("#container-1", { rotateY: -20, rotateX: 35, y: -100, x: 0, skewX: -35, skewY: 10, opacity: 0 }, { rotateY: 0, rotateX: 0, y: -80, x: 0, skewX: 0, skewY: 0, opacity: 1, ease: "power1.inOut", duration: 2 })
+        tl.fromTo("#container-1", { rotateY: -10, rotateX: 35, y: -100, x: 0, skewX: -35, skewY: 10, opacity: 0 }, { rotateY: 0, rotateX: 0, y: -80, x: 0, skewX: 0, skewY: 0, opacity: 1, ease: "power1.inOut", duration: 2 })
         .fromTo("#container-2", { rotateY: 20, rotateX: 35, y: -100, x: 0, skewX: -35, skewY: 10, opacity: 0 }, { rotateY: 0, rotateX: 0, y: -70, x: 0, skewX: 0, skewY: 0, opacity: 1, ease: "power1.inOut", duration: 2 })
         .fromTo("#container-3", { rotateY: 20, rotateX: -35, y: 100, x: 0, skewX: -35, skewY: -10, opacity: 0 }, { rotateY: 0, rotateX: 1, y: -47, x: 0, skewX: 0, skewY: 0, opacity: 1, ease: "power1.inOut", duration: 2 });
 
