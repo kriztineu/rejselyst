@@ -6,6 +6,7 @@ import InstagramSection from "../components/general/InstagramSection.astro"
 import FirstTravelSection2 from "../components/destinationer/FirstTravelSection2.astro"
 import TravelSection2 from "../components/destinationer/TravelSection2.astro"
 import FirstTravelSection from "../components/index/FirstTravelSection.astro"
+import Title from "./destinationer/[title].astro"
 
 const data = await fetch("https://zywerzwialywqwbenhax.supabase.co/rest/v1/destinations?id", {
   method: "GET",
@@ -18,7 +19,7 @@ console.log(data)
 ---
 
 <MainLayout title="Destinationer">
-  
+
 <div class="margin">
 <article class="hero-second">
 <section class="hero-heading">
@@ -30,11 +31,6 @@ console.log(data)
     <img src="destination-page/hero-img-maldiverne.png" alt="Maldives" width="" height=""> 
 </section>
 </div>
-  {
-    data.map((show) => {
-      return <FirstTravelSection2 data={show} />;
-    })
-  }
 <FirstTravelSection2/>
 <div class="margin">
 <TravelSection2/>

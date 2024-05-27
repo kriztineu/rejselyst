@@ -1,5 +1,15 @@
 ---
+import Title from "../../pages/destinationer/[title].astro";
 import BTNPrimary from "./BTNPrimary.astro";
+
+const data = await fetch("https://zywerzwialywqwbenhax.supabase.co/rest/v1/destinations", {
+  method: "GET",
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5d2VyendpYWx5d3F3YmVuaGF4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTY1MzY1NTYsImV4cCI6MjAzMjExMjU1Nn0.qAjwQtmmuFvZc9VU5aDtI4V2bkN4XbsLcKKjq-xiPcM",
+  },
+}).then((res) => res.json())
+
+console.log(data)
 ---
 
 <header>
@@ -9,7 +19,16 @@ import BTNPrimary from "./BTNPrimary.astro";
               <li><a href="/index.html"><img src="/svg/rejselyst..svg" class="logo" alt="Rejselyst logo"/></a></li>
               <div class="menu-left">
                 <li><a class="menuBTN link-text-small" href="/rejseforslag.html"> REJSEFORSLAG</a></li>
-                <li><a class="menuBTN link-text-small" href="/destinationer.html"> DESTINATIONER</a></li>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    <li><a class="menuBTN link-text-small" href="/destinationer.html"> DESTINATIONER</a></li>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href={`destinations/${data.title='Maldiverne'}`}>Maldiverne</a>
+                    <a href={`destinations/${data.title='Grækenland'}`}>Grækenland</a>
+                    <a href={`destinations/${data.title='Seychellerne'}`}>Seychellerne</a>
+                  </div>
+                </div>
               </div>
 
           </div>
@@ -44,6 +63,70 @@ import BTNPrimary from "./BTNPrimary.astro";
 </header>
 
 <style>
+
+.navbar {
+  overflow: hidden;
+  background-color: none;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  /* background-color: red; */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* background-color: #f9f9f9; */
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: var(--yellow100);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
   .overlayLogo {
     display: flex;
