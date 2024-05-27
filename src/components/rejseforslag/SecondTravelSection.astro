@@ -9,7 +9,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     <div class="paragraph">
     <ul class="paragraph-small">
         <li>Luksuriøse rejser</li>
-        <li>Familierejser</li>
+        <li  class="category-bold">Familierejser</li>
         <li>Honeymoons</li>
         <li>Lokale oplevelser</li>
         <li>For de voksne</li>
@@ -38,6 +38,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 
 @media only screen and (min-width: 992px) {
 
+
     .btn-container {
     padding-top: var(--space-horisontal-gap-xlarge,30px)
 }
@@ -61,7 +62,7 @@ padding-left: var(----space-vertical-gap-small,60px);
     padding-top: var(--space-horisontal---space-horisontal-gap-small, 16px);
     padding-bottom: var(--space-horisontal-gap-xlarge, 30px);
     display: flex;
-    list-style-type: none; /* Fjern punkttegn */
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -69,6 +70,11 @@ padding-left: var(----space-vertical-gap-small,60px);
 .paragraph li {
     margin-right: var(--space-horisontal---space-horisontal-gap-medium, 20px)
 }
+
+.paragraph-small li:hover {
+        font-weight: 700;
+        cursor: pointer;
+    }
 
 .travel-upper-section {
     display: flex;
