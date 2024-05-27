@@ -1,0 +1,26 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+
+export async function getStaticPaths() {
+  const data = await fetch("https://zywerzwialywqwbenhax.supabase.co/rest/v1/destinations", {
+    method: "GET",
+    headers: {
+      apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5d2VyendpYWx5d3F3YmVuaGF4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTY1MzY1NTYsImV4cCI6MjAzMjExMjU1Nn0.qAjwQtmmuFvZc9VU5aDtI4V2bkN4XbsLcKKjq-xiPcM",
+    },
+  }).then((response) => response.json());
+
+  return data.map((show) => {
+    return {
+      params: { title: show.title } /* Skal matche det "id/slug" navn der er i filnavnet. Dette tilfælde "title"*/,
+      props: { myData: show },
+    };
+  });
+}
+
+const { myData } = Astro.props;
+console.log(myData);
+---
+
+<MainLayout title= {myData.title}>
+
+</MainLayout>

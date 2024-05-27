@@ -43,14 +43,16 @@ const { data } = Astro.props;
 
     .hoverArrow {
         display: none;
+        z-index: 1000;
     }
 
-    .arrow:hover {
+    button:hover .arrow {
         display: none;
     }
 
-    .hoverArrow:hover {
-        display: none;
+    button:hover .hoverArrow {
+        display: block;
+        z-index: 1000;
     }
 
 </style>
