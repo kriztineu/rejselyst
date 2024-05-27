@@ -55,6 +55,61 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 
 <style>
 
+article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-horisontal-gap-xxxlarge, 80px);
+        padding-top: 130px;
+        padding-bottom: 130px;
+    }
+
+
+    img {
+
+        width: 281px;
+      height: 125px;
+
+
+    }
+    section {
+        padding: 0px var(--space-vertical-margin-x-large, 160px);
+        gap: var(--space-horisontal-gap-xxlarge, 50px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .travel-place {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-horisontal-gap-medium, 20px);
+    display: flex;
+
+    }
+
+    .text-gap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside {
+        display: flex;
+        flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-horisontal-gap-medium, 20px);
+
+    }
+
+    .head-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
 @media only screen and (min-width: 992px) {
 
     article {
@@ -87,6 +142,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     height: 235px;
     display: inline-flex;
     align-items: flex-start;
+    flex-direction: row;
     gap: var(--space-vertical-gap-small, 40px);
 
         display: flex;

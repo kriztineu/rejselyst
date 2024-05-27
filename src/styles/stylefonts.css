@@ -44,7 +44,7 @@
   font-size: 25px;
   font-style: normal;
   font-weight: 500;
-  line-height: 55px; /* 22.222% */
+  line-height: 30px; /* 22.222% */
 }
 
 .h3-italic {
@@ -52,7 +52,7 @@
   font-size: 25px;
   font-style: italic;
   font-weight: 700;
-  line-height: 55px;
+  line-height: 30px;
 }
 
 .h4 {

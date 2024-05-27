@@ -7,13 +7,16 @@ import InstagramSection from "../components/general/InstagramSection.astro"
 import Raadgivning from "../components/general/Raadgivning.astro"
 import OmOsLanding from "../components/index/OmOsLanding.astro"
 import TravelBlog from "../components/index/TravelBlog.astro"
+import TestimonialsSlider from "../components/index/TestimonialsSlider.astro"
 ---
 
 <MainLayout title="Rejselyst">
     <HeroSection/>
+    <div class="margin">
     <OmOsLanding/>
     </div>  
     <FirstTravelSection/>
+    <TestimonialsSlider/>
     <div class="margin">
     <TravelBlog/>
     </div>
@@ -28,5 +31,7 @@ import TravelBlog from "../components/index/TravelBlog.astro"
 
 <style>
 
-
+.margin {
+    margin: 2.5rem
+}
 </style>
