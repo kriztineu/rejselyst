@@ -1,52 +1,27 @@
-
+---
+import "../styles/splide.min.css"
+---
 
 <section class="splide" aria-label="Splide Basic HTML Example">
   <div class="splide__track">
 		<ul class="splide__list">
-			<li class="splide__slide">
-        <p class="paragraph-small">Der ingen tvivl om, at Rejselyst.dk har gjort deres forarbejde grundigt, når de strikker en tur sammen til deres kunder, og hele forløbet er meget personligt og trygt - virkelig en kundeoplevelse i særklasse!</p>
-        <span>Nana, Trustpilot</span>
-      </div></li>
-			<li class="splide__slide"><p class="paragraph-small">Der ingen tvivl om, at Rejselyst.dk har gjort deres forarbejde grundigt, når de strikker en tur sammen til deres kunder, og hele forløbet er meget personligt og trygt - virkelig en kundeoplevelse i særklasse!</p>
-        <span>Nana, Trustpilot</span></li>
-			<li class="splide__slide"><p class="paragraph-small">Der ingen tvivl om, at Rejselyst.dk har gjort deres forarbejde grundigt, når de strikker en tur sammen til deres kunder, og hele forløbet er meget personligt og trygt - virkelig en kundeoplevelse i særklasse!</p>
-        <span>Nana, Trustpilot</span></li>
-        <li class="splide__slide"><p class="paragraph-small">Der ingen tvivl om, at Rejselyst.dk har gjort deres forarbejde grundigt, når de strikker en tur sammen til deres kunder, og hele forløbet er meget personligt og trygt - virkelig en kundeoplevelse i særklasse!</p>
-          <span>Nana, Trustpilot</span></li>
+			<li class="splide__slide">Slide 01</li>
+			<li class="splide__slide">Slide 02</li>
+			<li class="splide__slide">Slide 03</li>
 		</ul>
   </div>
 </section>
   
   
   
-<style>
-p, span {
-  background: #fff;
-  color: black;
-  margin: 10px;
-  padding: 2%;
-  position: relative;
-  text-align: left;
-}
-
-</style>
 
 <script>
-
-
-new Splide( '.splide' ).mount( { AutoScroll } );
-
-const splide = new Splide( '.splide', {
+var splide = new Splide( '.splide', {
   type   : 'loop',
-  drag   : 'free',
-  focus  : 'center',
-  perPage: 3,
-  autoScroll: {
-    speed: 1,
-  },
+  padding: '5rem',
 } );
 
 splide.mount();
 </script>
 
-<script src="js/splide-extension-auto-scroll.min.js"></script>
+<script src="src/splide.min.js"></script>
