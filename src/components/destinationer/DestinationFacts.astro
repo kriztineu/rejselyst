@@ -312,3 +312,39 @@ span::after {
 
 
 </style>
+
+<script>
+
+  import { gsap } from "gsap";
+      import { ScrollTrigger } from "gsap/ScrollTrigger";
+  
+      gsap.registerPlugin(ScrollTrigger);
+  
+      gsap.from(".heading", {
+      y: 100,  
+      duration: 3,
+      opacity: 0,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: ".heading",
+        start: "top 80%", 
+        end: "bottom 60%", 
+        scrub: true,
+    }
+  });
+
+  gsap.from(".line", {
+      y: 100,  
+      duration: 3,
+      opacity: 0,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: ".line",
+        start: "top 80%", 
+        end: "bottom 60%", 
+        scrub: true,
+    }
+  });
+
+
+  </script>
