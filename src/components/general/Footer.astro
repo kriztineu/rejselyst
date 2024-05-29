@@ -30,7 +30,7 @@
 
     <section class="footerEnd">
         <p class="footer-text-bold">All rights reserved @2023</p>
-        <p class="footer-text-bold">CVR 43340689</p>
+        <p class="footer-text-bold footercvr">CVR 43340689</p>
         <div class="footerIcons">
             <a href="https://www.facebook.com/rejselyst.dk"><img src="/svg/fbicon.svg" alt="Facebook Ikon"></a>
             <a href="https://www.instagram.com/rejselystdk/"><img src="/svg/igicon.svg" alt="Instagram Ikon"></a>
@@ -48,19 +48,23 @@
     ul {
         display: flex;
         flex-direction: column;
-        gap: var(--space-5);
+        gap: var(--space-2);
     }
 
     .grid1 {
         display: flex;
         flex-direction: column;
-        gap: var(--space-7);
+        gap: var(--space-3);
     }
 
     .grid2 {
         display: flex;
         flex-direction: column;
-        gap: var(--space-5);
+        gap: var(--space-3);
+    }
+
+    .grid1 ul {
+        gap: 0px;
     }
 
     .grid2 ul {
@@ -78,9 +82,10 @@
 
     .footerStart {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr; 
-        gap: var(--space-horisontal-margin-small);
+        gap: var(--space-horisontal-margin-xsmall);
+        padding-bottom: var(--space-4);
     }
     .footerEnd {
         display: flex;
@@ -89,7 +94,12 @@
 
     .footerLogo {
         align-self: center;
+        padding-top: var(--space-8);
         /* padding-left: var(--space-10); */
+    }
+
+    .footerLogo img {
+        width: 60%;
     }
 
     hr {
@@ -108,6 +118,51 @@
 
     .footerIcons {
         display: flex;
+        gap: var(--space-3);
+    }
+
+    .footercvr {
+        display: none;
+    }
+    @media only screen and (min-width: 992px) {
+
+        .footercvr {
+        display: block;
+    }
+        ul {
+        gap: var(--space-5);
+    }
+        .footerIcons {
         gap: var(--space-6);
+    }
+    .grid1 {
+        gap: var(--space-7);
+    }
+
+    .grid1 ul {
+        gap: var(--space-4);
+    }
+
+    .grid2 {
+        gap: var(--space-5);
+    }
+
+    .footerStart {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr; 
+        gap: var(--space-horisontal-margin-small);
+    }
+
+    .footerLogo {
+        display: flex;
+        justify-content: center;
+        padding-top: 0px;
+        /* padding-left: var(--space-10); */
+    }
+
+    .footerEnd {
+        padding-top: var(--space-4)
+    }
     }
 </style>
