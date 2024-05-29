@@ -33,21 +33,23 @@
     section {
         position: relative;
         margin-top:-8rem;
+        z-index: -100;
     }
     video {
         position: relative;
-        width: 100vh;
+        width: 100vw;
         height: 100vh;
         top: 100%;
         left: 0;
         object-fit: cover;
         z-index: -1;
+        overflow-y: hidden;
         }
 
         h1 {
         position: absolute; 
         z-index: 1;
-        top: 10%;
+        top: 15%;
         width: 11ch;
         margin: 2.5rem;
         }
@@ -61,6 +63,14 @@
         left: 0;
         object-fit: cover;
         z-index: -1;
+        }
+
+        h1 {
+        position: absolute; 
+        z-index: 1;
+        top: 10%;
+        width: 11ch;
+        margin: 2.5rem;
         }
 
         section {
