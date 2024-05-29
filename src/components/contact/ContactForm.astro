@@ -62,8 +62,9 @@ import BTNSecondary from "../general/BTNSecondary.astro"
                         <label class="formlabel" for="budget"></label>
                     </div>
                     <div class="div13">
-                        <input type="text" id="comments" name="comments" class="form-input paragraph-medium" placeholder="Bemærkninger" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Bemærkninger'">
+                        <textarea id="comments" name="comments" class="form-input paragraph-medium" placeholder="Bemærkninger" maxlength="300" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Bemærkninger'"></textarea>
                         <label class="formlabel" for="comments"></label>
+                        <div class="form-input" id="charCount">0/300</div>
                     </div>
                 </div>
             </form>
@@ -100,6 +101,7 @@ import BTNSecondary from "../general/BTNSecondary.astro"
         border-bottom: 1px solid var(--text-form-contact-form-text-body-color);
         width: 100%;
         position: relative;
+        padding-bottom: 10px;
     }
 
     .form-input::placeholder {
@@ -123,8 +125,25 @@ import BTNSecondary from "../general/BTNSecondary.astro"
         display: flex;
         padding-top: 5rem;
         padding-bottom: 4rem;
+        justify-content: left;
+        align-items: left;
+        align-content: left;
     }
 
+    #charCount {
+        color: var(--text-form-contact-form-text-body-color);
+        margin-top: 0.5rem;
+        text-align: right;
+        font-family: "Be Vietnam Pro";
+        font-size: 14px;
+    }
+    textarea#comments {
+        resize: none;
+        overflow: auto;
+        height: 100px;
+        max-height: 100px;
+        width: 100%;
+    }
     @media only screen and (min-width: 992px) {
         .contact-grid {
             display: flex; 
@@ -166,5 +185,26 @@ import BTNSecondary from "../general/BTNSecondary.astro"
             flex-direction: column;
             align-self: flex-start;
         }
+
+        textarea#comments {
+        width: 500%;
+    }
+    .button {
+
+        padding-top: 13rem;
+        padding-bottom: 5rem;
+    }
     }
 </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const comments = document.getElementById('comments');
+        const charCount = document.getElementById('charCount');
+
+        comments.addEventListener('input', () => {
+            const currentLength = comments.value.length;
+            charCount.textContent = `${currentLength}/300`;
+        });
+    });
+</script>

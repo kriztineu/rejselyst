@@ -6,7 +6,8 @@ import InstagramSection from "../components/general/InstagramSection.astro"
 import FirstTravelSection2 from "../components/destinationer/FirstTravelSection2.astro"
 import TravelSection2 from "../components/destinationer/TravelSection2.astro"
 import FirstTravelSection from "../components/index/FirstTravelSection.astro"
-import Title from "./destinationer/[title].astro"
+import Destination from "./destination.astro"
+import Header from "../components/general/Header.astro"
 
 const data = await fetch("https://zywerzwialywqwbenhax.supabase.co/rest/v1/destinations?id", {
   method: "GET",
@@ -14,30 +15,13 @@ const data = await fetch("https://zywerzwialywqwbenhax.supabase.co/rest/v1/desti
     apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5d2VyendpYWx5d3F3YmVuaGF4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTY1MzY1NTYsImV4cCI6MjAzMjExMjU1Nn0.qAjwQtmmuFvZc9VU5aDtI4V2bkN4XbsLcKKjq-xiPcM",
   },
 }).then((res) => res.json())
-
-console.log(data)
 ---
 
 <MainLayout title="Destinationer">
 
-<div class="margin">
-<article class="hero-second">
-<section class="hero-heading">
-    <span class="forridder">DESTINATIONER</span>
-    <h1 class="h1-display">Maldiverne</h1>
-</section>
-<section class="hero-paragraph-img">
-    <p class="paragraph-medium header-p">Rejs til Maldiverne, hvor turkisblåt hav, svajende kokospalmer og kridhvide sandstrande skaber rammerne for uforglemmelige bounty-oplevelser og store smil på læberne. Maldiverne byder – bogstaveligt talt – på et hav af muligheder for at se farverige fisk, manta rays, stingrays, delfiner og skildpadder på åbent hav. Kom helt ned i gear eller tag snorkelmaske og svømmefødder på, hop i den turkise lagune og bliv klogere på livet under havoverfladen. Oplev verdens smukkeste strande, nyd en privat middag med fødderne i sandet, der er blød</p>
-    <img src="destination-page/hero-img-maldiverne.png" alt="Maldives" width="" height=""> 
-</section>
-</div>
-<FirstTravelSection2/>
-<div class="margin">
-<TravelSection2/>
-</div>
-<div class="margin">
-<DestinationFacts/>
-</div>
+  {data.map((show) => {
+    return <Destination data={show} />
+  })}
 <Newsletter/>
 <div class="margin">
 <InstagramSection/>
