@@ -18,20 +18,12 @@ import OurValues from "../general/OurValues.astro";
     </div>
 
     <div class="paragraph">
-        <p class="paragraph-medium">Det er mig Matti, du får i røret, når du ringer til os - og sammen med min bedre halvdel, Tina, driver jeg rejsebureauet. Stederne, vi udbyder, har vi selv besøgt, så vi kender dem til fingerspidserne. Ekspertise, personlig service, ærlig rådgivning og fingeren på pulsen får du hos os!</p>
-        <div><BTNSecondary data="LÆS MERE OM REJSELYST"/></div>
+        <div><p class="paragraph-medium">Det er mig Matti, du får i røret, når du ringer til os - og sammen med min bedre halvdel, Tina, driver jeg rejsebureauet. Stederne, vi udbyder, har vi selv besøgt, så vi kender dem til fingerspidserne. Ekspertise, personlig service, ærlig rådgivning og fingeren på pulsen får du hos os!</p></div>
+        <div class="btn"><BTNSecondary data="LÆS OM OS"/></div>
     </div>
 
 
     </section>
-
-    <!-- <section class="img-section">
-        <div><img src="img/om-os-1.png" alt="Billede af Matti og Tina som ejer Rejeslyst" class="img1"></div>
-        <div><img src="img/om-os-2.png" alt="Billede af Matti med deres barn, på en af deres ferier, ved en helikopter" class="img2"></div>
-        <div><img src="img/om-os-3.png" alt="Billede af Matti og Tina som ejer Rejeslyst" class="img3"></div>
-        <div><img src="img/om-os-4.png" alt="Billede af Matti og Tina som ejer Rejeslyst" class="img4"></div>
-        <div><img src="img/om-os-5.png" alt="Billede af Matti og Tina som ejer Rejeslyst" class="img5"></div>
-    </section> -->
 
 </article>
 
@@ -42,7 +34,7 @@ article {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 2px;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -60,14 +52,14 @@ height: 250px;
 
 .om-os-left {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .heading {
 position: relative;
-top:25%;
+top:-30px;
 text-align: center;
 }
 
@@ -75,10 +67,10 @@ text-align: center;
 .paragraph {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: var(--space-horisontal-gap-medium, 20px);
 
 }
+
 
 @media only screen and (min-width: 992px) {
 article {
@@ -110,15 +102,24 @@ height: 442px;
 .heading {
 position: relative;
 left:-20%;
+top:0;
 text-align: center;
 }
-
 
 .paragraph {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: var(--space-horisontal-gap-medium, 20px);}
+    gap: var(--space-horisontal-gap-medium, 20px);
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+.btn {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
 
 }
 

@@ -62,7 +62,19 @@ article {
     padding-top: 130px;
     padding-bottom: 130px;
     margin: 15px;
+    position: relative;
 }
+
+article::before {
+        content: "";
+        position: absolute;
+        top: 35rem; /* Exceeds the top of the container by 5rem */
+        /* left: -5rem; */
+        width: 100vw;
+        height: calc(100% + 5rem); /* Covers the entire height of the article plus 5rem */
+        background-color: var(--surface-secondary); /* Background color */
+        z-index: -1; /* Ensure the pseudo-element is behind other content */
+    }
 
 .blog-img {
 width: 250px;
