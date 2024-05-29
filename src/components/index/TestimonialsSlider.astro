@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none; color:black">
   <symbol viewBox="0 0 43.763 23.214">
       <g id="arrow-left" transform="translate(2.886 2.823)">
           <line id="Line_183" data-name="Line 183" x1="38.495" transform="translate(0.382 8.862)" fill="none"
@@ -9,7 +9,7 @@
               stroke-linecap="round" stroke-miterlimit="10" stroke-width="4" />
       </g>
   </symbol>
-  <symbol id="arrow" viewBox="0 0 400.004 400.004" style="enable-background:new 0 0 400.004 400.004;"
+  <symbol id="arrow" viewBox="0 0 400.004 400.004" style=" color:black; :new 0 0 400.004 400.004;"
       xml:space="preserve">
       <g>
           <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757
@@ -22,6 +22,7 @@
 
 <section class="half-color-box">
       <div class="swiper-container swiper-testimonial">
+        <div class="citat-icon"><p>"</p></div>
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="review-box">
@@ -79,13 +80,13 @@
             <div class="test-arrowbox">
       
                 <div class="swiper-button-prev-test">
-                    <svg fill="red" height="34" class="arrow left">
+                    <svg fill="black" height="30" class="arrow left">
                         <use xlink:href="#arrow" />
                     </svg>
                 </div>
                 <div class="swiper-button-next-test">
                     <div class="arrow-right">
-                        <svg fill="red" height="40" width="40" class="arrow">
+                        <svg fill="black" height="30" width="30" class="arrow">
                             <use xlink:href="#arrow" />
                         </svg>
                     </div>
@@ -99,9 +100,20 @@
 
 <style>
 
+  .citat-icon {
+    color: #FF5635;
+    font-style: normal;
+    font-family: "Wulkan Display";
+font-size: 600px;
+position: absolute;
+z-index: -1;
+left: 8%;
+
+  }
+
   section {
     margin:0;
-  padding:0;
+  padding-left:6rem;
   }
   .review-box {
     gap: var(--space-horisontal-gap-xsmall, 10px);
@@ -130,7 +142,6 @@ line-height: 28px;
 .half-color-box {
   background: var(--gradient);
   height: 300px;
-  margin-bottom: 100px;
 }
 
 
@@ -140,7 +151,7 @@ line-height: 28px;
 
 .review-box .quote {
   position: absolute;
-  width: 400px;
+  width: 40px;
   right: 10px;
   bottom: 10px;
 }
@@ -164,6 +175,7 @@ line-height: 28px;
   font-size: 22px;
   line-height: 27px;
   margin-top: 10px;
+  font-weight: 200;
 }
 
 .user-post {
@@ -175,6 +187,7 @@ line-height: 28px;
 .swiper-wrapper {
   display: flex;
   flex-direction: row;
+  padding-top: 7rem;
 }
 
 .swiper-testimonial {
@@ -191,7 +204,7 @@ line-height: 28px;
 .test-arrowbox .swiper-button-next-test,
 .test-arrowbox .swiper-button-prev-test {
   margin-right: 20px;
-  /* background: var(--comp-color);2 */
+color:#2F2F2F;
   border-radius: 50%;
   --size: 55px;
   width: var(--size);
@@ -219,7 +232,7 @@ line-height: 28px;
 <script>
   var swiper = new Swiper('.swiper-container.swiper-testimonial', {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 250,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
