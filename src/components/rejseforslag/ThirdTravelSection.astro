@@ -26,6 +26,24 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 </div>
 
 <style>
+    .image-link {
+    color: black;
+    font-family: "Be Vietnam Pro";
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.75px;
+  text-decoration: none;
+}
+
+.image-link:hover {
+    text-decoration: underline
+  }
+
+  .image-link:visited {
+    color: black;
+  }
     .margin {
         margin: 2.5rem;
     }
@@ -60,6 +78,24 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 }
 
 @media only screen and (min-width: 992px) {
+
+    image-link {
+    font-family: "Be Vietnam Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.75px;
+  text-decoration: none;
+}
+
+.image-link:hover {
+    text-decoration: underline;
+  }
+
+  .image-link:visited {
+    color: black;
+  }
 
     .btn-container {
     padding-top: var(--space-horisontal-gap-xlarge,30px)
@@ -116,6 +152,10 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+    }
+
+    img {
+        width: 100%;
     }
 
 
