@@ -100,6 +100,135 @@
 
 <style>
 
+.citat-icon {
+    color: #FF5635;
+    font-style: normal;
+    font-family: "Wulkan Display";
+font-size: 600px;
+position: absolute;
+z-index: -1;
+left: 8%;
+
+  }
+
+  section {
+    margin:0;
+  padding-left:6rem;
+  }
+  .review-box {
+    gap: var(--space-horisontal-gap-xsmall, 10px);
+    width: 600px;
+  }
+
+.text-center {
+  text-align:center;
+  
+}
+
+
+.name {
+  color: var(--text-body, #2F2F2F);
+font-family: "Be Vietnam Pro";
+font-size: 15px;
+font-style: italic;
+font-weight: 100;
+line-height: 28px;
+}
+
+.bg-color {
+  background: var(--bg-color);
+}
+
+.half-color-box {
+  background: var(--gradient);
+  height: 300px;
+}
+
+
+.por {
+  position: relative;
+}
+
+.review-box .quote {
+  position: absolute;
+  width: 40px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.test-arrowbox {
+  position: absolute;
+  right: 20px;
+  display: flex;
+}
+
+.review-box {
+  padding: 80px;
+}
+
+.review-box h5 {
+  margin: 0;
+}
+
+.review-box p {
+  margin-bottom: 0;
+  font-size: 22px;
+  line-height: 27px;
+  margin-top: 10px;
+  font-weight: 200;
+}
+
+.user-post {
+  font-size: 14px;
+  margin: 0 !important;
+ 
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding-top: 7rem;
+}
+
+.swiper-testimonial {
+  padding: 100px 20px;
+  padding-top: 30px;
+}
+
+.half-color-box {
+  background: var(--gradient);
+  height: 300px;
+  margin-bottom: 140px;
+}
+
+.test-arrowbox .swiper-button-next-test,
+.test-arrowbox .swiper-button-prev-test {
+  margin-right: 20px;
+color:#2F2F2F;
+  border-radius: 50%;
+  --size: 55px;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-right {
+  transform: rotate(180deg);
+  margin-top: -8px;
+}
+
+.arrow {
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.arrow:hover {
+  transform: translateX(-15px);
+}
+@media only screen and (min-width: 992px) {
+
   .citat-icon {
     color: #FF5635;
     font-style: normal;
@@ -227,9 +356,12 @@ color:#2F2F2F;
 .arrow:hover {
   transform: translateX(-15px);
 }
+
+}
 </style>
 
 <script>
+
   var swiper = new Swiper('.swiper-container.swiper-testimonial', {
     slidesPerView: 3,
     spaceBetween: 250,
@@ -241,5 +373,7 @@ color:#2F2F2F;
         nextEl: '.swiper-button-next-test',
         prevEl: '.swiper-button-prev-test',
     },
+
+    
 });
 </script>
