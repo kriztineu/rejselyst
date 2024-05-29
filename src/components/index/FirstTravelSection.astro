@@ -11,7 +11,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
         <div>
 <div class="content">
         <div>
-    <img src="destination-page/gr_t_upper_img1.webp" alt="Maldives" width="" height="" class="responsive1">
+    <img src="destination-page/gr_t_upper_img1.webp" alt="Maldives" width="" height="" class="img1">
         <div class="text-btn-gap">
         <div class="text-gap">
             <h6 class="h6">GRÆKENLAND</h6>
@@ -24,7 +24,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     </div>
     <div>
         <div>
-           <img src="destination-page/se_t_upper_img1.webp" alt="Maldives" width="" height="" class="responsive1">
+           <img src="destination-page/se_t_upper_img1.webp" alt="Maldives" width="" height="" class="img1">
             <div class="text-btn-gap">
             <div class="text-gap">
                 <h6 class="h6">SEYCHELLERNE</h6>
@@ -48,12 +48,12 @@ import BTNPrimary from "../general/BTNPrimary.astro"
         <div>
     <div class="content">
      <div>
-        <img src="destination-page/th_t_lower_img1.png" class="responsive2" alt="Maldives" width="" height="">
+        <img src="destination-page/th_t_lower_img1.png" class="img1" alt="Maldives" width="" height="">
         <div class="text-btn-gap">
         <div class="text-gap">
             <span class="forridder">THAILAND</span>
             <h6 class="h6">TOPPEN AF ECOLUKSUS</h6>
-            <p class="paragraph-small">På en rejse til Soneva Kiri vil I nyde godt af privat butler, smukke strande, børneklub og spa. Hotellet er det ultimative univers for børnefamilier, generationsrejsende og par. Soneva Kiri er et luksuriøst hotel på øen Koh Kood i Thailand.</p>
+            <p class="paragraph-small">På en rejse til Soneva Kiri vil I nyde godt af privat butler, smukke strande, børneklub og spa. </p>
             <span class="inline-text">8 nætter. Fra 33.000 pr. person. </span>
         </div>
         <div>
@@ -63,7 +63,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     </div>
 
         <div>
-            <img src="destination-page/ma_t_upper_img1.webp" class="responsive2" alt="Maldives" width="" height="">
+            <img src="destination-page/ma_t_upper_img1.webp" class="img1" alt="Maldives" width="" height="">
             <div class="text-btn-gap">
             <div class="text-gap">
                 <span class="forridder">MALDIVERNE</span>
@@ -98,12 +98,13 @@ import BTNPrimary from "../general/BTNPrimary.astro"
         height: 65%;
         object-fit:cover;
     } */
+    .img1 {
+            width: 450px;
+            height: 450px;
+            object-fit: cover;
 
-    img {
-    max-width: 100%;
-    height: auto;
-    display: block;
     }
+
 
 
 
@@ -152,11 +153,26 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     @media only screen and (min-width: 992px) {
         
 
+        .img1 {
+            width: 450px;
+            height: 450px;
+
+    }
+
+    .img2 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    }
         article {
             gap: var(--space-horisontal-gap-xxlarge, 50px);
             padding: var(--space-horisontal-gap-xlarge, 30px) var(--space-vertical-margin-small, 60px);
             background-color: var(--surface-secondary, #FFFFE9);
-            padding-top: 250px;
+            padding-top: var(--space-vertical-gap-large, 130px);
+            padding-bottom: var(--space-vertical-gap-large, 130px);
+
+
+
             display: flex;
         flex-direction: column;
         justify-content: center;
