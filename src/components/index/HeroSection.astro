@@ -1,6 +1,8 @@
 <section>
     <video src="../video/hero-video.mp4"autoplay muted loop ></video>
-    <h1 class="h1-display">Dine <div class="h1-display-italic">rejsedrømme</div>kan godt gå i opfyldeldse</h1>
+    <div class="h1txt">
+        <h1 class="h1-display">Dine <div class="h1-display-italic">rejsedrømme</div>kan godt gå i opfyldeldse</h1>
+    </div>
     <div class="maldiverlink">
         <li><a class="link-text-large" href="/destinationer.html"> REJS TIL MALDIVERNE</a></li>
         <img src="../svg/redarrow.svg" alt="Rød pil">
@@ -8,14 +10,14 @@
 </section>
 
 <style>
-    
+
     .maldiverlink {
         display: flex;
         gap: 10px;
         position: absolute; 
             z-index: 1;
-            top: 88%;
-            left: 70%;
+            top: 70%;
+            margin: 2.5rem;
     }
 
     .maldiverlink a {
@@ -34,19 +36,47 @@
     }
     video {
         position: relative;
+        width: 100vh;
+        height: 100vh;
+        top: 100%;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+        }
+
+        h1 {
+        position: absolute; 
+        z-index: 1;
+        top: 10%;
+        width: 11ch;
+        margin: 2.5rem;
+        }
+
+        @media only screen and (min-width: 992px) {
+        video {
+        position: relative;
         width: 100%;
         height: auto;
         top: 100%;
         left: 0;
-        object-fit: cover
+        object-fit: cover;
+        z-index: -1;
         }
 
-        h1 {
-            position: absolute; 
+        section {
+        position: relative;
+        margin-top:-8rem;
+        }
+
+        .maldiverlink {
+        display: flex;
+        gap: 10px;
+        position: absolute; 
             z-index: 1;
-            top: 10%;
-            width: 11ch;
-            margin:2.5rem;
+            top: 88%;
+            left: 70%;
+            margin: 0px;
+    }
         }
 </style>
 
