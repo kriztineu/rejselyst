@@ -1,25 +1,23 @@
 ---
 import BTNPrimary from "../general/BTNPrimary.astro"
 
-const {propdata} = Astro.props;
 ---
 
 <article>
 
     <section class="travel-upper-section">
             <div>
-                <span class="forridder"> {propdata.forridder} </span>
-                <h2 class="h2-display">Udvalgte rejseforslag</h2>
+                <span class="forridder">REJSEFORSLAG</span>
+            <h2 class="h2-display">Find din destination</h2>
                 </div>
             <div>
     <div class="content">
             <div>
-        <img src={"../destination-page/" + propdata.t_upper_img1} alt="image" width="" height="" class="responsive1">
+                <img src="destination-page/gr_t_upper_img1.webp" alt="Maldives" width="" height="" class="responsive1">
             <div class="text-btn-gap">
             <div class="text-gap">
-                <h6 class="h6">{propdata.t_upper_title1}</h6>
-                <p class="paragraph-small">{propdata.t_upper_description1}</p>
-                <span class="inline-text">{propdata.t_upper_price1}</span>
+                <h6 class="h6">GRÆKENLAND</h6>
+                <p class="paragraph-small">Grækenland byder på solsikkert klima, øhop og smukke strande, kulturelle oplevelser, cykel -og vandreruter for de aktive og en kulinarisk scene, der efter vores mening er en af de bedste i Europa.</p>
             </div>
             <div>
                 <div><BTNPrimary data="SE REJSE"/></div>
@@ -28,12 +26,11 @@ const {propdata} = Astro.props;
         </div>
         <div>
             <div>
-               <img src={"../destination-page/" + propdata.t_upper_img2} alt="image" width="" height="" class="responsive1">
+               <img src="destination-page/se_t_upper_img1.webp" alt="image" width="" height="" class="responsive1">
                 <div class="text-btn-gap">
                 <div class="text-gap">
-                    <h6 class="h6">{propdata.t_upper_title2}</h6>
-                    <p class="paragraph-small">{propdata.t_upper_description2}</p>
-                    <span class="inline-text">{propdata.t_upper_price2}</span>
+                    <h6 class="h6">MALDIVERNE</h6>
+                    <p class="paragraph-small">Seychellerne er et eksotisk og uberørt bountyland midt i Det Indiske Ocean. Se frem til unikke naturoplevelser, cykel –og vandreture i idylliske gsdage.</p>
                 </div>
                 <div>
                     <div><BTNPrimary data="SE REJSE"/></div>
@@ -53,12 +50,13 @@ const {propdata} = Astro.props;
             <div>
         <div class="content">
          <div>
-            <img src={"../destination-page/" + propdata.t_lower_img1} class="responsive2" alt="Maldives" width="" height="">
+            <img src="destination-page/se_t_upper_img1.webp" class="responsive2" alt="Maldives" width="" height="">
             <div class="text-btn-gap">
             <div class="text-gap">
-                <h6 class="h6">{propdata.t_lower_title1}</h6>
-                <p class="paragraph-small">{propdata.t_lower_description1}</p>
-                <span class="inline-text">{propdata.t_lower_price1} </span>
+                <span class="forridder">THAILAND</span>
+                <h6 class="h6">TOPPEN AF ECOLUKSUS</h6>
+                <p class="paragraph-small">På en rejse til Soneva Kiri vil I nyde godt af privat butler, smukke strande, børneklub og spa. </p>
+                <span class="inline-text">8 nætter. Fra 33.000 pr. person.  </span>
             </div>
             <div>
                 <div><BTNPrimary data="SE REJSE"/></div>
@@ -67,12 +65,14 @@ const {propdata} = Astro.props;
         </div>
     
             <div>
-                <img src={"../destination-page/" + propdata.t_lower_img2} class="responsive2" alt="image" width="" height="">
+                <img src="destination-page/th_t_lower_img1.png" class="responsive2" alt="image" width="" height="">
                 <div class="text-btn-gap">
                 <div class="text-gap">
-                    <h6 class="h6">{propdata.t_lower_title2}</h6>
-                    <p class="paragraph-small">{propdata.t_lower_description2}</p>
-                    <span class="inline-text">{propdata.t_lower_price2}</span>
+                    <span class="forridder">MALDIVERNE</span>
+                    <h6 class="h6">STRAND OG LOKALE OPLEVELSER
+                    </h6>
+                    <p class="paragraph-small">Drømmer I om at opleve små ø-samfund, hvor tiden står stille, og hvor gadesælgere og asfalterede veje er ukendte fænomener? </p>
+                    <span class="inline-text">8 nætter. Fra 33.000 pr. person.  </span>
                 </div>
                 <div>
                     <div><BTNPrimary data="SE REJSE"/></div>
@@ -82,12 +82,13 @@ const {propdata} = Astro.props;
     
     
                 <div>
-                   <img src={"../destination-page/" + propdata.t_lower_img3} class="responsive2" alt="Maldives" width="" height="">
+                   <img src="destination-page/th_t_lower_img1.png" class="responsive2" alt="Maldives" width="" height="">
                     <div class="text-btn-gap">
                     <div class="text-gap">
-                        <h6 class="h6">{propdata.t_lower_title3}</h6>
-                        <p class="paragraph-small">{propdata.t_lower_description3}</p>
-                        <span class="inline-text">{propdata.t_lower_price3}</span>
+                        <span class="forridder">OMAN</span>
+                        <h6 class="h6">ROADTRIP I OMAN</h6>
+                        <p class="paragraph-small">Drømmer I om at opleve små ø-samfund, hvor tiden står stille, og hvor gadesælgere og asfalterede veje er ukendte fænomener? </p>
+                        <span class="inline-text">8 nætter. Fra 33.000 pr. person.  </span>
                     </div>
                     <div>
                      <div><BTNPrimary data="SE REJSE"/></div>
@@ -115,7 +116,11 @@ const {propdata} = Astro.props;
         object-fit:cover;
     } */
 
-   
+    img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    }
 
 
 
@@ -177,7 +182,7 @@ const {propdata} = Astro.props;
         
         .travel-upper-section {
         display: flex;
-       flex-direction: row-reverse;
+       flex-direction: row;
         padding-bottom: 30px;
         gap: var(--space-horisontal-gap-xxxlarge);
         padding-bottom: var(--space-horisontal-gap-xlarge, 30px);
@@ -186,7 +191,7 @@ const {propdata} = Astro.props;
 
     .content {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         gap: var(--space-vertical-gap-small);
 
     }
@@ -194,7 +199,7 @@ const {propdata} = Astro.props;
 
     .travel-lower-section {
         display: flex;
-       flex-direction:row-reverse;
+       flex-direction:row;
         gap: var(--space-horisontal-gap-xxxlarge);
         padding-top: var(--space-horisontal-gap-xlarge, 30px);
     }
@@ -224,7 +229,7 @@ const {propdata} = Astro.props;
     gsap.registerPlugin(ScrollTrigger);
     
     gsap.from(".travel-upper-section", {
-        x: -700,
+        x: 700,
         duration: 3,
         opacity: 0,
         stagger: 0.2,
@@ -237,7 +242,7 @@ const {propdata} = Astro.props;
     });
 
     gsap.from(".travel-lower-section", {
-        x: -700,
+        x: 700,
         duration: 3,
         opacity: 0,
         stagger: 0.2,
