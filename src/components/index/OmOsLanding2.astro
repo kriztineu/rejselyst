@@ -18,8 +18,8 @@ import OurValues from "../general/OurValues.astro";
     </div>
 
     <div class="paragraph">
-        <p class="paragraph-medium">Det er mig Matti, du får i røret, når du ringer til os - og sammen med min bedre halvdel, Tina, driver jeg rejsebureauet. Stederne, vi udbyder, har vi selv besøgt, så vi kender dem til fingerspidserne. Ekspertise, personlig service, ærlig rådgivning og fingeren på pulsen får du hos os!</p>
-        <div><BTNSecondary data="LÆS MERE OM REJSELYST"/></div>
+        <div><p class="paragraph-medium">Det er mig Matti, du får i røret, når du ringer til os - og sammen med min bedre halvdel, Tina, driver jeg rejsebureauet. Stederne, vi udbyder, har vi selv besøgt, så vi kender dem til fingerspidserne. Ekspertise, personlig service, ærlig rådgivning og fingeren på pulsen får du hos os!</p></div>
+        <div class="btn"><BTNSecondary data="LÆS OM OS"/></div>
     </div>
 
 
@@ -75,9 +75,15 @@ text-align: center;
 .paragraph {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     gap: var(--space-horisontal-gap-medium, 20px);
 
+}
+
+.btn {
+    display: flex;
+    align-items: left;
+    justify-content: left;
 }
 
 @media only screen and (min-width: 992px) {
@@ -112,7 +118,6 @@ position: relative;
 left:-20%;
 text-align: center;
 }
-
 
 .paragraph {
     display: flex;

@@ -12,7 +12,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
                 </div>
             <div>
     <div class="content">
-            <div>
+            <div class="travel1">
                 <img src="destination-page/gr_t_upper_img1.webp" alt="Maldives" width="" height="" class="responsive1">
             <div class="text-btn-gap">
             <div class="text-gap">
@@ -24,7 +24,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
                 </div>
            </div>
         </div>
-        <div>
+        <div class="travel1">
             <div>
                <img src="destination-page/se_t_upper_img1.webp" alt="image" width="" height="" class="responsive1">
                 <div class="text-btn-gap">
@@ -49,7 +49,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
                 </div>
             <div>
         <div class="content">
-         <div>
+         <div class="travel">
             <img src="destination-page/th_t_lower_img1.png" class="responsive2" alt="Maldives" width="" height="">
             <div class="text-btn-gap">
             <div class="text-gap">
@@ -64,7 +64,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
            </div>
         </div>
     
-            <div>
+            <div class="travel">
                 <img src="destination-page/" class="responsive2" alt="image" width="" height="">
                 <div class="text-btn-gap">
                 <div class="text-gap">
@@ -81,7 +81,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
             </div>
     
     
-                <div>
+                <div class="travel">
                    <img src="destination-page/" class="responsive2" alt="Maldives" width="" height="">
                     <div class="text-btn-gap">
                     <div class="text-gap">
@@ -173,7 +173,7 @@ gap: 40px;
     .text-btn-gap {
     display: flex;
     flex-direction: column;
-    gap: var(--space-horisontal-gap-xlarge, 30px);
+    gap: var(--space-horisontal-gap-medium, 20px);
     justify-content: left;
     }
 
@@ -185,6 +185,12 @@ gap: 40px;
         padding-top: 16px;
     }
 
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
     @media only screen and (min-width: 992px) {
         
 
@@ -192,17 +198,14 @@ gap: 40px;
             gap: var(--space-horisontal-gap-xxlarge, 50px);
             padding: var(--space-horisontal-gap-xlarge, 30px) var(--space-vertical-margin-small, 30px);
             background-color: var(--surface-secondary, #FFFFE9);
-            padding-top: 250px;
             display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
+
         }
         
         .travel-upper-section {
         display: flex;
        flex-direction: row;
-        padding-bottom: 30px;
         gap: var(--space-horisontal-gap-xxxlarge);
         padding-bottom: var(--space-horisontal-gap-xlarge, 30px);
 
@@ -212,6 +215,7 @@ gap: 40px;
         display: flex;
         flex-direction: row;
         gap: var(--space-vertical-gap-small);
+    
 
     }
 
@@ -219,12 +223,13 @@ gap: 40px;
     .travel-lower-section {
         display: flex;
        flex-direction:row;
+    
         gap: var(--space-horisontal-gap-xxxlarge);
         padding-top: var(--space-horisontal-gap-xlarge, 30px);
     }
     
 
-    .responsive1 {
+    /* .responsive1 {
   height: 350px; 
   width: 470px; 
   max-width: 470px;
@@ -232,11 +237,34 @@ gap: 40px;
 }
 
 .responsive2 {
-  height: 250px; 
+  height: auto; 
   width: 300px; 
-  max-width: 300px; 
+  max-height: px; 
+  object-fit: cover;
+} */
+
+
+    .responsive1 {
+  height: 350px; 
+  width: 100%; 
   object-fit: cover;
 }
+
+.responsive2 {
+    height: 250px; 
+  width: 100%; 
+  object-fit: cover;
+}
+
+.travel {
+    width: 20vw;
+}
+
+.travel1 {
+    width: 32vw;
+    
+}
+
 }
 
    
