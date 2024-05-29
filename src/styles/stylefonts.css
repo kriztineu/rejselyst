@@ -181,6 +181,25 @@
   line-height: 32px; /* 128% */
 }
 
+/*image text*/
+.image-link {
+  font-family: "Be Vietnam Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.75px;
+}
+
+.image-link-mobile {
+  font-family: "Be Vietnam Pro";
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.75px;
+}
+
 .testimonial-name {
   font-family: "Be Vietnam Pro";
   font-size: 15px;
