@@ -63,12 +63,11 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 .travel-sections{
         padding-bottom: var(--space-horisontal-gap-large)
     }
-
+/* 
 .margin {
         margin: 2.5rem;
-    }
+    } */
 .travel-text {
-    padding-top: 20px;
     display: flex;
         flex-direction: column;
 }
@@ -98,10 +97,12 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 }
 
 
-img {
-    height: 150%;
-width: 120%;
+
+    img {
+width: 350px;
+height: 100%;
 }
+
 
     section {
     background-color: var(--surface-secondary, #FFFFE9);
@@ -175,6 +176,7 @@ padding-left: var(----space-vertical-gap-small,60px);
 .travel-upper-section {
     display: flex;
     align-items: flex-start;
+    gap: var(--space-vertical-gap-medium, 50px);
 }
 
 .travel-content {
@@ -187,8 +189,17 @@ padding-left: var(----space-vertical-gap-small,60px);
 
 .travel-text {
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     padding-left: var(----space-vertical---space-vertical-gap-medium,110px);  
 
+}
+
+img {
+width: 634px;
+height: 100%;
 }
 
 
@@ -198,8 +209,8 @@ section {
             padding-bottom: 100px;
             display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        padding: var(--space-horisontal-margin-xsmall, 40px) var(--space-vertical-margin-small, 60px);
+        gap: var(--space-horisontal-gap-xlarge, 30px);
     }
 
 

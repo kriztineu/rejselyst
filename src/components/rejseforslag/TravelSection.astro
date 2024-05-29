@@ -6,7 +6,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
         <section class="travel-upper-section">
             <div>
             <span class="forridder">REJSEFORSLAG</span>
-                <div>
+                <div class="text">
                     <h1 class="h1-display-small">Find din næste skræddersyede rejse her</h1>
                      <div>
                     <p class="paragraph-small header-p">Klik dig rundt i et univers fyldt med særligt håndplukkede destinationer og hoteller. Vi har sammensat forskellige rejseforslag, så du kan lade dig inspirere. De er blot til inspiration og kan til hver en tid skræddersyes og tilpasses dine ønsker. Du finder alt lige fra små, hyggelige guesthouses til nogle af verdens bedste hoteller</p>
@@ -28,7 +28,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     .travel-upper-section {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: var(--space-horisontal-gap-xxxlarge, 80px);
         padding: 1rem;
     }
 
@@ -78,7 +78,8 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     img {
 
         width: 100%;
-        height: 100%;
+        height: 610px;
+        object-fit: cover;
     }
         
         .travel-upper-section {
@@ -95,6 +96,11 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     .travel-lower-section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .text {
+        gap: var(--space-horisontal-gap-xlarge, 30px);
+
     }
 }
 
