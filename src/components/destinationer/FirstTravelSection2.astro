@@ -218,3 +218,40 @@ const {propdata} = Astro.props;
 
    
 </style>
+
+
+<script>
+
+    import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+    
+    gsap.registerPlugin(ScrollTrigger);
+    
+    gsap.from(".travel-upper-section", {
+        x: -700,
+        duration: 3,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+            trigger: ".travel-upper-section",
+            start: "top 90%",  
+            end: "bottom 80%", 
+            scrub: true,
+      }
+    });
+
+    gsap.from(".travel-lower-section", {
+        x: -700,
+        duration: 3,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".travel-lower-section",
+          start: "top 90%",  
+            end: "bottom 80%", 
+          scrub: true,
+      }
+    });
+
+    </script>
+    

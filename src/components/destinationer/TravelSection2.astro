@@ -170,3 +170,38 @@ article {
     }
 }
 </style>
+
+<script>
+
+    import { gsap } from "gsap";
+        import { ScrollTrigger } from "gsap/ScrollTrigger";
+    
+        gsap.registerPlugin(ScrollTrigger);
+    
+        gsap.from(".head-center", {
+        y: 100,  
+        duration: 3,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".head-center",
+          start: "top 80%", 
+          end: "bottom 60%", 
+          scrub: true,
+      }
+    });
+
+    gsap.from(".travel-place", {
+        y: 100,  
+        duration: 3,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".travel-place",
+          start: "top 80%", 
+          end: "bottom 60%", 
+          scrub: true,
+      }
+    });
+    
+    </script>

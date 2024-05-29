@@ -1,6 +1,6 @@
 
 <article>
-    <div class="div1">
+    <div class="om-os-section">
         <div class="h2-forridder-gap">
             <span class="forridder">Vores historie</span>
             <h2 class="h2-display">Fra rejselyst til rejsebureau</h2>
@@ -23,7 +23,7 @@
             <p class="paragraph-small">Vi lægger vægt på, at hotellet tager ansvar - både for de ansatte og omgivelserne. Vores hjerter banker ubegrænset for dyrevelfærd, miljøet og ikke mindst for, at pengene investeres på en måde, så de synker dybere ned i samfundslagene på de forskellige destinationer.</p>
         </div>
     </div>
-    <div class="div2">
+    <div class="om-os-img">
         <img src="../om-os/omos2.jpg" alt="">
     </div>
     
@@ -54,7 +54,7 @@
         z-index: -1; /* Ensure the pseudo-element is behind other content */
     }
 
-    .div2 img {
+    .om-os-img img {
         position: sticky;
         top: 1rem;
         align-self: start;
@@ -84,7 +84,7 @@
         top: -8rem;
         }
 
-        .div1 {
+        .om-os-section {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -92,7 +92,7 @@
             gap: var(--space-horisontal-gap-medium, 20px);
         }
 
-        .div2 {
+        .om-os-img {
             display: flex;
             justify-content: center;
             grid-column: 2/2;
@@ -108,11 +108,6 @@
     }
 </style>
 
-<script>
 
-import { gsap } from "gsap/dist/gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-        
-gsap.registerPlugin(ScrollTrigger);
 
-    </script>
+

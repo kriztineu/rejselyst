@@ -3,11 +3,12 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 ---
 
 <article>
+    <div class="gsap-heading">
 <div class="heading">
 <span class="forridder">REJSELYST BLOG</span>
 <h4 class="h3-display">Lad dig <span class="h3-italic">inspirere</span> gennem vores rejseeventyr</h4>
 </div>
-
+</div>
 <section class="blog-post">
 
 <div class="blog-post-1">
@@ -197,3 +198,65 @@ height: auto;
 }
 
 </style>
+
+
+<script>
+
+    import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+    
+    gsap.registerPlugin(ScrollTrigger);
+    
+    gsap.from(".gsap-heading", {
+        yPercent: 50,
+        duration: 3,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".gsap-heading",
+          start: "top 95%",
+        end: "bottom center ",
+          scrub: true,
+      }
+    });
+    
+    gsap.from(".blog-post-1", {
+        yPercent: 50,
+        duration: 4,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".gsap-heading",
+          start: "top 70%",
+        end: "bottom center ",
+          scrub: true,
+      }
+    });
+
+    gsap.from(".blog-post-2", {
+        yPercent: 50,
+        duration: 4,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".gsap-heading",
+          start: "top 60%",
+        end: "bottom center ",
+          scrub: true,
+      }
+    });
+
+    gsap.from(".blog-post-3", {
+        yPercent: 50,
+        duration: 4,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".gsap-heading",
+          start: "top 70%",
+        end: "bottom center ",
+          scrub: true,
+      }
+    });
+    
+    </script>

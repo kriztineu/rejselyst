@@ -158,7 +158,55 @@ section {
 
 
      
+<script>
 
+    import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+    
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".travel-sections", {
+        x: -700,
+        duration: 3,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+            trigger: ".paragraph",
+            start: "top 90%",  
+            end: "bottom 50%", 
+            scrub: true,
+      }
+    });
+
+    gsap.from(".paragraph", {
+        x: -700,
+        duration: 3,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+            trigger: ".paragraph",
+            start: "top 90%",  
+            end: "bottom 50%", 
+            scrub: true,
+      }
+    });
+
+    
+    gsap.from(".travel-content", {
+        x: -700,
+        duration: 5,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+            trigger: ".paragraph",
+            start: "top 90%",  
+            end: "bottom 50%", 
+            scrub: true,
+      }
+    });
+
+    </script>
+    
 
 
 

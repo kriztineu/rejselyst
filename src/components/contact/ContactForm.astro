@@ -198,6 +198,25 @@ import BTNSecondary from "../general/BTNSecondary.astro"
 </style>
 
 <script>
+    import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".contact-grid", {
+        y: 100,  
+        duration: 3,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".contact-grid",
+          start: "top 80%", 
+          end: "bottom 60%", 
+          scrub: true,
+      }
+    });
+</script>
+<script>
     document.addEventListener('DOMContentLoaded', (event) => {
         const comments = document.getElementById('comments');
         const charCount = document.getElementById('charCount');
