@@ -1,19 +1,308 @@
 ---
-import BTNPrimary from "../general/BTNPrimary.astro"
+const {propdata} = Astro.props;
 ---
-<section>
+<article>
+    <div class="heading">
+        <h2 class="h3-display">Hvad er inkluderet?</h2>
+        </div>
 
-</section>
+<div class="line">
+ <label for="touch1"><span class="h6">FLY</span></label>               
+  <input type="checkbox" id="touch1"> 
+
+  <ul class="slide">
+    <li class="paragraph-medium">Fly fra København til Portugal tur/retur.</li> 
+  </ul>
+</div> 
+
+    <div class="line">
+    <label for="touch2"><span class="h6">OVERNATNING</span></label>               
+    <input type="checkbox" id="touch2"> 
+  
+    <ul class="slide">
+        <li class="paragraph-medium">5 nætter på Noah Surf House & 5 nætter på Craveiral Farmhouse.</li> 
+    </ul>
+  </div> 
+
+  <div class="line">
+    <label for="touch3"><span class="h6">BILUDLEJNING</span></label>               
+    <input type="checkbox" id="touch3"> 
+  
+    <ul class="slide">
+        <li class="paragraph-medium">Der er inkluderet billeje under hele opholdet.</li> 
+    </ul>
+  </div> 
+
+  <div class="line">
+    <label for="touch4"><span class="h6">MÅLTIDER</span></label>               
+    <input type="checkbox" id="touch4"> 
+  
+    <ul class="slide">
+        <li class="paragraph-medium">Morgenmad inkl. på begge hoteller.</li> 
+    </ul>
+  </div> 
+
+  <div class="line">
+    <label for="touch6"><span class="h6">INDRETNING</span></label>               
+    <input type="checkbox" id="touch6"> 
+  
+    <ul class="slide">
+        <li class="paragraph-medium">Rummelige værelser med plads til familien. Eget køkken på Craveiral Farmhouse
+        </li> 
+    </ul>
+  </div> 
+
+
+    <!-- <div>
+        <div class="dropdown">
+            <div class="dropdown-btn-line">
+            <span class="h6">SPROG</span>
+            <img src="destination-page/plus-icon.png" alt="" width="17" height="auto">
+            </div>
+            <div class="dropdown-content">
+              <p>Hello World!</p>
+            </div>
+          </div> -->
+
+</article>
 
 <style>
-    section {
-            background-color: var(--surface-secondary, #FFFFE9);
-            padding-top: 500px;
-            padding-bottom: 500px;
-            display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
+
+.heading {
+    padding-bottom: var(--space-horisontal-gap-xxxlarge, 80px);
+
+}
+
+
+.line {
+    border-bottom: solid 1px;
+}
+
+article {
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+  padding-left: 0px var(--space-vertical-margin-x-large, 160px);
+  padding-right: 0px var(--space-vertical-margin-x-large, 160px);
+  padding-top: 130px;
+  padding-bottom: 130px;
+
+
+}
+
+span {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background : transparent; 
+  color : rgb(0, 0, 0);
+  font-variant : small-caps;
+  cursor : pointer;
+  display: block;
+}
+
+span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:250px;
+  height:0px;
+  overflow: hidden;
+  transition: height .4s ease;
+}
+
+.slide li {padding-left : 0px;}  
+
+#touch1 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch1:checked + .slide {height: 50px;} 
+
+
+#touch2 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch2:checked + .slide {height: 50px;} 
+
+
+#touch3 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch3:checked + .slide {height: 50px;} 
+
+
+#touch4 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch4:checked + .slide {height: 50px;} 
+
+
+#touch5 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch5:checked + .slide {height: 50px;} 
+
+
+#touch6 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch6:checked + .slide {height: 50px;} 
+
+
+#touch7 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch7:checked + .slide {height: 50px;} 
+
+
+#touch8 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch8:checked + .slide {height: 50px;} 
+
+
+#touch9 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch9:checked + .slide {height: 50px;} 
+
+
+#touch10 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch10:checked + .slide {height: 50px;} 
+
+
+@media only screen and (min-width: 992px) {
+.heading {
+    padding-bottom: var(--space-horisontal-gap-xxxlarge, 80px);
+
+}
+
+
+.line {
+    border-bottom: solid 1px;
+}
+
+article {
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+  padding-left: 0px var(--space-vertical-margin-x-large, 160px);
+  padding-right: 0px var(--space-vertical-margin-x-large, 160px);
+  padding-top: 130px;
+  padding-bottom: 130px;
+
+
+}
+
+span {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background : transparent; 
+  color : rgb(0, 0, 0);
+  font-variant : small-caps;
+  cursor : pointer;
+  display: block;
+}
+
+span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:1000px;
+  height:0px;
+  overflow: hidden;
+  transition: height .4s ease;
+}
+
+.slide li {padding-left : 0px;}
+
+
+#touch1 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch1:checked + .slide {height: 50px;} 
+
+
+#touch2 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch2:checked + .slide {height: 50px;} 
+
+
+#touch3 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch3:checked + .slide {height: 50px;} 
+
+
+#touch4 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch4:checked + .slide {height: 50px;} 
+
+
+#touch5 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch5:checked + .slide {height: 50px;} 
+
+
+#touch6 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch6:checked + .slide {height: 50px;} 
+
+
+#touch7 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch7:checked + .slide {height: 50px;} 
+
+
+#touch8 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch8:checked + .slide {height: 50px;} 
+
+
+#touch9 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch9:checked + .slide {height: 50px;} 
+
+
+#touch10 {position: absolute; opacity: 0; height: 0px;}    
+
+#touch10:checked + .slide {height: 50px;} 
+
+
+}
+
 
 </style>
+
+<script>
+
+  import { gsap } from "gsap";
+      import { ScrollTrigger } from "gsap/ScrollTrigger";
+  
+      gsap.registerPlugin(ScrollTrigger);
+  
+      gsap.from(".heading", {
+      y: 100,  
+      duration: 3,
+      opacity: 0,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: ".heading",
+        start: "top 80%", 
+        end: "bottom 60%", 
+        scrub: true,
+    }
+  });
+
+  gsap.from(".line", {
+      y: 100,  
+      duration: 3,
+      opacity: 0,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: ".line",
+        start: "top 80%", 
+        end: "bottom 60%", 
+        scrub: true,
+    }
+  });
+
+
+  </script>
