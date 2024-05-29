@@ -99,8 +99,8 @@ import BTNPrimary from "../general/BTNPrimary.astro"
         object-fit:cover;
     } */
     .img1 {
-            width: 450px;
-            height: 450px;
+            width: 75vw;
+            height: 250px;
             object-fit: cover;
 
     }
@@ -108,15 +108,14 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 
 
 
-    .article {
+    article {
         background-color: var(--surface-secondary, #FFFFE9);
-        display: flex;
-        padding-top: 250px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
         gap: var(--space-horisontal-gap-xxlarge, 50px);
-        padding: var(--space-horisontal-gap-xlarge, 30px) var(--space-vertical-margin-small, 60px);
+        padding-left: var(--space-horisontal-gap-xlarge, 30px);
+        padding-right: var(--space-horisontal-gap-xlarge, 30px);
+        padding-bottom: var(--space-vertical-margin-small, 60px);
+        padding-top: var(--space-vertical-margin-small, 60px);
+
     }
 
     .travel-upper-section {
@@ -138,7 +137,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     .text-btn-gap {
     display: flex;
     flex-direction: column;
-    gap: var(--space-horisontal-gap-xlarge, 30px);
+    gap: 16px;
     justify-content: left;
     }
 
@@ -170,9 +169,6 @@ import BTNPrimary from "../general/BTNPrimary.astro"
             background-color: var(--surface-secondary, #FFFFE9);
             padding-top: var(--space-vertical-gap-large, 130px);
             padding-bottom: var(--space-vertical-gap-large, 130px);
-
-
-
             display: flex;
         flex-direction: column;
         justify-content: center;
