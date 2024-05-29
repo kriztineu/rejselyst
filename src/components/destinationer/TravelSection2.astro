@@ -1,22 +1,23 @@
 ---
 import BTNPrimary from "../general/BTNPrimary.astro"
----
 
+  const {propdata} = Astro.props;
+---
 
 <article>
 
 <div class="head-center">
-    <span class="forridder">MALDIVERNE</span>
+    <span class="forridder">{propdata.forridder}</span>
     <h3 class="h3-display">Udvalgte øer og hoteller</h3>
 </div>
 
 <section>
 <div class="travel-place">
-<div><img src="destination-page/image2.jpg" alt="Maldives" width="" height=""></div>
+<div><img src={"../destination-page/" + propdata.t_place_img1} alt="image" width="" height=""></div>
     <div class="aside">
         <div class="text-gap">
-        <h6 class="h6">GILI LANKANFUSHI, MALDIVERNE</h6>
-        <p class="paragraph-small">Home away from home. Det er store ord, men på alle måder, hvad en rejse til Gili Lankanfushi er - og mere til. Her lander du i rolige paradisomgivelser på øen, hvor virkeligheden overstiger forventningerne. Niveauet for service, gourmetmad og gæsteoplevelser når nye højde. Her ankommer du som gæst, forlader som ven og vender tilbage som familie.</p>
+        <h6 class="h6">{propdata.t_place_title1}</h6>
+        <p class="paragraph-small">{propdata.t_place_description1}</p>
     </div>
     <div>
         <div><BTNPrimary data="SE REJSE"/></div>
@@ -25,11 +26,11 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 </div>
 
 <div class="travel-place">
-    <div><img src="destination-page/image3.jpg" alt="Maldives" width="" height=""></div>
+    <div><img src={"../destination-page/" + propdata.t_place_img2} alt="image" width="" height=""></div>
     <div class="aside">
         <div class="text-gap">
-        <h6 class="h6">REETHI FARU, MALDIVERNE</h6>
-        <p class="paragraph-small">Reethi Faru ligger på en privat og uforstyrret ø på Maldiverne, som indbyder til verdensklasse snorkling, aktiviteter for hele familien og ren afslapning. Her er synligt fokus på ansvarlig hoteldrift, kvaliteten er gennemgående høj, og så får du rigtig meget for pengene på Reethi Faru. Glæd dig til at opleve det ægte Maldiverne i al sin skønhed, hvor der både er plads til familier, par og solorejsende.</p>
+        <h6 class="h6">{propdata.t_place_title2}</h6>
+        <p class="paragraph-small">{propdata.t_place_description2}</p>
     </div>
     <div>
         <div><BTNPrimary data="SE REJSE"/></div>
@@ -38,11 +39,11 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 </div>
 
 <div class="travel-place">
-    <div><img src="destination-page/image.jpg" alt="Maldives" width="" height=""></div>
+    <div><img src={"../destination-page/" + propdata.t_place_img3} alt="image" width="" height=""></div>
     <div class="aside">
         <div class="text-gap">
-        <h6 class="h6">KANDOLHU, MALDIVERNE</h6>
-        <p class="paragraph-small">På Kandolhu kan du se frem til et ophold på en af Maldivernes mindste øer, der kun måler 150 x 200 meter og omkranses af landets bedste husrev. Det er tid til at smide skoene og nyde tosomheden. Øen er indbegrebet af ro, intimitet og romantik, og det er netop, hvad der gør Kandolhu til det perfekte valg til en bryllupsrejse til Maldiverne.        </p>
+        <h6 class="h6">{propdata.t_place_title3}</h6>
+        <p class="paragraph-small">{propdata.t_place_description3}</p>
     </div>
     <div>
         <div><BTNPrimary data="SE REJSE"/></div>
@@ -169,3 +170,38 @@ article {
     }
 }
 </style>
+
+<script>
+
+    import { gsap } from "gsap";
+        import { ScrollTrigger } from "gsap/ScrollTrigger";
+    
+        gsap.registerPlugin(ScrollTrigger);
+    
+        gsap.from(".head-center", {
+        y: 100,  
+        duration: 3,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".head-center",
+          start: "top 80%", 
+          end: "bottom 60%", 
+          scrub: true,
+      }
+    });
+
+    gsap.from(".travel-place", {
+        y: 100,  
+        duration: 3,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".travel-place",
+          start: "top 80%", 
+          end: "bottom 60%", 
+          scrub: true,
+      }
+    });
+    
+    </script>

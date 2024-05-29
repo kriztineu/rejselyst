@@ -1,6 +1,9 @@
+---
+const {propdata} = Astro.props;
+---
 <article>
     <div class="heading">
-        <h2 class="h3-display">Fakta om Maldiverne</h2>
+        <h2 class="h3-display">Fakta om {propdata.title}</h2>
         </div>
 
 <div class="line">
@@ -8,7 +11,7 @@
   <input type="checkbox" id="touch1"> 
 
   <ul class="slide">
-    <li class="paragraph-medium">Dhivehi & engelsk</li> 
+    <li class="paragraph-medium">{propdata.sprog}</li> 
   </ul>
 </div> 
 
@@ -17,7 +20,7 @@
     <input type="checkbox" id="touch2"> 
   
     <ul class="slide">
-        <li class="paragraph-medium">Nej. Visa er ikke nødvendigt.</li> 
+        <li class="paragraph-medium">{propdata.visum}</li> 
     </ul>
   </div> 
 
@@ -26,7 +29,7 @@
     <input type="checkbox" id="touch3"> 
   
     <ul class="slide">
-        <li class="paragraph-medium">27-33 grader</li> 
+        <li class="paragraph-medium">{propdata.klima}</li> 
     </ul>
   </div> 
 
@@ -35,7 +38,7 @@
     <input type="checkbox" id="touch4"> 
   
     <ul class="slide">
-        <li class="paragraph-medium">Malé</li> 
+        <li class="paragraph-medium">{propdata.hovedstad}</li> 
     </ul>
   </div> 
 
@@ -44,16 +47,16 @@
     <input type="checkbox" id="touch5"> 
   
     <ul class="slide">
-        <li class="paragraph-medium">+500.000</li> 
+        <li class="paragraph-medium">{propdata.indbyggere}</li> 
     </ul>
   </div> 
 
   <div class="line">
-    <label for="touch6"><span class="h6">RELGION</span></label>               
+    <label for="touch6"><span class="h6">RELIGION</span></label>               
     <input type="checkbox" id="touch6"> 
   
     <ul class="slide">
-        <li class="paragraph-medium">Islam</li> 
+        <li class="paragraph-medium">{propdata.religion}</li> 
     </ul>
   </div> 
 
@@ -62,7 +65,7 @@
     <input type="checkbox" id="touch7"> 
   
     <ul class="slide">
-        <li class="paragraph-medium">Sommertid +3 timer, Vintertid +4 timer</li> 
+        <li class="paragraph-medium">{propdata.tidsforskel}</li> 
     </ul>
   </div> 
 
@@ -71,7 +74,7 @@
     <input type="checkbox" id="touch8"> 
   
     <ul class="slide">
-        <li class="paragraph-medium">Asien</li> 
+        <li class="paragraph-medium">{propdata.kontinent}</li> 
     </ul>
   </div> 
 
@@ -80,7 +83,7 @@
     <input type="checkbox" id="touch9"> 
   
     <ul class="slide">
-        <li class="paragraph-medium">Maldiviske Rufiyaa & USD</li> 
+        <li class="paragraph-medium">{propdata.valuta}</li> 
     </ul>
   </div>
 
@@ -90,7 +93,7 @@
     <input type="checkbox" id="touch10"> 
   
     <ul class="slide">
-        <li class="paragraph-medium">Fiskeri & turisme</li> 
+        <li class="paragraph-medium">{propdata.beskæftigelse}</li> 
     </ul>
   </div>
 
@@ -312,3 +315,39 @@ span::after {
 
 
 </style>
+
+<script>
+
+  import { gsap } from "gsap";
+      import { ScrollTrigger } from "gsap/ScrollTrigger";
+  
+      gsap.registerPlugin(ScrollTrigger);
+  
+      gsap.from(".heading", {
+      y: 100,  
+      duration: 3,
+      opacity: 0,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: ".heading",
+        start: "top 80%", 
+        end: "bottom 60%", 
+        scrub: true,
+    }
+  });
+
+  gsap.from(".line", {
+      y: 100,  
+      duration: 3,
+      opacity: 0,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: ".line",
+        start: "top 80%", 
+        end: "bottom 60%", 
+        scrub: true,
+    }
+  });
+
+
+  </script>

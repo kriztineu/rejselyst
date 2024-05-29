@@ -1,0 +1,73 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import DestinationFacts from "../../components/destinationer/DestinationFacts.astro"
+import Newsletter from "../../components/general/Newsletter.astro"
+import InstagramSection from "../../components/general/InstagramSection.astro"
+import FirstTravelSection2 from "../../components/destinationer/FirstTravelSection2.astro"
+import TravelSection2 from "../../components/destinationer/TravelSection2.astro"
+import BTNPrimary from '../../components/general/BTNPrimary.astro';
+import FirstTravelSection from '../../components/index/FirstTravelSection.astro';
+
+export async function getStaticPaths() {
+    const data = await fetch("https://zywerzwialywqwbenhax.supabase.co/rest/v1/destinations?id", {
+  method: "GET",
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp5d2VyendpYWx5d3F3YmVuaGF4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTY1MzY1NTYsImV4cCI6MjAzMjExMjU1Nn0.qAjwQtmmuFvZc9VU5aDtI4V2bkN4XbsLcKKjq-xiPcM",
+  },
+}).then((res) => res.json())
+
+  return data.map((destination) => {
+    return {
+      params: { title: destination.title } /* Skal matche det "id/slug" navn der er i filnavnet. Dette tilfælde "title"*/,
+      props: { myData: destination },
+    };
+  });
+}
+const {data} = Astro.props;
+console.log(data);
+
+const {myData} = Astro.props;
+console.log("tester tester", myData);
+
+---
+
+<MainLayout title={myData.title}>
+    <div class="margin">
+        <article class="hero-second">
+        <section class="hero-heading">
+            <span class="forridder">DESTINATIONER</span>
+            <h1 class="h1-display"> {myData.title} </h1>
+        </section>
+        <section class="hero-paragraph-img">
+            <p class="paragraph-medium header-p">{myData.description}</p>
+            <img src= {"../destination-page/" + myData.img1} alt="hero-image"> 
+        </section>
+        </div>
+        
+        <FirstTravelSection2 propdata={myData}/>
+        <div class="margin">
+        <TravelSection2 propdata={myData} />
+        </div>
+        <div class="margin">
+        <DestinationFacts propdata={myData} />
+        </div>
+        <Newsletter/>
+        <div class="margin">
+        <InstagramSection/>
+        </div>
+</article>
+
+
+<style>
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.margin {
+  margin: 2.5rem;
+}
+</style>
+
+</MainLayout>

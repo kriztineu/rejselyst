@@ -36,8 +36,9 @@ import BTNPrimary from "./BTNPrimary.astro"
 
                 <div class="div5">
                     <label class="formlabel" for="comments">
-                        <input type="text" id="comments" name="comments" class="form-text form-input paragraph-medium" value="Hvad kan vi hjælpe med?">
+                        <textarea id="comments" name="comments" class="form-text form-input paragraph-medium" placeholder="Hvad kan vi hjælpe med?" maxlength="300" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Hvad kan vi hjælpe med?'"></textarea>
                     </label>
+                    <div id="charCount">0/300</div>
                 </div>
 
                 <div class="div6">
@@ -79,10 +80,9 @@ import BTNPrimary from "./BTNPrimary.astro"
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: var(--space-horisontal-gap-xxlarge, 50px);
+        gap: var(--space-horisontal-gap-large, 50px);
     }
 
-    
 
     .form-input {
         cursor: pointer;
@@ -93,6 +93,21 @@ import BTNPrimary from "./BTNPrimary.astro"
         border-bottom: 1px solid var(--text-form-contact-form-text-body-color);
         width: 100%;
     }
+
+    textarea#comments {
+        resize: none;
+        overflow: auto;
+        height: 60px;
+        max-height: 80px;
+    }
+
+    #charCount {
+        color: var(--text-form-contact-form-text-body-color);
+        text-align: right;
+        font-family: "Be Vietnam Pro";
+        font-size: 14px;
+    }
+
     @media only screen and (min-width: 992px) {
 
         form {
@@ -100,7 +115,7 @@ import BTNPrimary from "./BTNPrimary.astro"
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 50px;
-        grid-row-gap: var(--space-vertical-gap-small);
+        /* grid-row-gap: var(--space-vertical-gap-small); */
         align-items: center;
         width: 640px;
     }
@@ -114,3 +129,15 @@ import BTNPrimary from "./BTNPrimary.astro"
 
     }
 </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const comments = document.getElementById('comments');
+        const charCount = document.getElementById('charCount');
+
+        comments.addEventListener('input', () => {
+            const currentLength = comments.value.length;
+            charCount.textContent = `${currentLength}/300`;
+        });
+    });
+</script>

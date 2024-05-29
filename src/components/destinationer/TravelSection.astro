@@ -1,20 +1,22 @@
 ---
 import BTNPrimary from "../general/BTNPrimary.astro"
 
+const {propdata} = Astro.props;
+
 const { data } = Astro.props;
 console.log(data);
 ---
-
+<!-- // IKKE DENNE!!! // -->
 <article>
     <div>
-        <span class="forridder">MALDIVERNE</span>
+        <span class="forridder">{propdata.title}</span>
         <h2 class="h2-display">Udvalgte rejseforslag</h2>
         </div>
     <div>
         
     <section class="travel-upper-section">
         <div>
-        <img src="destination-page/travel-big-1.png" alt="Maldives" width="" height="">
+        <img src="destination-page/travel-big-1.png" alt="Image" width="" height="">
         <div class="text-btn-gap">
         <div class="text-gap">
             <h6 class="h6">BOUNTYSTRANDE OG LOKALE OPLEVELSER</h6>

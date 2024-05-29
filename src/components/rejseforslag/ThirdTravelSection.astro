@@ -3,6 +3,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 ---
 
 <section class="travel-upper-section">
+    <div class="second-travel-section">
     <div class="margin">
     <div class="travel-content">
         <div class="travel-text">
@@ -20,6 +21,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
             </div>
         </div>
     </div>
+</div>
 </section>
 </div>
 
@@ -121,7 +123,30 @@ section {
 
 </style>
 
+  
+<script>
 
+    import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+    
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".second-travel-section", {
+        x: 700,
+        duration: 3,
+        opacity: 0,
+        stagger: 0.2,
+        scrollTrigger: {
+            trigger: ".second-travel-section",
+            start: "top 90%",  
+            end: "bottom 50%", 
+            scrub: true,
+      }
+    });
+
+   
+
+    </script>
      
 
 
