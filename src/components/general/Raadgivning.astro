@@ -65,8 +65,9 @@ import BTNPrimary from "./BTNPrimary.astro"
     .raadgivning-container {
         display: flex;
         align-items: flex-start;
-        gap: 124px;
+        gap: var(--space-vertical-margin-small);
         justify-content: center;
+        flex-direction: column;
     }
 
     .raadgivning-header {
@@ -108,6 +109,17 @@ import BTNPrimary from "./BTNPrimary.astro"
         font-size: 14px;
     }
 
+    form {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: var(--space-vertical-gap-xsmall);
+        width: 100%;
+    }
+
+    .div6 {
+        padding-top: var(--space-8);
+    }
+
     @media only screen and (min-width: 992px) {
 
         form {
@@ -126,6 +138,13 @@ import BTNPrimary from "./BTNPrimary.astro"
         .div5 { grid-area: 3 / 1 / 4 / 3; }
         .div6 { grid-area: 4 / 1 / 5 / 3; }
 
+        .raadgivning-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 124px;
+        justify-content: center;
+        flex-direction: row;
+    }
 
     }
 </style>
