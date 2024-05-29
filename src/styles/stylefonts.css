@@ -1,4 +1,21 @@
 /* FONTE */
+
+@font-face {
+  font-family: "Wulkan Display Regular";
+  src: url("/fontWulkan/WulkanDisplayRegular.ttf") format("opentype"); /* Adjust the path accordingly */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Wulkan Display Italic";
+  src: url("/fontWulkan/WulkanDisplayItalic.ttf") format("opentype"); /* Adjust the path accordingly */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .h1-display {
   font-family: "Wulkan Display Regular";
   font-size: 70px;
