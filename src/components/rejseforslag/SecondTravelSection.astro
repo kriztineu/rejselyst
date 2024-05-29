@@ -16,11 +16,13 @@ import BTNPrimary from "../general/BTNPrimary.astro"
         <li>For de voksne</li>
     </ul>
     </div>
+    
+    
     <div class="travel-content">
         <div class="travel-image">
-            <img src="../rejseforslag/noahsurfhouse.png" alt="Noah Surf House, Portugal" width="" height="">
+            <img src="../rejseforslag/noah_surf_0007.webp" alt="Noah Surf House, Portugal" width="" height="">
             <div>
-                <span class="image-link">Noah Surf House, Portugal</span>
+                <a href="https://www.rejselyst.dk" ><span class="image-link">Noah Surf House, Portugal</span></a>
             </div>
         </div>
         <div class="travel-text">
@@ -38,11 +40,37 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 
 <style>
 
+
+.image-link {
+    color: black;
+    font-family: "Be Vietnam Pro";
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.75px;
+  text-decoration: none;
+}
+
+.image-link:hover {
+    text-decoration: underline
+  }
+
+  .image-link:visited {
+    color: black;
+  }
+
+.travel-sections{
+        padding-bottom: var(--space-horisontal-gap-large)
+    }
+
 .margin {
         margin: 2.5rem;
     }
 .travel-text {
     padding-top: 20px;
+    display: flex;
+        flex-direction: column;
 }
 
 .paragraph-small {
@@ -51,7 +79,6 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    padding: 0;
     margin: 0;
 }
 
@@ -66,9 +93,14 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 }
 
 
-.travel-image img {
-    width: 100%;
-    height: auto;
+.travel-image {
+    flex: 1;
+}
+
+
+img {
+    height: 150%;
+width: 120%;
 }
 
     section {
@@ -82,6 +114,23 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 }
 
 @media only screen and (min-width: 992px) {
+    .image-link {
+    font-family: "Be Vietnam Pro";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.75px;
+  text-decoration: none;
+}
+
+.image-link:hover {
+    text-decoration: underline;
+  }
+
+  .image-link:visited {
+    color: black;
+  }
 
 
     .btn-container {
@@ -136,7 +185,7 @@ padding-left: var(----space-vertical-gap-small,60px);
 
 .travel-text {
     flex: 2;
-    padding-left: var(----space-vertical---space-vertical-gap-medium,50px);  
+    padding-left: var(----space-vertical---space-vertical-gap-medium,110px);  
 
 }
 
