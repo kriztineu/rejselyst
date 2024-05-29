@@ -10,7 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.8.4",
+    "astro": "^4.9.2",
     "gsap": "^3.12.5",
     "jquery": "^3.7.1"
   },
