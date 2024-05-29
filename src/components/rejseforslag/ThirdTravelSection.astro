@@ -15,7 +15,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
             <div class="btn-container"><BTNPrimary data="LÆS MERE"/></div>
         </div>
         <div class="travel-image">
-            <img src="../rejseforslag/farmhouse.png" alt="Noah Surf House, Portugal" width="" height="">
+            <img src="../rejseforslag/craveiral-farmhouse.webp" alt="Noah Surf House, Portugal" width="" height="">
             <div>
                 <span class="image-link">Craveiral Farmhouse, Portugal</span>
             </div>
@@ -64,11 +64,6 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     margin: 0;
 }
 
-.travel-image img {
-    width: 100%;
-    height: auto;
-}
-
     section {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -76,6 +71,16 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+.travel-image {
+    flex: 1;
+}
+
+
+img {
+    height: 150%;
+width: 120%;
 }
 
 @media only screen and (min-width: 992px) {
@@ -120,11 +125,15 @@ padding-left: var(----space-vertical-gap-small,60px);
 
 .travel-image {
     flex: 1;
-    margin-right: 20px; 
 }
 
 .travel-text {
     flex: 2;
+}
+
+img {
+    height: 150%;
+width: 120%;
 }
 
 
