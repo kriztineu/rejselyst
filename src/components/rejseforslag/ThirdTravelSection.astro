@@ -26,6 +26,10 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 </div>
 
 <style>
+     .btn-container {
+    padding-top: var(--space-horisontal-gap-xlarge,30px);
+    padding-bottom: var(--space-horisontal-gap-xlarge,30px);
+}
     .image-link {
     color: black;
     font-family: "Be Vietnam Pro";
@@ -54,14 +58,11 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 
 .paragraph-small {
     padding-top: 16px;
-    padding-bottom: 30px;
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    padding: 0;
     margin: 0;
 }
-
 
 .travel-image img {
     width: 100%;
@@ -78,24 +79,6 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 }
 
 @media only screen and (min-width: 992px) {
-
-    image-link {
-    font-family: "Be Vietnam Pro";
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0.75px;
-  text-decoration: none;
-}
-
-.image-link:hover {
-    text-decoration: underline;
-  }
-
-  .image-link:visited {
-    color: black;
-  }
 
     .btn-container {
     padding-top: var(--space-horisontal-gap-xlarge,30px)
@@ -152,10 +135,6 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-    }
-
-    img {
-        width: 100%;
     }
 
 
