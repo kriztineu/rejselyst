@@ -18,23 +18,23 @@ const { data } = Astro.props;
         padding: 10px 15px;
         align-items: center;
         gap: 50px;
-        background-color: var(--components-button-primary-background-default);
-        color: var(--text-button-text-primary-default);
-        border: 1px solid var(--components-button-primary-background-default);
+        background-color: transparent;
+        color: var(--text-button-text-primary-hover);
+        border: 1px solid var(--components-button-secondary-background-default);
     }
 
     p {
     color: var(--components-button-text-primary-default);
     }
     button:hover {
-    background-color: var(--components-button-primary-background-hover);
+    background-color: var(--surface-brand-contrast);
     color: var(--text-button-text-primary-hover);
-    border: 1px solid var(--text-button-text-primary-hover);
+    border: 1px solid var(--surface-brand-contrast);
     }
 
 
     button:hover p {
-        color: var(--button-text-primary-hover);
+        color: var(--text-button-text-primary-default);
     }
 
     .arrow {
