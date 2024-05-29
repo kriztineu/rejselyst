@@ -29,7 +29,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
                <img src="destination-page/se_t_upper_img1.webp" alt="image" width="" height="" class="responsive1">
                 <div class="text-btn-gap">
                 <div class="text-gap">
-                    <h6 class="h6">MALDIVERNE</h6>
+                    <h6 class="h6">SEYCHELLERNE</h6>
                     <p class="paragraph-small">Seychellerne er et eksotisk og uberørt bountyland midt i Det Indiske Ocean. Se frem til unikke naturoplevelser, cykel –og vandreture i idylliske gsdage.</p>
                 </div>
                 <div>
@@ -55,8 +55,8 @@ import BTNPrimary from "../general/BTNPrimary.astro"
             <div class="text-gap">
                 <span class="forridder">THAILAND</span>
                 <h6 class="h6">TOPPEN AF ECOLUKSUS</h6>
-                <p class="paragraph-small">På en rejse til Soneva Kiri vil I nyde godt af privat butler, smukke strande, børneklub og spa. </p>
-                <span class="inline-text">8 nætter. Fra 33.000 pr. person.  </span>
+                <p class="paragraph-small">På Soneva Kiri vil I nyde godt af privat butler, smukke strande, børneklub og spa. </p>
+                <span class="inline-text">7 nætter fra 99.000 kr. i alt for 4 pers. </span>
             </div>
             <div>
                 <div><BTNPrimary data="SE REJSE"/></div>
@@ -69,10 +69,10 @@ import BTNPrimary from "../general/BTNPrimary.astro"
                 <div class="text-btn-gap">
                 <div class="text-gap">
                     <span class="forridder">MALDIVERNE</span>
-                    <h6 class="h6">LOKALE OPLEVELSER
+                    <h6 class="h6">BARFODSLUKSUS
                     </h6>
                     <p class="paragraph-small">Drømmer I om at opleve små ø-samfund hvor tiden står stille? </p>
-                    <span class="inline-text">8 nætter. Fra 33.000 pr. person.  </span>
+                    <span class="inline-text">7 nætter fra 135.000 kr. i alt for 4 pers.</span>
                 </div>
                 <div>
                     <div><BTNPrimary data="SE REJSE"/></div>
@@ -87,8 +87,8 @@ import BTNPrimary from "../general/BTNPrimary.astro"
                     <div class="text-gap">
                         <span class="forridder">OMAN</span>
                         <h6 class="h6">ROADTRIP I OMAN</h6>
-                        <p class="paragraph-small">Drømmer I om at opleve små ø-samfund, hvor tiden står stille, og hvor gadesælgere og asfalterede veje er ukendte fænomener? </p>
-                        <span class="inline-text">8 nætter. Fra 33.000 pr. person.  </span>
+                        <p class="paragraph-small">Oplev unikke naturscenarier, vandreture til små landsbyer og forkælelse på to af de bedste hoteller i Oman. </p>
+                        <span class="inline-text">7 nætter fra 26.000 kr. pr. person </span>
                     </div>
                     <div>
                      <div><BTNPrimary data="SE REJSE"/></div>
@@ -123,6 +123,20 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     object-fit: cover;
     }
 
+    .responsive1 {
+  height: 300px; 
+  width: 100%; 
+  max-width: auto;
+  object-fit: cover;
+}
+
+.responsive2 {
+    height: 200px; 
+  width: 100%; 
+  max-width: auto;
+  object-fit: cover;
+}
+
 
 
     .article {
@@ -133,7 +147,9 @@ import BTNPrimary from "../general/BTNPrimary.astro"
         justify-content: center;
         align-items: flex-start;
         gap: var(--space-horisontal-gap-xxlarge, 50px);
-        padding: var(--space-horisontal-gap-xlarge, 30px) var(--space-vertical-margin-small, 60px);
+        padding: 0px var(--space-horisontal-margin-xsmall, 40px);
+gap: 40px;
+
     }
 
     .travel-upper-section {
@@ -141,6 +157,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
         grid-template-columns: 1fr;
         gap: var(--space-vertical-gap-small);
         padding-bottom: var(--space-horisontal-gap-xlarge, 30px);
+        padding: 0px var(--space-horisontal-margin-xsmall, 40px);
 
     }
 
@@ -149,6 +166,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
         grid-template-columns: 1fr;
         padding-bottom: 30px;
         gap: var(--space-vertical-gap-small);
+        padding: 0px var(--space-horisontal-margin-xsmall, 40px);
         padding-top: var(--space-horisontal-gap-xlarge, 30px);
     }
 
@@ -172,7 +190,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 
         article {
             gap: var(--space-horisontal-gap-xxlarge, 50px);
-            padding: var(--space-horisontal-gap-xlarge, 30px) var(--space-vertical-margin-small, 60px);
+            padding: var(--space-horisontal-gap-xlarge, 30px) var(--space-vertical-margin-small, 30px);
             background-color: var(--surface-secondary, #FFFFE9);
             padding-top: 250px;
             display: flex;
@@ -204,6 +222,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
         gap: var(--space-horisontal-gap-xxxlarge);
         padding-top: var(--space-horisontal-gap-xlarge, 30px);
     }
+    
 
     .responsive1 {
   height: 350px; 
@@ -224,7 +243,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 </style>
 
 
-<script>
+<!-- <script>
 
     import { gsap } from "gsap";
     import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -255,7 +274,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
             end: "bottom 80%", 
           scrub: true,
       }
-    });
+    }); -->
 
     </script>
     
