@@ -1,16 +1,21 @@
 <article>
     <div class="thomas-text">
-            <h3 class="h3-display">Thomas Paaske Hansen</h3>
+        <div class="h2-forridder-gap">
+            <span class="forridder">Lær os at kende</span>
+            <h3 class="h3-display">Holdet bag Rejselyst</h3>
+        </div>
             <p class="paragraph-small">Med os har vi også Thomas. Thomas har været i rejsebranchen gennem årtier. Tidligere har han siddet i en stilling som leder i et andet rejsebureau. Han er 100 meter mester i alt, hvad der vedrører fly, dem kompromisløse kundekontakt - og service, og så elsker han at skræddersy og nørde rejser til de mere ukendte steder, som vores hjerter banker for. Han har skræddersyet rejser til alverdens lande og spændende kontinenter verden over, og vi er utroligt glade for at have ham som en del af Rejselyst.</p>
             <p class="paragraph-small">Det er Thomas, du skal have fat i, hvis du skal opleve Thailand. Han kender Thailand fra et andet perspektiv end det gængse. </p>
             <div class="thomas-contact">
                 <p class="category-bold">53 87 59 53</p>
-                <p class="category-bold">thomas@rejselyst.dk</p>
+                <p class="category-bold">- thomas@rejselyst.dk</p>
             </div>
 
     </div>
     <div class="thomas-img">
-        <img src="../om-os/thomas.png" alt="Thomas Paaske Hansen">
+        <img src="../om-os/thomas.webp" alt="Thomas Paaske Hansen">
+        <p class="category-bold">Thomas Paaske Hansen</p>
+        <p class="paragraph-small">Medarbejder - speciale i Thailand</p>
     </div>
     
 </article>
@@ -24,15 +29,16 @@
         flex-direction: column;
         align-items: flex-start;
         gap: var(--space-horisontal-gap-medium);
+        padding-bottom: 10px;
     }
     article {
-        background: var(--surface-secondary);
+        background-color: var(--surface-tertiary);
     }
 
     .thomas-contact {
         display: flex;
-        flex-direction: column;
-        gap: 13px;
+        /* flex-direction: column; */
+        gap: 5px;
     }
 
 
@@ -45,15 +51,16 @@
 
     article {
         display: flex;
-        padding: var(--space-horisontal-margin-small) var(--space-vertical-margin-x-large);
+        padding: var(--space-horisontal-margin-medium) var(--space-vertical-margin-x-large);
+        padding-bottom: 7rem;
         align-items: flex-start;
         gap: var(--space-vertical-margin-medium);
     }
 
 
     img {
-        min-width: 377px;
-        min-height: 488px;
+        min-width: 350px;
+        min-height: auto;
     }
 
     }
