@@ -116,7 +116,12 @@ const {propdata} = Astro.props;
     } */
 
    
-
+    img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    }
 
 
     .article {
@@ -207,7 +212,8 @@ const {propdata} = Astro.props;
 
 .responsive2 {
   height: 250px; 
-  width: 400px; 
+  max-width: 300px;
+  width: 300px; 
   object-fit: cover;
 }
 }
