@@ -13,26 +13,19 @@ import TravelSection2 from "../components/destinationer/TravelSection2.astro"
 
 <MainLayout title="Rejselyst">
     <HeroSection/>
-    <div class="margin">
-    <OmOsLanding2/>
-    </div>  
+    <OmOsLanding2/> 
     <FirstTravelSection2/>
     <TestimonialsSlider/>
-    <div class="margin">
     <TravelBlog/>
-    </div>
     <Newsletter/>
-    <div class="margin">
     <InstagramSection/> 
-    </div>
     <Raadgivning/>
 </MainLayout>
 
 
 
 <style>
-
-.margin {
-    margin: 2.5rem
-}
+  .margin {
+        margin:var(--space-horisontal-margin-small, 60px);
+    }
 </style>

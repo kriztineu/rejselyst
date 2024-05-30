@@ -23,9 +23,7 @@ import InstagramSection from "../components/general/InstagramSection.astro"
 </div>
 <IconSection/>
 <Newsletter/>
-<div class="margin">
 <InstagramSection/>
-</div>
 </section>
 
 </MainLayout>
@@ -33,6 +31,6 @@ import InstagramSection from "../components/general/InstagramSection.astro"
 
 <style>
     .margin {
-        margin: 2.5rem;
+        margin:var(--space-horisontal-margin-small, 60px);
     }
 </style>

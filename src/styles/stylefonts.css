@@ -64,6 +64,14 @@
   line-height: normal;
 }
 
+.h2-italic {
+  font-family: "Wulkan Display";
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .h3-display {
   font-family: "Wulkan Display";
   font-size: 25px;
@@ -308,6 +316,14 @@
     font-size: 50px;
     font-style: normal;
     font-weight: 500;
+    line-height: normal;
+  }
+
+  .h2-italic {
+    font-family: "Wulkan Display";
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 700;
     line-height: normal;
   }
 

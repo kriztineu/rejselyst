@@ -1,7 +1,7 @@
 ---
 import Title from "../../pages/destinationer/[title].astro";
 import Destination from "../destinationer/destinations.astro";
-import BTNPrimary from "./BTNPrimary.astro";
+import BTNSecondary from "./BTNSecondary.astro";
 
 const data = await fetch("https://zywerzwialywqwbenhax.supabase.co/rest/v1/destinations", {
   method: "GET",
@@ -36,7 +36,7 @@ console.log(data)
 
             <div class="icons">
               <ul>
-                <li><a class="menuBTN" href="/kontaktos.html"><BTNPrimary data="KONTAKT OS"/></a></li>
+                <li><a class="menuBTN" href="/kontaktos.html"><BTNSecondary data="KONTAKT OS"/></a></li>
                 <li class="burger-menu"><img src="/svg/burgermenu.svg" alt="Burger-Menu" /></li>
               </ul>
             </div>
