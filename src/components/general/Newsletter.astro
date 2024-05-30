@@ -7,18 +7,16 @@ import BTNForm2 from "./BTNForm2.astro"
             <h3 class="h3-display">Få tilbud og nyheder om dine drømmerejser</h5>
             <p class="paragraph-small">Tilmeld dig nyhedsbrevet og få inspiration om nye destinationer, og bliv en del af vores rejsefællesskab. </p>
         </div>
-            <form action="">
-                
-                <label class="newslabel" for="fname">
-                    <input type="text" id="fname" name="fname" class="newsletterinput form-text" value="Fornavn">
-                </label>
-                
-                
-                <label class="newslabel" for="lname">
-                    <input type="text" id="lname" name="lname" class="newsletterinput form-text" value="Efternavn">
-                </label>
-                
-                </form>
+        <form action="">
+            <label class="newslabel" for="fname">
+                <input type="text" id="fname" name="fname" class="newsletterinput form-text" placeholder="Fornavn *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Fornavn *'">
+            </label>
+            
+            <label class="newslabel" for="lname">
+                <input type="text" id="lname" name="lname" class="newsletterinput form-text" placeholder="Efternavn *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Efternavn *'">
+            </label>
+        </form>
+        
 
             <div class="newsletterBTN">
                 <BTNForm2 data="TILMELD"/>

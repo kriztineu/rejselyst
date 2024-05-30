@@ -12,39 +12,34 @@ import BTNPrimary from "./BTNPrimary.astro"
             
             <form action="">
                 <div class="div1">
-                    <label class="formlabel" for="fname">
-                        <input type="text" id="fname" name="fname" class="form-text form-input paragraph-medium" value="Fornavn">
-                    </label>
+                    <input type="text" id="fname" name="fname" class="form-input paragraph-medium" placeholder="Fornavn *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Fornavn *'">
+                    <label class="formlabel" for="fname"></label>
                 </div>
 
                 <div class="div2">
-                    <label class="formlabel" for="lname">
-                        <input type="text" id="lname" name="lname" class="form-text form-input paragraph-medium" value="Efternavn">
-                    </label>
+                    <input type="text" id="lname" name="lname" class="form-input paragraph-medium" placeholder="Efternavn *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Efternavn *'">
+                    <label class="formlabel" for="lname"></label>
                 </div>
 
                 <div class="div3">
-                    <input type="text" id="email" name="email" class="form-text form-input paragraph-medium" value="E-mail">
+                    <input type="text" id="email" name="email" class="form-input paragraph-medium" placeholder="E-mail *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail *'">
                     <label class="formlabel" for="email"></label>
                 </div>
 
                 <div class="div4">
-                    <label class="formlabel" for="phone">
-                        <input type="text" id="phone" name="phone" class="form-text form-input paragraph-medium" value="Telefon">
-                    </label>
+                    <input type="text" id="phone" name="phone" class="form-input paragraph-medium" placeholder="Telefon *" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telefon *'">
+                    <label class="formlabel" for="phone"></label>
                 </div>
 
                 <div class="div5">
-                    <label class="formlabel" for="comments">
-                        <textarea id="comments" name="comments" class="form-text form-input paragraph-medium" placeholder="Hvad kan vi hjælpe med?" maxlength="300" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Hvad kan vi hjælpe med?'"></textarea>
-                    </label>
+                    <textarea id="comments" name="comments" class="form-input paragraph-medium" placeholder="Hvad kan vi hjælpe med?" maxlength="300" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Hvad kan vi hjælpe med?'"></textarea>
+                    <label class="formlabel" for="comments"></label>
                     <div id="charCount">0/300</div>
                 </div>
 
                 <div class="div6">
-<BTNPrimary data="SEND"/>
+                    <BTNPrimary data="SEND"/>
                 </div>
-                
         </form>
     </div>
     <div class="matti-img">
@@ -52,12 +47,11 @@ import BTNPrimary from "./BTNPrimary.astro"
         <p class="category-bold">Matti Saastamoinen Binderup</p>
         <p class="paragraph-small">Stifter af Rejselyst</p>
     </div>
-       
     </div>
 </section>
 
 <style>
-     section {
+    section {
         background-color: var(--surface-tertiary);
         padding: 60px;
     }
@@ -68,7 +62,6 @@ import BTNPrimary from "./BTNPrimary.astro"
         gap: var(--space-vertical-margin-small);
         justify-content: center;
         flex-direction: column;
-        align-items: center;
     }
 
     .raadgivning-header {
@@ -84,7 +77,6 @@ import BTNPrimary from "./BTNPrimary.astro"
         align-items: flex-start;
         gap: var(--space-horisontal-gap-large, 50px);
     }
-
 
     .form-input {
         cursor: pointer;
@@ -122,16 +114,14 @@ import BTNPrimary from "./BTNPrimary.astro"
     }
 
     @media only screen and (min-width: 992px) {
-
         form {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 50px;
-        /* grid-row-gap: var(--space-vertical-gap-small); */
-        align-items: center;
-        width: 640px;
-    }
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 50px;
+            align-items: center;
+            width: 640px;
+        }
         .div1 { grid-area: 1 / 1 / 2 / 2; }
         .div2 { grid-area: 1 / 2 / 2 / 3; }
         .div3 { grid-area: 2 / 1 / 3 / 2; }
@@ -140,18 +130,18 @@ import BTNPrimary from "./BTNPrimary.astro"
         .div6 { grid-area: 4 / 1 / 5 / 3; }
 
         .raadgivning-container {
-        display: flex;
-        align-items: flex-start;
-        gap: 124px;
-        justify-content: center;
-        flex-direction: row;
-    }
-
+            display: flex;
+            align-items: flex-start;
+            gap: 124px;
+            justify-content: center;
+            flex-direction: row;
+        }
     }
 </style>
 
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
+        const inputs = document.querySelectorAll('.form-input');
         const comments = document.getElementById('comments');
         const charCount = document.getElementById('charCount');
 
