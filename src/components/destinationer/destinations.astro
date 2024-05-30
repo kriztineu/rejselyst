@@ -2,8 +2,24 @@
 const { data } = Astro.props;
 ---
 
-<a class="link" href={`/destinations/${data.title}`} >
-      <!-- Bruger title istedet for slug, da jeg ikke har oprettet en slug i vores Supabase -->
-      <h2>{data.title}</h2>
-</a>
+<section>
+      <a class="link" href={`/destinations/${data.title}`} >
+            <!-- Bruger title istedet for slug, da jeg ikke har oprettet en slug i vores Supabase -->
+            
+            <h2 class="h1-display-small">{data.title}</h2>
+      </a>
+</section>
 
+
+<style>
+
+section {
+      display: flex;
+      justify-content: left;
+      padding-top: 1rem;
+}
+
+a {
+      color: var(--red500);
+}
+</style>

@@ -5,7 +5,6 @@ import Newsletter from "../components/general/Newsletter.astro"
 import InstagramSection from "../components/general/InstagramSection.astro"
 import FirstTravelSection2 from "../components/destinationer/FirstTravelSection2.astro"
 import TravelSection2 from "../components/destinationer/TravelSection2.astro"
-import FirstTravelSection from "../components/index/FirstTravelSection.astro"
 import Destination from "../components/destinationer/destinations.astro"
 import Header from "../components/general/Header.astro"
 
@@ -20,11 +19,19 @@ console.log(data);
 ---
 
 <MainLayout title="Destinationer">
-
-  {data.map((show) => {
-    return <Destination data={show} />
-  })}
-<Newsletter/>
+  <div class="margin destinationsection hero-second">
+    <div>
+      <span class="forridder">Destinationer</span>
+      {data.map((show) => {
+        return <Destination data={show} />
+      })}
+    </div>
+    <div>
+      <img src="/public/destination-page/destinationer.webp" alt="Matti der arbejder">
+    </div>
+    
+  </div>
+<div class="margin">
 <InstagramSection/>
 </article>
 
@@ -32,11 +39,16 @@ console.log(data);
 
 <style>
 
-img {
-  max-width: 100%;
-  height: auto;
+.destinationsection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: var(--space-10);
 }
 
+.destinationsection img {
+  width: 600px;
+  height: auto;
+}
 .margin {
         margin:var(--space-horisontal-margin-small, 60px);
     }
