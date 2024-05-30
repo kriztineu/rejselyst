@@ -142,14 +142,12 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     .article {
         background-color: var(--surface-secondary, #FFFFE9);
         display: flex;
-        padding-top: 250px;
+        padding-top: 100px;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         gap: var(--space-horisontal-gap-xxlarge, 50px);
         padding: var(--space-horisontal-margin-medium, 80px) var(--size-spacing-space-7, 30px);
-
-        gap: 40px;
 
     }
 
@@ -201,7 +199,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
             background-color: var(--surface-secondary, #FFFFE9);
             display: flex;
         flex-direction: column;
-        padding-top: var(--space-vertical-gap-large, 130px);
+        padding-top: var(--space-vertical---space-vertical-gap-small, 40px);
         padding-bottom: var(--space-vertical-gap-large, 130px);
 
 
@@ -276,7 +274,7 @@ import BTNPrimary from "../general/BTNPrimary.astro"
 </style>
 
 
-<!-- <script>
+<script>
 
     import { gsap } from "gsap";
     import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -284,30 +282,30 @@ import BTNPrimary from "../general/BTNPrimary.astro"
     gsap.registerPlugin(ScrollTrigger);
     
     gsap.from(".travel-upper-section", {
-        x: 700,
+        yPercent:50,
         duration: 3,
         opacity: 0,
         stagger: 0.2,
         scrollTrigger: {
             trigger: ".travel-upper-section",
-            start: "top 90%",  
-            end: "bottom 80%", 
+            start: "top 80%",  
+            end: "bottom 50%", 
             scrub: true,
       }
     });
 
     gsap.from(".travel-lower-section", {
-        x: 700,
+        yPercent:50,
         duration: 3,
         opacity: 0,
         stagger: 0.2,
         scrollTrigger: {
           trigger: ".travel-lower-section",
-          start: "top 90%",  
-            end: "bottom 80%", 
+          start: "top 80%",  
+            end: "bottom 70%", 
           scrub: true,
       }
-    }); -->
+    }); 
 
     </script>
     
