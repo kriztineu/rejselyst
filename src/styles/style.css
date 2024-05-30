@@ -9,6 +9,11 @@ button {
   cursor: pointer;
 }
 
+a,
+li {
+  cursor: pointer;
+}
+
 * {
   /*!PRIMITIVES HERUNDER!*/
 
