@@ -398,6 +398,16 @@
     letter-spacing: 0.75px;
   }
 
+  .forridder-second {
+    font-family: "Be Vietnam Pro";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+  }
+
   .category-bold {
     font-family: "Be Vietnam Pro";
     font-size: 15px;

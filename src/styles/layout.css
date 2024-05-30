@@ -25,12 +25,14 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-horisontal-gap-medium);
+  padding: 0px var(--space-horisontal-gap-xlarge, 30px);
 }
 
 .hero-paragraph-img {
   display: flex;
   flex-direction: column;
   gap: var(--space-horisontal-gap-xxlarge);
+  padding: 0px var(--space-horisontal-gap-xlarge, 30px);
 }
 
 .h2-forridder-gap {
@@ -49,21 +51,23 @@
   }
 
   .hero-second {
-    padding: var(--space-vertical-margin-x-large, 160px) var(--space-vertical-margin-small, 60px);
     display: flex;
     flex-direction: column;
-    gap: var(--space-horisontal-gap-xxxlarge, 80px);
   }
 
   .hero-heading {
     display: flex;
     flex-direction: column;
     gap: var(--space-horisontal-gap-medium);
+    padding-left: var(--space-vertical-margin-small, 60px);
+    padding-right: var(--space-vertical-margin-small, 60px);
   }
 
   .hero-paragraph-img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-horisontal-gap-xxlarge);
+    padding-left: var(--space-vertical-margin-small, 60px);
+    padding-right: var(--space-vertical-margin-small, 60px);
   }
 }

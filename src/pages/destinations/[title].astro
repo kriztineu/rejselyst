@@ -30,7 +30,6 @@ console.log("tester tester", myData);
 ---
 
 <MainLayout title={myData.title}>
-    <div class="margin">
         <article class="hero-second">
         <section class="hero-heading">
             <span class="forridder-second">DESTINATIONER</span>
@@ -40,7 +39,6 @@ console.log("tester tester", myData);
             <p class="paragraph-medium header-p">{myData.description}</p>
             <img src= {"/../destination-page/" + myData.img1} alt="hero-image"> 
         </section>
-        </div>
         
         <FirstTravelSection2 propdata={myData}/>
         <TravelSection2 propdata={myData} />
@@ -53,8 +51,10 @@ console.log("tester tester", myData);
 <style>
 
 img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+height: 498px;
+flex-shrink: 0;
+  object-fit: cover;
 }
 
 </style>
