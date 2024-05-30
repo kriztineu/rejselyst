@@ -45,14 +45,14 @@
   .hero-landingpage {
     display: flex;
     flex-direction: column;
-    gap: var(--space-horisontal-gap-medium);
+    gap: var(--space-horisontal-gap-xxxlarge, 80px);
   }
 
   .hero-second {
-    padding-top: 164px;
+    padding: var(--space-vertical-margin-x-large, 160px) var(--space-vertical-margin-small, 60px);
     display: flex;
     flex-direction: column;
-    gap: var(--space-horisontal-gap-medium);
+    gap: var(--space-horisontal-gap-xxxlarge, 80px);
   }
 
   .hero-heading {

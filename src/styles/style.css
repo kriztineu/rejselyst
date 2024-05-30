@@ -92,6 +92,7 @@ button {
   --text-heading-3: var(--neutral400);
   --text-heading-4: var(--neutral400);
   --text-forridder: var(--neutral300);
+  --text-forridder-second: var(--red500);
   --text-body: var(--neutral400);
 
   /* components-text-form*/
@@ -156,6 +157,10 @@ h1 {
 
 .forridder {
   color: var(--text-forridder);
+}
+
+.forridder-second {
+  color: var(--text-forridder-second);
 }
 
 .header-p {
