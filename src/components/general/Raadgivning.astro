@@ -43,7 +43,7 @@ import BTNPrimary from "./BTNPrimary.astro"
         </form>
     </div>
     <div class="matti-img">
-        <img src="../img/matti_raadgivning.png" alt="Matti">
+        <img src="../img/matti_raadgivning.png" alt="Matti" class="matti">
         <p class="category-bold">Matti Saastamoinen Binderup</p>
         <p class="paragraph-small">Stifter af Rejselyst</p>
     </div>
@@ -53,7 +53,7 @@ import BTNPrimary from "./BTNPrimary.astro"
 <style>
     section {
         background-color: var(--surface-tertiary);
-        padding: 60px;
+        padding: var(--space-horisontal-margin-small, 60px) var(--space-vertical-margin-small, 60px);
     }
 
     .raadgivning-container {
@@ -86,6 +86,13 @@ import BTNPrimary from "./BTNPrimary.astro"
         color: rgba(0, 0, 0, 0.50);
         border-bottom: 1px solid var(--text-form-contact-form-text-body-color);
         width: 100%;
+    }
+
+    img {
+width: 100%;
+height: auto;
+object-fit: cover;
+
     }
 
     textarea#comments {
